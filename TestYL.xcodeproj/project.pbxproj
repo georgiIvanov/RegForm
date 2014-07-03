@@ -30,7 +30,6 @@
 		387598B2193DFA5700A103E0 /* BaseMapImageOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 38759892193DFA5700A103E0 /* BaseMapImageOverlay.m */; };
 		387598B3193DFA5700A103E0 /* BaseMapImageOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38759894193DFA5700A103E0 /* BaseMapImageOverlayView.m */; };
 		387598B4193DFA5700A103E0 /* BaseSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 38759896193DFA5700A103E0 /* BaseSegment.m */; };
-		387598B5193DFA5700A103E0 /* FXForms.m in Sources */ = {isa = PBXBuildFile; fileRef = 38759898193DFA5700A103E0 /* FXForms.m */; };
 		387598B6193DFA5700A103E0 /* MKCircleView+VeplayCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3875989A193DFA5700A103E0 /* MKCircleView+VeplayCommon.m */; };
 		387598B7193DFA5700A103E0 /* MKMapView+ZoomLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3875989C193DFA5700A103E0 /* MKMapView+ZoomLevel.m */; };
 		387598B8193DFA5700A103E0 /* UIColor+VeplayCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3875989E193DFA5700A103E0 /* UIColor+VeplayCommon.m */; };
@@ -95,8 +94,6 @@
 		38759894193DFA5700A103E0 /* BaseMapImageOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseMapImageOverlayView.m; sourceTree = "<group>"; };
 		38759895193DFA5700A103E0 /* BaseSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSegment.h; sourceTree = "<group>"; };
 		38759896193DFA5700A103E0 /* BaseSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSegment.m; sourceTree = "<group>"; };
-		38759897193DFA5700A103E0 /* FXForms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXForms.h; sourceTree = "<group>"; };
-		38759898193DFA5700A103E0 /* FXForms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXForms.m; sourceTree = "<group>"; };
 		38759899193DFA5700A103E0 /* MKCircleView+VeplayCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKCircleView+VeplayCommon.h"; sourceTree = "<group>"; };
 		3875989A193DFA5700A103E0 /* MKCircleView+VeplayCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKCircleView+VeplayCommon.m"; sourceTree = "<group>"; };
 		3875989B193DFA5700A103E0 /* MKMapView+ZoomLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+ZoomLevel.h"; sourceTree = "<group>"; };
@@ -255,8 +252,6 @@
 				38759894193DFA5700A103E0 /* BaseMapImageOverlayView.m */,
 				38759895193DFA5700A103E0 /* BaseSegment.h */,
 				38759896193DFA5700A103E0 /* BaseSegment.m */,
-				38759897193DFA5700A103E0 /* FXForms.h */,
-				38759898193DFA5700A103E0 /* FXForms.m */,
 				38759899193DFA5700A103E0 /* MKCircleView+VeplayCommon.h */,
 				3875989A193DFA5700A103E0 /* MKCircleView+VeplayCommon.m */,
 				3875989B193DFA5700A103E0 /* MKMapView+ZoomLevel.h */,
@@ -425,7 +420,6 @@
 				387598B3193DFA5700A103E0 /* BaseMapImageOverlayView.m in Sources */,
 				387598C8193DFB6C00A103E0 /* BBlock.m in Sources */,
 				387598B9193DFA5700A103E0 /* UIImage+VeplayCommon.m in Sources */,
-				387598B5193DFA5700A103E0 /* FXForms.m in Sources */,
 				387598C4193DFAED00A103E0 /* BaseUserAvatar.m in Sources */,
 				387598B6193DFA5700A103E0 /* MKCircleView+VeplayCommon.m in Sources */,
 				387598B1193DFA5700A103E0 /* BaseLabel.m in Sources */,

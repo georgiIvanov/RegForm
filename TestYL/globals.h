@@ -25,15 +25,9 @@ typedef NS_ENUM(NSUInteger, UserGender) {
 };
 
 #import <MapKit/MapKit.h>
-#import <BOString.h>
 #import <Masonry.h>
-#import <GHKit/GHKit.h>
-#import <MagicalRecord/CoreData+MagicalRecord.h>
-#import <Mantle.h>
-#import <UIActionSheet+Blocks.h>
-#import <UIAlertView+Blocks.h>
-#import <TTTLocalizedPluralString.h>
-#import "AFNetworking.h"
+#import <AFNetworking.h>
+#import <UIImageView+AFNetworking.h>
 
 #import "UIView+FrameAdditions.h"
 #import "MKMapView+ZoomLevel.h"

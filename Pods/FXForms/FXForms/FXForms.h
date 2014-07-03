@@ -1,7 +1,7 @@
 //
 //  FXForms.h
 //
-//  Version 1.1.4
+//  Version 1.1.6
 //
 //  Created by Nick Lockwood on 13/02/2014.
 //  Copyright (c) 2014 Charcoal Design. All rights reserved.
@@ -60,6 +60,7 @@ static NSString *const FXFormFieldTypeEmail = @"email";
 static NSString *const FXFormFieldTypePassword = @"password";
 static NSString *const FXFormFieldTypeNumber = @"number";
 static NSString *const FXFormFieldTypeInteger = @"integer";
+static NSString *const FXFormFieldTypeFloat = @"float";
 static NSString *const FXFormFieldTypeBitfield = @"bitfield";
 static NSString *const FXFormFieldTypeBoolean = @"boolean";
 static NSString *const FXFormFieldTypeOption = @"option";
@@ -132,7 +133,6 @@ static NSString *const FXFormFieldTypeImage = @"image";
 - (FXFormField *)fieldForIndexPath:(NSIndexPath *)indexPath;
 - (void)enumerateFieldsWithBlock:(void (^)(FXFormField *field, NSIndexPath *indexPath))block;
 
-- (Class)cellForIndexPath:(NSIndexPath *)indexPath;
 - (Class)cellClassForFieldType:(NSString *)fieldType;
 - (void)registerDefaultFieldCellClass:(Class)cellClass;
 - (void)registerCellClass:(Class)cellClass forFieldType:(NSString *)fieldType;
@@ -175,22 +175,8 @@ static NSString *const FXFormFieldTypeImage = @"image";
 
 @end
 
-@interface FXFormSizes : NSObject
-
-@property (nonatomic, assign) CGFloat paddingLeft;
-@property (nonatomic, assign) CGFloat paddingTop;
-@property (nonatomic, assign) CGFloat paddingRight;
-@property (nonatomic, assign) CGFloat paddingBottom;
-
-- (instancetype)initWithPadding:(NSArray *)padding;
-
-@end
 
 @interface FXFormBaseCell : UITableViewCell <FXFormFieldCell>
-
-@property (nonatomic, strong) FXFormSizes *formSizes;
-@property (nonatomic, strong) UIView *topSeparator;
-@property (nonatomic, strong) UIView *bottomSeparator;
 
 @end
 
