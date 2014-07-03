@@ -14,7 +14,6 @@
 		38759820193DF4EB00A103E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3875981F193DF4EB00A103E0 /* main.m */; };
 		38759824193DF4EB00A103E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38759823193DF4EB00A103E0 /* AppDelegate.m */; };
 		38759827193DF4EB00A103E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38759825193DF4EB00A103E0 /* Main.storyboard */; };
-		3875982A193DF4EB00A103E0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38759829193DF4EB00A103E0 /* ViewController.m */; };
 		3875982C193DF4EB00A103E0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3875982B193DF4EB00A103E0 /* Images.xcassets */; };
 		38759833193DF4EB00A103E0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38759832193DF4EB00A103E0 /* XCTest.framework */; };
 		38759834193DF4EB00A103E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38759813193DF4EB00A103E0 /* Foundation.framework */; };
@@ -44,6 +43,8 @@
 		387598C5193DFAED00A103E0 /* BaseUserAvatarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 387598C3193DFAED00A103E0 /* BaseUserAvatarView.m */; };
 		387598C8193DFB6C00A103E0 /* BBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 387598C7193DFB6C00A103E0 /* BBlock.m */; };
 		D7735D2FFD70421EA44C1E1C /* libPods-TestYL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 435D84CA3F3742109639C407 /* libPods-TestYL.a */; };
+		FF107C6B1965DC1D008399DA /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF107C6A1965DC1D008399DA /* LoginViewController.m */; };
+		FF107C6E1965DC50008399DA /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF107C6D1965DC50008399DA /* NavigationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,8 +69,6 @@
 		38759822193DF4EB00A103E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		38759823193DF4EB00A103E0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		38759826193DF4EB00A103E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		38759828193DF4EB00A103E0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		38759829193DF4EB00A103E0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3875982B193DF4EB00A103E0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		38759831193DF4EB00A103E0 /* TestYLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestYLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38759832193DF4EB00A103E0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -122,6 +121,10 @@
 		387598C7193DFB6C00A103E0 /* BBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBlock.m; sourceTree = "<group>"; };
 		435D84CA3F3742109639C407 /* libPods-TestYL.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestYL.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D6C7C1122B94DA4BF061AC2 /* Pods-TestYL.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestYL.xcconfig"; path = "Pods/Pods-TestYL.xcconfig"; sourceTree = "<group>"; };
+		FF107C691965DC1D008399DA /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		FF107C6A1965DC1D008399DA /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		FF107C6C1965DC50008399DA /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
+		FF107C6D1965DC50008399DA /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,12 +187,11 @@
 		38759819193DF4EB00A103E0 /* TestYL */ = {
 			isa = PBXGroup;
 			children = (
+				FF107C681965DBE2008399DA /* ViewControllers */,
 				38759886193DFA4D00A103E0 /* Base */,
 				38759822193DF4EB00A103E0 /* AppDelegate.h */,
 				38759823193DF4EB00A103E0 /* AppDelegate.m */,
 				38759825193DF4EB00A103E0 /* Main.storyboard */,
-				38759828193DF4EB00A103E0 /* ViewController.h */,
-				38759829193DF4EB00A103E0 /* ViewController.m */,
 				3875982B193DF4EB00A103E0 /* Images.xcassets */,
 				3875981A193DF4EB00A103E0 /* Supporting Files */,
 				3875986B193DF5B500A103E0 /* globals.h */,
@@ -274,6 +276,17 @@
 				387598AC193DFA5700A103E0 /* YLSliderValues.m */,
 			);
 			name = Base;
+			sourceTree = "<group>";
+		};
+		FF107C681965DBE2008399DA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FF107C691965DC1D008399DA /* LoginViewController.h */,
+				FF107C6A1965DC1D008399DA /* LoginViewController.m */,
+				FF107C6C1965DC50008399DA /* NavigationViewController.h */,
+				FF107C6D1965DC50008399DA /* NavigationViewController.m */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -410,11 +423,12 @@
 			files = (
 				387598BF193DFA5700A103E0 /* YLSliderValues.m in Sources */,
 				387598B0193DFA5700A103E0 /* BaseFormTableView.m in Sources */,
-				3875982A193DF4EB00A103E0 /* ViewController.m in Sources */,
+				FF107C6B1965DC1D008399DA /* LoginViewController.m in Sources */,
 				387598BB193DFA5700A103E0 /* YLBirthDateModel.m in Sources */,
 				387598B4193DFA5700A103E0 /* BaseSegment.m in Sources */,
 				387598B8193DFA5700A103E0 /* UIColor+VeplayCommon.m in Sources */,
 				387598BE193DFA5700A103E0 /* YLDistanceTransformer.m in Sources */,
+				FF107C6E1965DC50008399DA /* NavigationViewController.m in Sources */,
 				387598BD193DFA5700A103E0 /* YLDistance.m in Sources */,
 				3875986D193DF5B500A103E0 /* globals.m in Sources */,
 				387598B3193DFA5700A103E0 /* BaseMapImageOverlayView.m in Sources */,
