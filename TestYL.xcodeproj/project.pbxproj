@@ -44,6 +44,11 @@
 		FF107D351965DF79008399DA /* globals.m in Sources */ = {isa = PBXBuildFile; fileRef = FF107D331965DF79008399DA /* globals.m */; };
 		FF107D3F1965E045008399DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF107D3C1965E045008399DA /* main.m */; };
 		FF107D411965E099008399DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38759825193DF4EB00A103E0 /* Main.storyboard */; };
+		FF107D481965E21A008399DA /* AddPhoto.png in Resources */ = {isa = PBXBuildFile; fileRef = FF107D431965E21A008399DA /* AddPhoto.png */; };
+		FF107D491965E21A008399DA /* BackNavButton.png in Resources */ = {isa = PBXBuildFile; fileRef = FF107D441965E21A008399DA /* BackNavButton.png */; };
+		FF107D4A1965E21A008399DA /* LaunchScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = FF107D451965E21A008399DA /* LaunchScreen.png */; };
+		FF107D4B1965E21A008399DA /* LaunchScreenClear.png in Resources */ = {isa = PBXBuildFile; fileRef = FF107D461965E21A008399DA /* LaunchScreenClear.png */; };
+		FF107D4C1965E21A008399DA /* RoundedRectButton.png in Resources */ = {isa = PBXBuildFile; fileRef = FF107D471965E21A008399DA /* RoundedRectButton.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +128,11 @@
 		FF107D3C1965E045008399DA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FF107D3D1965E045008399DA /* TestYL-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TestYL-Info.plist"; sourceTree = "<group>"; };
 		FF107D3E1965E045008399DA /* TestYL-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestYL-Prefix.pch"; sourceTree = "<group>"; };
+		FF107D431965E21A008399DA /* AddPhoto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AddPhoto.png; sourceTree = "<group>"; };
+		FF107D441965E21A008399DA /* BackNavButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackNavButton.png; sourceTree = "<group>"; };
+		FF107D451965E21A008399DA /* LaunchScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchScreen.png; sourceTree = "<group>"; };
+		FF107D461965E21A008399DA /* LaunchScreenClear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchScreenClear.png; sourceTree = "<group>"; };
+		FF107D471965E21A008399DA /* RoundedRectButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RoundedRectButton.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +163,7 @@
 		38759807193DF4EB00A103E0 = {
 			isa = PBXGroup;
 			children = (
+				FF107D421965E21A008399DA /* Images */,
 				FF107CEF1965DEE9008399DA /* Base */,
 				FF107C681965DBE2008399DA /* ViewControllers */,
 				FF107D2F1965DF79008399DA /* General */,
@@ -297,6 +308,19 @@
 			path = TestYL/General;
 			sourceTree = "<group>";
 		};
+		FF107D421965E21A008399DA /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				FF107D431965E21A008399DA /* AddPhoto.png */,
+				FF107D441965E21A008399DA /* BackNavButton.png */,
+				FF107D451965E21A008399DA /* LaunchScreen.png */,
+				FF107D461965E21A008399DA /* LaunchScreenClear.png */,
+				FF107D471965E21A008399DA /* RoundedRectButton.png */,
+			);
+			name = Images;
+			path = TestYL/Images;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -375,8 +399,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF107D4B1965E21A008399DA /* LaunchScreenClear.png in Resources */,
 				FF107D411965E099008399DA /* Main.storyboard in Resources */,
+				FF107D4A1965E21A008399DA /* LaunchScreen.png in Resources */,
 				3875982C193DF4EB00A103E0 /* Images.xcassets in Resources */,
+				FF107D491965E21A008399DA /* BackNavButton.png in Resources */,
+				FF107D4C1965E21A008399DA /* RoundedRectButton.png in Resources */,
+				FF107D481965E21A008399DA /* AddPhoto.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
