@@ -31,17 +31,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreen.png" translatesAutoresizingMaskIntoConstraints="NO" id="4FC-o8-uG4">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreenClear.png" translatesAutoresizingMaskIntoConstraints="NO" id="4FC-o8-uG4">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YouLocalBackgroundLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="l6g-c2-O88">
+                                <rect key="frame" x="50" y="36" width="221" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="29B-vp-klM"/>
+                                    <constraint firstAttribute="width" constant="221" id="OZO-Hm-Xg2"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="l6g-c2-O88" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="36" id="4nd-6E-J6w"/>
                             <constraint firstItem="4FC-o8-uG4" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="b9x-yj-aS2"/>
                             <constraint firstItem="4FC-o8-uG4" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="dUy-7b-ECr"/>
                             <constraint firstAttribute="bottom" secondItem="4FC-o8-uG4" secondAttribute="bottom" id="ehY-XG-ULB"/>
                             <constraint firstAttribute="trailing" secondItem="4FC-o8-uG4" secondAttribute="trailing" id="g5t-zF-YQS"/>
+                            <constraint firstAttribute="centerX" secondItem="l6g-c2-O88" secondAttribute="centerX" id="nWk-6S-2ae"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8u9-eC-kyg"/>
@@ -51,7 +61,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LaunchScreen.png" width="640" height="960"/>
+        <image name="LaunchScreenClear.png" width="640" height="960"/>
+        <image name="YouLocalBackgroundLogo.png" width="379" height="104"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

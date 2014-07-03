@@ -49,6 +49,7 @@
 		FF107D4A1965E21A008399DA /* LaunchScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = FF107D451965E21A008399DA /* LaunchScreen.png */; };
 		FF107D4B1965E21A008399DA /* LaunchScreenClear.png in Resources */ = {isa = PBXBuildFile; fileRef = FF107D461965E21A008399DA /* LaunchScreenClear.png */; };
 		FF107D4C1965E21A008399DA /* RoundedRectButton.png in Resources */ = {isa = PBXBuildFile; fileRef = FF107D471965E21A008399DA /* RoundedRectButton.png */; };
+		FF107D4E1965E547008399DA /* YouLocalBackgroundLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = FF107D4D1965E547008399DA /* YouLocalBackgroundLogo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +134,7 @@
 		FF107D451965E21A008399DA /* LaunchScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchScreen.png; sourceTree = "<group>"; };
 		FF107D461965E21A008399DA /* LaunchScreenClear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchScreenClear.png; sourceTree = "<group>"; };
 		FF107D471965E21A008399DA /* RoundedRectButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RoundedRectButton.png; sourceTree = "<group>"; };
+		FF107D4D1965E547008399DA /* YouLocalBackgroundLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = YouLocalBackgroundLogo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -311,6 +313,7 @@
 		FF107D421965E21A008399DA /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				FF107D4D1965E547008399DA /* YouLocalBackgroundLogo.png */,
 				FF107D431965E21A008399DA /* AddPhoto.png */,
 				FF107D441965E21A008399DA /* BackNavButton.png */,
 				FF107D451965E21A008399DA /* LaunchScreen.png */,
@@ -405,6 +408,7 @@
 				3875982C193DF4EB00A103E0 /* Images.xcassets in Resources */,
 				FF107D491965E21A008399DA /* BackNavButton.png in Resources */,
 				FF107D4C1965E21A008399DA /* RoundedRectButton.png in Resources */,
+				FF107D4E1965E547008399DA /* YouLocalBackgroundLogo.png in Resources */,
 				FF107D481965E21A008399DA /* AddPhoto.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
