@@ -17,41 +17,41 @@
 		3875983D193DF4EB00A103E0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3875983B193DF4EB00A103E0 /* InfoPlist.strings */; };
 		3875983F193DF4EB00A103E0 /* TestYLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3875983E193DF4EB00A103E0 /* TestYLTests.m */; };
 		D7735D2FFD70421EA44C1E1C /* libPods-TestYL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 435D84CA3F3742109639C407 /* libPods-TestYL.a */; };
-		FF107C6B1965DC1D008399DA /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF107C6A1965DC1D008399DA /* LoginViewController.m */; };
-		FF107C6E1965DC50008399DA /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF107C6D1965DC50008399DA /* NavigationViewController.m */; };
-		FF107D1A1965DEE9008399DA /* BaseForm.m in Sources */ = {isa = PBXBuildFile; fileRef = FF107CF11965DEE9008399DA /* BaseForm.m */; };
-		FF107D1B1965DEE9008399DA /* BaseFormCells.m in Sources */ = {isa = PBXBuildFile; fileRef = FF107CF31965DEE9008399DA /* BaseFormCells.m */; };
-		FF107D1C1965DEE9008399DA /* BaseFormController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF107CF51965DEE9008399DA /* BaseFormController.m */; };
-		FF107D1D1965DEE9008399DA /* BaseFormTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF107CF71965DEE9008399DA /* BaseFormTableView.m */; };
-		FF107D1E1965DEE9008399DA /* BaseLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF107CF91965DEE9008399DA /* BaseLabel.m */; };
-		FF107D1F1965DEE9008399DA /* BaseMapImageOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = FF107CFB1965DEE9008399DA /* BaseMapImageOverlay.m */; };
-		FF107D201965DEE9008399DA /* BaseMapImageOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF107CFD1965DEE9008399DA /* BaseMapImageOverlayView.m */; };
-		FF107D211965DEE9008399DA /* BaseSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = FF107CFF1965DEE9008399DA /* BaseSegment.m */; };
-		FF107D221965DEE9008399DA /* BaseUserAvatar.m in Sources */ = {isa = PBXBuildFile; fileRef = FF107D011965DEE9008399DA /* BaseUserAvatar.m */; };
-		FF107D231965DEE9008399DA /* BaseUserAvatarView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF107D031965DEE9008399DA /* BaseUserAvatarView.m */; };
-		FF107D241965DEE9008399DA /* BBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = FF107D051965DEE9008399DA /* BBlock.m */; };
-		FF107D251965DEE9008399DA /* MKCircleView+VeplayCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = FF107D071965DEE9008399DA /* MKCircleView+VeplayCommon.m */; };
-		FF107D261965DEE9008399DA /* MKMapView+ZoomLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF107D091965DEE9008399DA /* MKMapView+ZoomLevel.m */; };
-		FF107D271965DEE9008399DA /* UIColor+VeplayCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = FF107D0B1965DEE9008399DA /* UIColor+VeplayCommon.m */; };
-		FF107D281965DEE9008399DA /* UIImage+VeplayCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = FF107D0D1965DEE9008399DA /* UIImage+VeplayCommon.m */; };
-		FF107D291965DEE9008399DA /* UIView+FrameAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FF107D0F1965DEE9008399DA /* UIView+FrameAdditions.m */; };
-		FF107D2A1965DEE9008399DA /* YLBirthDateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF107D111965DEE9008399DA /* YLBirthDateModel.m */; };
-		FF107D2B1965DEE9008399DA /* YLColors.m in Sources */ = {isa = PBXBuildFile; fileRef = FF107D131965DEE9008399DA /* YLColors.m */; };
-		FF107D2C1965DEE9008399DA /* YLDistance.m in Sources */ = {isa = PBXBuildFile; fileRef = FF107D151965DEE9008399DA /* YLDistance.m */; };
-		FF107D2D1965DEE9008399DA /* YLDistanceTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF107D171965DEE9008399DA /* YLDistanceTransformer.m */; };
-		FF107D2E1965DEE9008399DA /* YLSliderValues.m in Sources */ = {isa = PBXBuildFile; fileRef = FF107D191965DEE9008399DA /* YLSliderValues.m */; };
-		FF107D341965DF79008399DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF107D311965DF79008399DA /* AppDelegate.m */; };
-		FF107D351965DF79008399DA /* globals.m in Sources */ = {isa = PBXBuildFile; fileRef = FF107D331965DF79008399DA /* globals.m */; };
 		FF107D3F1965E045008399DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF107D3C1965E045008399DA /* main.m */; };
 		FF107D411965E099008399DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38759825193DF4EB00A103E0 /* Main.storyboard */; };
-		FF107D481965E21A008399DA /* AddPhoto.png in Resources */ = {isa = PBXBuildFile; fileRef = FF107D431965E21A008399DA /* AddPhoto.png */; };
-		FF107D491965E21A008399DA /* BackNavButton.png in Resources */ = {isa = PBXBuildFile; fileRef = FF107D441965E21A008399DA /* BackNavButton.png */; };
-		FF107D4A1965E21A008399DA /* LaunchScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = FF107D451965E21A008399DA /* LaunchScreen.png */; };
-		FF107D4B1965E21A008399DA /* LaunchScreenClear.png in Resources */ = {isa = PBXBuildFile; fileRef = FF107D461965E21A008399DA /* LaunchScreenClear.png */; };
-		FF107D4C1965E21A008399DA /* RoundedRectButton.png in Resources */ = {isa = PBXBuildFile; fileRef = FF107D471965E21A008399DA /* RoundedRectButton.png */; };
-		FF107D4E1965E547008399DA /* YouLocalBackgroundLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = FF107D4D1965E547008399DA /* YouLocalBackgroundLogo.png */; };
-		FF107D521965E816008399DA /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF107D511965E816008399DA /* LoginController.m */; };
-		FF107D561965F038008399DA /* LoginForm.m in Sources */ = {isa = PBXBuildFile; fileRef = FF107D551965F038008399DA /* LoginForm.m */; };
+		FFAEAEA41967FA7800F3ABDE /* BaseForm.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAE631967FA7800F3ABDE /* BaseForm.m */; };
+		FFAEAEA51967FA7800F3ABDE /* BaseFormCells.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAE651967FA7800F3ABDE /* BaseFormCells.m */; };
+		FFAEAEA61967FA7800F3ABDE /* BaseFormController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAE671967FA7800F3ABDE /* BaseFormController.m */; };
+		FFAEAEA71967FA7800F3ABDE /* BaseFormTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAE691967FA7800F3ABDE /* BaseFormTableView.m */; };
+		FFAEAEA81967FA7800F3ABDE /* BaseLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAE6B1967FA7800F3ABDE /* BaseLabel.m */; };
+		FFAEAEA91967FA7800F3ABDE /* BaseMapImageOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAE6D1967FA7800F3ABDE /* BaseMapImageOverlay.m */; };
+		FFAEAEAA1967FA7800F3ABDE /* BaseMapImageOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAE6F1967FA7800F3ABDE /* BaseMapImageOverlayView.m */; };
+		FFAEAEAB1967FA7800F3ABDE /* BaseSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAE711967FA7800F3ABDE /* BaseSegment.m */; };
+		FFAEAEAC1967FA7800F3ABDE /* BaseUserAvatar.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAE731967FA7800F3ABDE /* BaseUserAvatar.m */; };
+		FFAEAEAD1967FA7800F3ABDE /* BaseUserAvatarView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAE751967FA7800F3ABDE /* BaseUserAvatarView.m */; };
+		FFAEAEAE1967FA7800F3ABDE /* BBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAE771967FA7800F3ABDE /* BBlock.m */; };
+		FFAEAEAF1967FA7800F3ABDE /* MKCircleView+VeplayCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAE791967FA7800F3ABDE /* MKCircleView+VeplayCommon.m */; };
+		FFAEAEB01967FA7800F3ABDE /* MKMapView+ZoomLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAE7B1967FA7800F3ABDE /* MKMapView+ZoomLevel.m */; };
+		FFAEAEB11967FA7800F3ABDE /* UIColor+VeplayCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAE7D1967FA7800F3ABDE /* UIColor+VeplayCommon.m */; };
+		FFAEAEB21967FA7800F3ABDE /* UIImage+VeplayCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAE7F1967FA7800F3ABDE /* UIImage+VeplayCommon.m */; };
+		FFAEAEB31967FA7800F3ABDE /* UIView+FrameAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAE811967FA7800F3ABDE /* UIView+FrameAdditions.m */; };
+		FFAEAEB41967FA7800F3ABDE /* YLBirthDateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAE831967FA7800F3ABDE /* YLBirthDateModel.m */; };
+		FFAEAEB51967FA7800F3ABDE /* YLColors.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAE851967FA7800F3ABDE /* YLColors.m */; };
+		FFAEAEB61967FA7800F3ABDE /* YLDistance.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAE871967FA7800F3ABDE /* YLDistance.m */; };
+		FFAEAEB71967FA7800F3ABDE /* YLDistanceTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAE891967FA7800F3ABDE /* YLDistanceTransformer.m */; };
+		FFAEAEB81967FA7800F3ABDE /* YLSliderValues.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAE8B1967FA7800F3ABDE /* YLSliderValues.m */; };
+		FFAEAEB91967FA7800F3ABDE /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAE8E1967FA7800F3ABDE /* LoginController.m */; };
+		FFAEAEBA1967FA7800F3ABDE /* LoginForm.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAE911967FA7800F3ABDE /* LoginForm.m */; };
+		FFAEAEBB1967FA7800F3ABDE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAE941967FA7800F3ABDE /* AppDelegate.m */; };
+		FFAEAEBC1967FA7800F3ABDE /* globals.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAE961967FA7800F3ABDE /* globals.m */; };
+		FFAEAEBD1967FA7800F3ABDE /* AddPhoto.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAEAE991967FA7800F3ABDE /* AddPhoto.png */; };
+		FFAEAEBE1967FA7800F3ABDE /* BackNavButton.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAEAE9A1967FA7800F3ABDE /* BackNavButton.png */; };
+		FFAEAEBF1967FA7800F3ABDE /* LaunchScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAEAE9B1967FA7800F3ABDE /* LaunchScreen.png */; };
+		FFAEAEC01967FA7800F3ABDE /* LaunchScreenClear.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAEAE9C1967FA7800F3ABDE /* LaunchScreenClear.png */; };
+		FFAEAEC11967FA7800F3ABDE /* RoundedRectButton.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAEAE9D1967FA7800F3ABDE /* RoundedRectButton.png */; };
+		FFAEAEC21967FA7800F3ABDE /* YouLocalBackgroundLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAEAE9E1967FA7800F3ABDE /* YouLocalBackgroundLogo.png */; };
+		FFAEAEC31967FA7800F3ABDE /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAEA11967FA7800F3ABDE /* LoginViewController.m */; };
+		FFAEAEC41967FA7800F3ABDE /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAEA31967FA7800F3ABDE /* NavigationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,69 +78,69 @@
 		3875983E193DF4EB00A103E0 /* TestYLTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestYLTests.m; sourceTree = "<group>"; };
 		435D84CA3F3742109639C407 /* libPods-TestYL.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestYL.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D6C7C1122B94DA4BF061AC2 /* Pods-TestYL.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestYL.xcconfig"; path = "Pods/Pods-TestYL.xcconfig"; sourceTree = "<group>"; };
-		FF107C691965DC1D008399DA /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		FF107C6A1965DC1D008399DA /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		FF107C6C1965DC50008399DA /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
-		FF107C6D1965DC50008399DA /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
-		FF107CF01965DEE9008399DA /* BaseForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseForm.h; sourceTree = "<group>"; };
-		FF107CF11965DEE9008399DA /* BaseForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseForm.m; sourceTree = "<group>"; };
-		FF107CF21965DEE9008399DA /* BaseFormCells.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseFormCells.h; sourceTree = "<group>"; };
-		FF107CF31965DEE9008399DA /* BaseFormCells.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseFormCells.m; sourceTree = "<group>"; };
-		FF107CF41965DEE9008399DA /* BaseFormController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseFormController.h; sourceTree = "<group>"; };
-		FF107CF51965DEE9008399DA /* BaseFormController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseFormController.m; sourceTree = "<group>"; };
-		FF107CF61965DEE9008399DA /* BaseFormTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseFormTableView.h; sourceTree = "<group>"; };
-		FF107CF71965DEE9008399DA /* BaseFormTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseFormTableView.m; sourceTree = "<group>"; };
-		FF107CF81965DEE9008399DA /* BaseLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseLabel.h; sourceTree = "<group>"; };
-		FF107CF91965DEE9008399DA /* BaseLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseLabel.m; sourceTree = "<group>"; };
-		FF107CFA1965DEE9008399DA /* BaseMapImageOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseMapImageOverlay.h; sourceTree = "<group>"; };
-		FF107CFB1965DEE9008399DA /* BaseMapImageOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseMapImageOverlay.m; sourceTree = "<group>"; };
-		FF107CFC1965DEE9008399DA /* BaseMapImageOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseMapImageOverlayView.h; sourceTree = "<group>"; };
-		FF107CFD1965DEE9008399DA /* BaseMapImageOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseMapImageOverlayView.m; sourceTree = "<group>"; };
-		FF107CFE1965DEE9008399DA /* BaseSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSegment.h; sourceTree = "<group>"; };
-		FF107CFF1965DEE9008399DA /* BaseSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSegment.m; sourceTree = "<group>"; };
-		FF107D001965DEE9008399DA /* BaseUserAvatar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseUserAvatar.h; sourceTree = "<group>"; };
-		FF107D011965DEE9008399DA /* BaseUserAvatar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseUserAvatar.m; sourceTree = "<group>"; };
-		FF107D021965DEE9008399DA /* BaseUserAvatarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseUserAvatarView.h; sourceTree = "<group>"; };
-		FF107D031965DEE9008399DA /* BaseUserAvatarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseUserAvatarView.m; sourceTree = "<group>"; };
-		FF107D041965DEE9008399DA /* BBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBlock.h; sourceTree = "<group>"; };
-		FF107D051965DEE9008399DA /* BBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBlock.m; sourceTree = "<group>"; };
-		FF107D061965DEE9008399DA /* MKCircleView+VeplayCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKCircleView+VeplayCommon.h"; sourceTree = "<group>"; };
-		FF107D071965DEE9008399DA /* MKCircleView+VeplayCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKCircleView+VeplayCommon.m"; sourceTree = "<group>"; };
-		FF107D081965DEE9008399DA /* MKMapView+ZoomLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+ZoomLevel.h"; sourceTree = "<group>"; };
-		FF107D091965DEE9008399DA /* MKMapView+ZoomLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+ZoomLevel.m"; sourceTree = "<group>"; };
-		FF107D0A1965DEE9008399DA /* UIColor+VeplayCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+VeplayCommon.h"; sourceTree = "<group>"; };
-		FF107D0B1965DEE9008399DA /* UIColor+VeplayCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+VeplayCommon.m"; sourceTree = "<group>"; };
-		FF107D0C1965DEE9008399DA /* UIImage+VeplayCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+VeplayCommon.h"; sourceTree = "<group>"; };
-		FF107D0D1965DEE9008399DA /* UIImage+VeplayCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+VeplayCommon.m"; sourceTree = "<group>"; };
-		FF107D0E1965DEE9008399DA /* UIView+FrameAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FrameAdditions.h"; sourceTree = "<group>"; };
-		FF107D0F1965DEE9008399DA /* UIView+FrameAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FrameAdditions.m"; sourceTree = "<group>"; };
-		FF107D101965DEE9008399DA /* YLBirthDateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLBirthDateModel.h; sourceTree = "<group>"; };
-		FF107D111965DEE9008399DA /* YLBirthDateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLBirthDateModel.m; sourceTree = "<group>"; };
-		FF107D121965DEE9008399DA /* YLColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLColors.h; sourceTree = "<group>"; };
-		FF107D131965DEE9008399DA /* YLColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLColors.m; sourceTree = "<group>"; };
-		FF107D141965DEE9008399DA /* YLDistance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLDistance.h; sourceTree = "<group>"; };
-		FF107D151965DEE9008399DA /* YLDistance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLDistance.m; sourceTree = "<group>"; };
-		FF107D161965DEE9008399DA /* YLDistanceTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLDistanceTransformer.h; sourceTree = "<group>"; };
-		FF107D171965DEE9008399DA /* YLDistanceTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLDistanceTransformer.m; sourceTree = "<group>"; };
-		FF107D181965DEE9008399DA /* YLSliderValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLSliderValues.h; sourceTree = "<group>"; };
-		FF107D191965DEE9008399DA /* YLSliderValues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLSliderValues.m; sourceTree = "<group>"; };
-		FF107D301965DF79008399DA /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		FF107D311965DF79008399DA /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FF107D321965DF79008399DA /* globals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = globals.h; sourceTree = "<group>"; };
-		FF107D331965DF79008399DA /* globals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = globals.m; sourceTree = "<group>"; };
 		FF107D3C1965E045008399DA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FF107D3D1965E045008399DA /* TestYL-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TestYL-Info.plist"; sourceTree = "<group>"; };
 		FF107D3E1965E045008399DA /* TestYL-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestYL-Prefix.pch"; sourceTree = "<group>"; };
-		FF107D431965E21A008399DA /* AddPhoto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AddPhoto.png; sourceTree = "<group>"; };
-		FF107D441965E21A008399DA /* BackNavButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackNavButton.png; sourceTree = "<group>"; };
-		FF107D451965E21A008399DA /* LaunchScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchScreen.png; sourceTree = "<group>"; };
-		FF107D461965E21A008399DA /* LaunchScreenClear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchScreenClear.png; sourceTree = "<group>"; };
-		FF107D471965E21A008399DA /* RoundedRectButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RoundedRectButton.png; sourceTree = "<group>"; };
-		FF107D4D1965E547008399DA /* YouLocalBackgroundLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = YouLocalBackgroundLogo.png; sourceTree = "<group>"; };
-		FF107D501965E816008399DA /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
-		FF107D511965E816008399DA /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
-		FF107D541965F038008399DA /* LoginForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginForm.h; sourceTree = "<group>"; };
-		FF107D551965F038008399DA /* LoginForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginForm.m; sourceTree = "<group>"; };
+		FFAEAE621967FA7800F3ABDE /* BaseForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseForm.h; sourceTree = "<group>"; };
+		FFAEAE631967FA7800F3ABDE /* BaseForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseForm.m; sourceTree = "<group>"; };
+		FFAEAE641967FA7800F3ABDE /* BaseFormCells.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseFormCells.h; sourceTree = "<group>"; };
+		FFAEAE651967FA7800F3ABDE /* BaseFormCells.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseFormCells.m; sourceTree = "<group>"; };
+		FFAEAE661967FA7800F3ABDE /* BaseFormController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseFormController.h; sourceTree = "<group>"; };
+		FFAEAE671967FA7800F3ABDE /* BaseFormController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseFormController.m; sourceTree = "<group>"; };
+		FFAEAE681967FA7800F3ABDE /* BaseFormTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseFormTableView.h; sourceTree = "<group>"; };
+		FFAEAE691967FA7800F3ABDE /* BaseFormTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseFormTableView.m; sourceTree = "<group>"; };
+		FFAEAE6A1967FA7800F3ABDE /* BaseLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseLabel.h; sourceTree = "<group>"; };
+		FFAEAE6B1967FA7800F3ABDE /* BaseLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseLabel.m; sourceTree = "<group>"; };
+		FFAEAE6C1967FA7800F3ABDE /* BaseMapImageOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseMapImageOverlay.h; sourceTree = "<group>"; };
+		FFAEAE6D1967FA7800F3ABDE /* BaseMapImageOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseMapImageOverlay.m; sourceTree = "<group>"; };
+		FFAEAE6E1967FA7800F3ABDE /* BaseMapImageOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseMapImageOverlayView.h; sourceTree = "<group>"; };
+		FFAEAE6F1967FA7800F3ABDE /* BaseMapImageOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseMapImageOverlayView.m; sourceTree = "<group>"; };
+		FFAEAE701967FA7800F3ABDE /* BaseSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSegment.h; sourceTree = "<group>"; };
+		FFAEAE711967FA7800F3ABDE /* BaseSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSegment.m; sourceTree = "<group>"; };
+		FFAEAE721967FA7800F3ABDE /* BaseUserAvatar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseUserAvatar.h; sourceTree = "<group>"; };
+		FFAEAE731967FA7800F3ABDE /* BaseUserAvatar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseUserAvatar.m; sourceTree = "<group>"; };
+		FFAEAE741967FA7800F3ABDE /* BaseUserAvatarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseUserAvatarView.h; sourceTree = "<group>"; };
+		FFAEAE751967FA7800F3ABDE /* BaseUserAvatarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseUserAvatarView.m; sourceTree = "<group>"; };
+		FFAEAE761967FA7800F3ABDE /* BBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBlock.h; sourceTree = "<group>"; };
+		FFAEAE771967FA7800F3ABDE /* BBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBlock.m; sourceTree = "<group>"; };
+		FFAEAE781967FA7800F3ABDE /* MKCircleView+VeplayCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKCircleView+VeplayCommon.h"; sourceTree = "<group>"; };
+		FFAEAE791967FA7800F3ABDE /* MKCircleView+VeplayCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKCircleView+VeplayCommon.m"; sourceTree = "<group>"; };
+		FFAEAE7A1967FA7800F3ABDE /* MKMapView+ZoomLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+ZoomLevel.h"; sourceTree = "<group>"; };
+		FFAEAE7B1967FA7800F3ABDE /* MKMapView+ZoomLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+ZoomLevel.m"; sourceTree = "<group>"; };
+		FFAEAE7C1967FA7800F3ABDE /* UIColor+VeplayCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+VeplayCommon.h"; sourceTree = "<group>"; };
+		FFAEAE7D1967FA7800F3ABDE /* UIColor+VeplayCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+VeplayCommon.m"; sourceTree = "<group>"; };
+		FFAEAE7E1967FA7800F3ABDE /* UIImage+VeplayCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+VeplayCommon.h"; sourceTree = "<group>"; };
+		FFAEAE7F1967FA7800F3ABDE /* UIImage+VeplayCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+VeplayCommon.m"; sourceTree = "<group>"; };
+		FFAEAE801967FA7800F3ABDE /* UIView+FrameAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FrameAdditions.h"; sourceTree = "<group>"; };
+		FFAEAE811967FA7800F3ABDE /* UIView+FrameAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FrameAdditions.m"; sourceTree = "<group>"; };
+		FFAEAE821967FA7800F3ABDE /* YLBirthDateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLBirthDateModel.h; sourceTree = "<group>"; };
+		FFAEAE831967FA7800F3ABDE /* YLBirthDateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLBirthDateModel.m; sourceTree = "<group>"; };
+		FFAEAE841967FA7800F3ABDE /* YLColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLColors.h; sourceTree = "<group>"; };
+		FFAEAE851967FA7800F3ABDE /* YLColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLColors.m; sourceTree = "<group>"; };
+		FFAEAE861967FA7800F3ABDE /* YLDistance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLDistance.h; sourceTree = "<group>"; };
+		FFAEAE871967FA7800F3ABDE /* YLDistance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLDistance.m; sourceTree = "<group>"; };
+		FFAEAE881967FA7800F3ABDE /* YLDistanceTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLDistanceTransformer.h; sourceTree = "<group>"; };
+		FFAEAE891967FA7800F3ABDE /* YLDistanceTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLDistanceTransformer.m; sourceTree = "<group>"; };
+		FFAEAE8A1967FA7800F3ABDE /* YLSliderValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLSliderValues.h; sourceTree = "<group>"; };
+		FFAEAE8B1967FA7800F3ABDE /* YLSliderValues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLSliderValues.m; sourceTree = "<group>"; };
+		FFAEAE8D1967FA7800F3ABDE /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
+		FFAEAE8E1967FA7800F3ABDE /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
+		FFAEAE901967FA7800F3ABDE /* LoginForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginForm.h; sourceTree = "<group>"; };
+		FFAEAE911967FA7800F3ABDE /* LoginForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginForm.m; sourceTree = "<group>"; };
+		FFAEAE931967FA7800F3ABDE /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FFAEAE941967FA7800F3ABDE /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FFAEAE951967FA7800F3ABDE /* globals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = globals.h; sourceTree = "<group>"; };
+		FFAEAE961967FA7800F3ABDE /* globals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = globals.m; sourceTree = "<group>"; };
+		FFAEAE991967FA7800F3ABDE /* AddPhoto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AddPhoto.png; sourceTree = "<group>"; };
+		FFAEAE9A1967FA7800F3ABDE /* BackNavButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackNavButton.png; sourceTree = "<group>"; };
+		FFAEAE9B1967FA7800F3ABDE /* LaunchScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchScreen.png; sourceTree = "<group>"; };
+		FFAEAE9C1967FA7800F3ABDE /* LaunchScreenClear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchScreenClear.png; sourceTree = "<group>"; };
+		FFAEAE9D1967FA7800F3ABDE /* RoundedRectButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RoundedRectButton.png; sourceTree = "<group>"; };
+		FFAEAE9E1967FA7800F3ABDE /* YouLocalBackgroundLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = YouLocalBackgroundLogo.png; sourceTree = "<group>"; };
+		FFAEAEA01967FA7800F3ABDE /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		FFAEAEA11967FA7800F3ABDE /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		FFAEAEA21967FA7800F3ABDE /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
+		FFAEAEA31967FA7800F3ABDE /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,12 +171,12 @@
 		38759807193DF4EB00A103E0 = {
 			isa = PBXGroup;
 			children = (
-				FF107D421965E21A008399DA /* Images */,
-				FF107CEF1965DEE9008399DA /* Base */,
-				FF107D531965F014008399DA /* Forms */,
-				FF107D4F1965E7ED008399DA /* Controllers */,
-				FF107C681965DBE2008399DA /* ViewControllers */,
-				FF107D2F1965DF79008399DA /* General */,
+				FFAEAE611967FA7800F3ABDE /* Base */,
+				FFAEAE8C1967FA7800F3ABDE /* Controllers */,
+				FFAEAE8F1967FA7800F3ABDE /* Forms */,
+				FFAEAE921967FA7800F3ABDE /* General */,
+				FFAEAE981967FA7800F3ABDE /* Images */,
+				FFAEAE9F1967FA7800F3ABDE /* ViewControllers */,
 				38759819193DF4EB00A103E0 /* TestYL */,
 				38759838193DF4EB00A103E0 /* TestYLTests */,
 				38759812193DF4EB00A103E0 /* Frameworks */,
@@ -244,112 +244,114 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		FF107C681965DBE2008399DA /* ViewControllers */ = {
+		FFAEAE611967FA7800F3ABDE /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				FF107C691965DC1D008399DA /* LoginViewController.h */,
-				FF107C6A1965DC1D008399DA /* LoginViewController.m */,
-				FF107C6C1965DC50008399DA /* NavigationViewController.h */,
-				FF107C6D1965DC50008399DA /* NavigationViewController.m */,
+				FFAEAE621967FA7800F3ABDE /* BaseForm.h */,
+				FFAEAE631967FA7800F3ABDE /* BaseForm.m */,
+				FFAEAE641967FA7800F3ABDE /* BaseFormCells.h */,
+				FFAEAE651967FA7800F3ABDE /* BaseFormCells.m */,
+				FFAEAE661967FA7800F3ABDE /* BaseFormController.h */,
+				FFAEAE671967FA7800F3ABDE /* BaseFormController.m */,
+				FFAEAE681967FA7800F3ABDE /* BaseFormTableView.h */,
+				FFAEAE691967FA7800F3ABDE /* BaseFormTableView.m */,
+				FFAEAE6A1967FA7800F3ABDE /* BaseLabel.h */,
+				FFAEAE6B1967FA7800F3ABDE /* BaseLabel.m */,
+				FFAEAE6C1967FA7800F3ABDE /* BaseMapImageOverlay.h */,
+				FFAEAE6D1967FA7800F3ABDE /* BaseMapImageOverlay.m */,
+				FFAEAE6E1967FA7800F3ABDE /* BaseMapImageOverlayView.h */,
+				FFAEAE6F1967FA7800F3ABDE /* BaseMapImageOverlayView.m */,
+				FFAEAE701967FA7800F3ABDE /* BaseSegment.h */,
+				FFAEAE711967FA7800F3ABDE /* BaseSegment.m */,
+				FFAEAE721967FA7800F3ABDE /* BaseUserAvatar.h */,
+				FFAEAE731967FA7800F3ABDE /* BaseUserAvatar.m */,
+				FFAEAE741967FA7800F3ABDE /* BaseUserAvatarView.h */,
+				FFAEAE751967FA7800F3ABDE /* BaseUserAvatarView.m */,
+				FFAEAE761967FA7800F3ABDE /* BBlock.h */,
+				FFAEAE771967FA7800F3ABDE /* BBlock.m */,
+				FFAEAE781967FA7800F3ABDE /* MKCircleView+VeplayCommon.h */,
+				FFAEAE791967FA7800F3ABDE /* MKCircleView+VeplayCommon.m */,
+				FFAEAE7A1967FA7800F3ABDE /* MKMapView+ZoomLevel.h */,
+				FFAEAE7B1967FA7800F3ABDE /* MKMapView+ZoomLevel.m */,
+				FFAEAE7C1967FA7800F3ABDE /* UIColor+VeplayCommon.h */,
+				FFAEAE7D1967FA7800F3ABDE /* UIColor+VeplayCommon.m */,
+				FFAEAE7E1967FA7800F3ABDE /* UIImage+VeplayCommon.h */,
+				FFAEAE7F1967FA7800F3ABDE /* UIImage+VeplayCommon.m */,
+				FFAEAE801967FA7800F3ABDE /* UIView+FrameAdditions.h */,
+				FFAEAE811967FA7800F3ABDE /* UIView+FrameAdditions.m */,
+				FFAEAE821967FA7800F3ABDE /* YLBirthDateModel.h */,
+				FFAEAE831967FA7800F3ABDE /* YLBirthDateModel.m */,
+				FFAEAE841967FA7800F3ABDE /* YLColors.h */,
+				FFAEAE851967FA7800F3ABDE /* YLColors.m */,
+				FFAEAE861967FA7800F3ABDE /* YLDistance.h */,
+				FFAEAE871967FA7800F3ABDE /* YLDistance.m */,
+				FFAEAE881967FA7800F3ABDE /* YLDistanceTransformer.h */,
+				FFAEAE891967FA7800F3ABDE /* YLDistanceTransformer.m */,
+				FFAEAE8A1967FA7800F3ABDE /* YLSliderValues.h */,
+				FFAEAE8B1967FA7800F3ABDE /* YLSliderValues.m */,
 			);
-			name = ViewControllers;
-			path = TestYL/ViewControllers;
+			path = Base;
 			sourceTree = "<group>";
 		};
-		FF107CEF1965DEE9008399DA /* Base */ = {
+		FFAEAE8C1967FA7800F3ABDE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				FF107CF01965DEE9008399DA /* BaseForm.h */,
-				FF107CF11965DEE9008399DA /* BaseForm.m */,
-				FF107CF21965DEE9008399DA /* BaseFormCells.h */,
-				FF107CF31965DEE9008399DA /* BaseFormCells.m */,
-				FF107CF41965DEE9008399DA /* BaseFormController.h */,
-				FF107CF51965DEE9008399DA /* BaseFormController.m */,
-				FF107CF61965DEE9008399DA /* BaseFormTableView.h */,
-				FF107CF71965DEE9008399DA /* BaseFormTableView.m */,
-				FF107CF81965DEE9008399DA /* BaseLabel.h */,
-				FF107CF91965DEE9008399DA /* BaseLabel.m */,
-				FF107CFA1965DEE9008399DA /* BaseMapImageOverlay.h */,
-				FF107CFB1965DEE9008399DA /* BaseMapImageOverlay.m */,
-				FF107CFC1965DEE9008399DA /* BaseMapImageOverlayView.h */,
-				FF107CFD1965DEE9008399DA /* BaseMapImageOverlayView.m */,
-				FF107CFE1965DEE9008399DA /* BaseSegment.h */,
-				FF107CFF1965DEE9008399DA /* BaseSegment.m */,
-				FF107D001965DEE9008399DA /* BaseUserAvatar.h */,
-				FF107D011965DEE9008399DA /* BaseUserAvatar.m */,
-				FF107D021965DEE9008399DA /* BaseUserAvatarView.h */,
-				FF107D031965DEE9008399DA /* BaseUserAvatarView.m */,
-				FF107D041965DEE9008399DA /* BBlock.h */,
-				FF107D051965DEE9008399DA /* BBlock.m */,
-				FF107D061965DEE9008399DA /* MKCircleView+VeplayCommon.h */,
-				FF107D071965DEE9008399DA /* MKCircleView+VeplayCommon.m */,
-				FF107D081965DEE9008399DA /* MKMapView+ZoomLevel.h */,
-				FF107D091965DEE9008399DA /* MKMapView+ZoomLevel.m */,
-				FF107D0A1965DEE9008399DA /* UIColor+VeplayCommon.h */,
-				FF107D0B1965DEE9008399DA /* UIColor+VeplayCommon.m */,
-				FF107D0C1965DEE9008399DA /* UIImage+VeplayCommon.h */,
-				FF107D0D1965DEE9008399DA /* UIImage+VeplayCommon.m */,
-				FF107D0E1965DEE9008399DA /* UIView+FrameAdditions.h */,
-				FF107D0F1965DEE9008399DA /* UIView+FrameAdditions.m */,
-				FF107D101965DEE9008399DA /* YLBirthDateModel.h */,
-				FF107D111965DEE9008399DA /* YLBirthDateModel.m */,
-				FF107D121965DEE9008399DA /* YLColors.h */,
-				FF107D131965DEE9008399DA /* YLColors.m */,
-				FF107D141965DEE9008399DA /* YLDistance.h */,
-				FF107D151965DEE9008399DA /* YLDistance.m */,
-				FF107D161965DEE9008399DA /* YLDistanceTransformer.h */,
-				FF107D171965DEE9008399DA /* YLDistanceTransformer.m */,
-				FF107D181965DEE9008399DA /* YLSliderValues.h */,
-				FF107D191965DEE9008399DA /* YLSliderValues.m */,
+				FFAEAE8D1967FA7800F3ABDE /* LoginController.h */,
+				FFAEAE8E1967FA7800F3ABDE /* LoginController.m */,
 			);
-			name = Base;
-			path = TestYL/Base;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
-		FF107D2F1965DF79008399DA /* General */ = {
+		FFAEAE8F1967FA7800F3ABDE /* Forms */ = {
 			isa = PBXGroup;
 			children = (
-				FF107D301965DF79008399DA /* AppDelegate.h */,
-				FF107D311965DF79008399DA /* AppDelegate.m */,
-				FF107D321965DF79008399DA /* globals.h */,
-				FF107D331965DF79008399DA /* globals.m */,
+				FFAEAE901967FA7800F3ABDE /* LoginForm.h */,
+				FFAEAE911967FA7800F3ABDE /* LoginForm.m */,
 			);
-			name = General;
-			path = TestYL/General;
+			path = Forms;
 			sourceTree = "<group>";
 		};
-		FF107D421965E21A008399DA /* Images */ = {
+		FFAEAE921967FA7800F3ABDE /* General */ = {
 			isa = PBXGroup;
 			children = (
-				FF107D4D1965E547008399DA /* YouLocalBackgroundLogo.png */,
-				FF107D431965E21A008399DA /* AddPhoto.png */,
-				FF107D441965E21A008399DA /* BackNavButton.png */,
-				FF107D451965E21A008399DA /* LaunchScreen.png */,
-				FF107D461965E21A008399DA /* LaunchScreenClear.png */,
-				FF107D471965E21A008399DA /* RoundedRectButton.png */,
+				FFAEAE931967FA7800F3ABDE /* AppDelegate.h */,
+				FFAEAE941967FA7800F3ABDE /* AppDelegate.m */,
+				FFAEAE951967FA7800F3ABDE /* globals.h */,
+				FFAEAE961967FA7800F3ABDE /* globals.m */,
+				FFAEAE971967FA7800F3ABDE /* SupportingFiles */,
 			);
-			name = Images;
-			path = TestYL/Images;
+			path = General;
 			sourceTree = "<group>";
 		};
-		FF107D4F1965E7ED008399DA /* Controllers */ = {
+		FFAEAE971967FA7800F3ABDE /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
-				FF107D501965E816008399DA /* LoginController.h */,
-				FF107D511965E816008399DA /* LoginController.m */,
 			);
-			name = Controllers;
-			path = TestYL/Controllers;
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
-		FF107D531965F014008399DA /* Forms */ = {
+		FFAEAE981967FA7800F3ABDE /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				FF107D541965F038008399DA /* LoginForm.h */,
-				FF107D551965F038008399DA /* LoginForm.m */,
+				FFAEAE991967FA7800F3ABDE /* AddPhoto.png */,
+				FFAEAE9A1967FA7800F3ABDE /* BackNavButton.png */,
+				FFAEAE9B1967FA7800F3ABDE /* LaunchScreen.png */,
+				FFAEAE9C1967FA7800F3ABDE /* LaunchScreenClear.png */,
+				FFAEAE9D1967FA7800F3ABDE /* RoundedRectButton.png */,
+				FFAEAE9E1967FA7800F3ABDE /* YouLocalBackgroundLogo.png */,
 			);
-			name = Forms;
-			path = TestYL/Forms;
+			path = Images;
+			sourceTree = "<group>";
+		};
+		FFAEAE9F1967FA7800F3ABDE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FFAEAEA01967FA7800F3ABDE /* LoginViewController.h */,
+				FFAEAEA11967FA7800F3ABDE /* LoginViewController.m */,
+				FFAEAEA21967FA7800F3ABDE /* NavigationViewController.h */,
+				FFAEAEA31967FA7800F3ABDE /* NavigationViewController.m */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -430,14 +432,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF107D4B1965E21A008399DA /* LaunchScreenClear.png in Resources */,
+				FFAEAEC01967FA7800F3ABDE /* LaunchScreenClear.png in Resources */,
 				FF107D411965E099008399DA /* Main.storyboard in Resources */,
-				FF107D4A1965E21A008399DA /* LaunchScreen.png in Resources */,
+				FFAEAEBF1967FA7800F3ABDE /* LaunchScreen.png in Resources */,
 				3875982C193DF4EB00A103E0 /* Images.xcassets in Resources */,
-				FF107D491965E21A008399DA /* BackNavButton.png in Resources */,
-				FF107D4C1965E21A008399DA /* RoundedRectButton.png in Resources */,
-				FF107D4E1965E547008399DA /* YouLocalBackgroundLogo.png in Resources */,
-				FF107D481965E21A008399DA /* AddPhoto.png in Resources */,
+				FFAEAEBE1967FA7800F3ABDE /* BackNavButton.png in Resources */,
+				FFAEAEC11967FA7800F3ABDE /* RoundedRectButton.png in Resources */,
+				FFAEAEC21967FA7800F3ABDE /* YouLocalBackgroundLogo.png in Resources */,
+				FFAEAEBD1967FA7800F3ABDE /* AddPhoto.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,34 +491,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFAEAEAE1967FA7800F3ABDE /* BBlock.m in Sources */,
+				FFAEAEB51967FA7800F3ABDE /* YLColors.m in Sources */,
+				FFAEAEBC1967FA7800F3ABDE /* globals.m in Sources */,
+				FFAEAEB91967FA7800F3ABDE /* LoginController.m in Sources */,
+				FFAEAEBA1967FA7800F3ABDE /* LoginForm.m in Sources */,
+				FFAEAEC31967FA7800F3ABDE /* LoginViewController.m in Sources */,
+				FFAEAEB11967FA7800F3ABDE /* UIColor+VeplayCommon.m in Sources */,
+				FFAEAEAF1967FA7800F3ABDE /* MKCircleView+VeplayCommon.m in Sources */,
+				FFAEAEA41967FA7800F3ABDE /* BaseForm.m in Sources */,
+				FFAEAEB81967FA7800F3ABDE /* YLSliderValues.m in Sources */,
 				FF107D3F1965E045008399DA /* main.m in Sources */,
-				FF107D241965DEE9008399DA /* BBlock.m in Sources */,
-				FF107D261965DEE9008399DA /* MKMapView+ZoomLevel.m in Sources */,
-				FF107D341965DF79008399DA /* AppDelegate.m in Sources */,
-				FF107D2D1965DEE9008399DA /* YLDistanceTransformer.m in Sources */,
-				FF107D1A1965DEE9008399DA /* BaseForm.m in Sources */,
-				FF107C6B1965DC1D008399DA /* LoginViewController.m in Sources */,
-				FF107D1C1965DEE9008399DA /* BaseFormController.m in Sources */,
-				FF107C6E1965DC50008399DA /* NavigationViewController.m in Sources */,
-				FF107D2A1965DEE9008399DA /* YLBirthDateModel.m in Sources */,
-				FF107D221965DEE9008399DA /* BaseUserAvatar.m in Sources */,
-				FF107D2E1965DEE9008399DA /* YLSliderValues.m in Sources */,
-				FF107D271965DEE9008399DA /* UIColor+VeplayCommon.m in Sources */,
-				FF107D1F1965DEE9008399DA /* BaseMapImageOverlay.m in Sources */,
-				FF107D201965DEE9008399DA /* BaseMapImageOverlayView.m in Sources */,
-				FF107D281965DEE9008399DA /* UIImage+VeplayCommon.m in Sources */,
-				FF107D251965DEE9008399DA /* MKCircleView+VeplayCommon.m in Sources */,
-				FF107D521965E816008399DA /* LoginController.m in Sources */,
-				FF107D1B1965DEE9008399DA /* BaseFormCells.m in Sources */,
-				FF107D561965F038008399DA /* LoginForm.m in Sources */,
-				FF107D291965DEE9008399DA /* UIView+FrameAdditions.m in Sources */,
-				FF107D351965DF79008399DA /* globals.m in Sources */,
-				FF107D211965DEE9008399DA /* BaseSegment.m in Sources */,
-				FF107D1E1965DEE9008399DA /* BaseLabel.m in Sources */,
-				FF107D231965DEE9008399DA /* BaseUserAvatarView.m in Sources */,
-				FF107D1D1965DEE9008399DA /* BaseFormTableView.m in Sources */,
-				FF107D2B1965DEE9008399DA /* YLColors.m in Sources */,
-				FF107D2C1965DEE9008399DA /* YLDistance.m in Sources */,
+				FFAEAEAB1967FA7800F3ABDE /* BaseSegment.m in Sources */,
+				FFAEAEB61967FA7800F3ABDE /* YLDistance.m in Sources */,
+				FFAEAEA61967FA7800F3ABDE /* BaseFormController.m in Sources */,
+				FFAEAEB21967FA7800F3ABDE /* UIImage+VeplayCommon.m in Sources */,
+				FFAEAEA81967FA7800F3ABDE /* BaseLabel.m in Sources */,
+				FFAEAEC41967FA7800F3ABDE /* NavigationViewController.m in Sources */,
+				FFAEAEB31967FA7800F3ABDE /* UIView+FrameAdditions.m in Sources */,
+				FFAEAEB01967FA7800F3ABDE /* MKMapView+ZoomLevel.m in Sources */,
+				FFAEAEAD1967FA7800F3ABDE /* BaseUserAvatarView.m in Sources */,
+				FFAEAEA91967FA7800F3ABDE /* BaseMapImageOverlay.m in Sources */,
+				FFAEAEAA1967FA7800F3ABDE /* BaseMapImageOverlayView.m in Sources */,
+				FFAEAEBB1967FA7800F3ABDE /* AppDelegate.m in Sources */,
+				FFAEAEA51967FA7800F3ABDE /* BaseFormCells.m in Sources */,
+				FFAEAEAC1967FA7800F3ABDE /* BaseUserAvatar.m in Sources */,
+				FFAEAEB41967FA7800F3ABDE /* YLBirthDateModel.m in Sources */,
+				FFAEAEB71967FA7800F3ABDE /* YLDistanceTransformer.m in Sources */,
+				FFAEAEA71967FA7800F3ABDE /* BaseFormTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
