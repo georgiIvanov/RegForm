@@ -18,6 +18,7 @@
 @property(nonatomic, readonly) NSInteger formCellsCount;
 @property(nonatomic, strong) UITableView* loginTable;
 @property(nonatomic, strong) BaseFormController* formController;
+@property(nonatomic, strong) LoginForm* loginForm;
 
 
 @end
@@ -30,6 +31,7 @@
     if(self)
     {
         _formCellsCount = 2;
+        _loginForm = [[LoginForm alloc] init];
     }
     return self;
 }
@@ -41,13 +43,13 @@
     self.loginTable.scrollEnabled = NO;
     self.loginTable.contentSize = CGSizeMake(0, tableHeight.intValue);
     self.loginTable.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0);
-    self.loginTable.delegate = self;
+
     
     
     self.formController = [[BaseFormController alloc] init];
     self.formController.tableView = self.loginTable;
     self.formController.delegate = self;
-    self.formController.form = [[LoginForm alloc] init];
+    self.formController.form = self.loginForm;
     
     [self addSubview:self.loginTable];
     
@@ -95,8 +97,9 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    if (! self.loginTable.scrollEnabled)
-        [self.loginTable scrollToRowAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:0] atScrollPosition:UITableViewScrollPositionTop animated:NO];
+    [self.loginTable scrollToRowAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:0]
+                           atScrollPosition:UITableViewScrollPositionTop
+                                   animated:NO];
 }
 
 -(void)reloadViews
@@ -106,16 +109,8 @@
 
 - (IBAction)loginTapped:(id)sender
 {
-    
+//    NSString* email = self.loginForm.email;
+//    NSString* password = self.loginForm.password;
 }
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
-}
-*/
 
 @end
