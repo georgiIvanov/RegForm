@@ -44,16 +44,19 @@
 		FFAEAEBA1967FA7800F3ABDE /* LoginForm.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAE911967FA7800F3ABDE /* LoginForm.m */; };
 		FFAEAEBB1967FA7800F3ABDE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAE941967FA7800F3ABDE /* AppDelegate.m */; };
 		FFAEAEBC1967FA7800F3ABDE /* globals.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAE961967FA7800F3ABDE /* globals.m */; };
-		FFAEAEBD1967FA7800F3ABDE /* AddPhoto.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAEAE991967FA7800F3ABDE /* AddPhoto.png */; };
-		FFAEAEBE1967FA7800F3ABDE /* BackNavButton.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAEAE9A1967FA7800F3ABDE /* BackNavButton.png */; };
-		FFAEAEBF1967FA7800F3ABDE /* LaunchScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAEAE9B1967FA7800F3ABDE /* LaunchScreen.png */; };
-		FFAEAEC01967FA7800F3ABDE /* LaunchScreenClear.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAEAE9C1967FA7800F3ABDE /* LaunchScreenClear.png */; };
-		FFAEAEC11967FA7800F3ABDE /* RoundedRectButton.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAEAE9D1967FA7800F3ABDE /* RoundedRectButton.png */; };
-		FFAEAEC21967FA7800F3ABDE /* YouLocalBackgroundLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAEAE9E1967FA7800F3ABDE /* YouLocalBackgroundLogo.png */; };
 		FFAEAEC31967FA7800F3ABDE /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAEA11967FA7800F3ABDE /* LoginViewController.m */; };
 		FFAEAEC41967FA7800F3ABDE /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAEA31967FA7800F3ABDE /* NavigationViewController.m */; };
 		FFAEAEC71967FB3700F3ABDE /* BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAEC61967FB3700F3ABDE /* BaseController.m */; };
 		FFAEAECD196813FE00F3ABDE /* UIConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAECC196813FE00F3ABDE /* UIConstants.m */; };
+		FFAEAED71968220500F3ABDE /* AddPhoto.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAEAED11968220500F3ABDE /* AddPhoto.png */; };
+		FFAEAED81968220500F3ABDE /* BackNavButton.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAEAED21968220500F3ABDE /* BackNavButton.png */; };
+		FFAEAED91968220500F3ABDE /* LaunchScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAEAED31968220500F3ABDE /* LaunchScreen.png */; };
+		FFAEAEDA1968220500F3ABDE /* LaunchScreenClear.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAEAED41968220500F3ABDE /* LaunchScreenClear.png */; };
+		FFAEAEDB1968220500F3ABDE /* RoundedRectButton.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAEAED51968220500F3ABDE /* RoundedRectButton.png */; };
+		FFAEAEDC1968220500F3ABDE /* YouLocalBackgroundLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAEAED61968220500F3ABDE /* YouLocalBackgroundLogo.png */; };
+		FFAEAEDF196822E200F3ABDE /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFAEAEDD196822E200F3ABDE /* Lato-Bold.ttf */; };
+		FFAEAEE0196822E200F3ABDE /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFAEAEDE196822E200F3ABDE /* Lato-Light.ttf */; };
+		FFAEAEE21968243500F3ABDE /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFAEAEE11968243500F3ABDE /* Lato-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,12 +136,6 @@
 		FFAEAE941967FA7800F3ABDE /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FFAEAE951967FA7800F3ABDE /* globals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = globals.h; sourceTree = "<group>"; };
 		FFAEAE961967FA7800F3ABDE /* globals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = globals.m; sourceTree = "<group>"; };
-		FFAEAE991967FA7800F3ABDE /* AddPhoto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AddPhoto.png; sourceTree = "<group>"; };
-		FFAEAE9A1967FA7800F3ABDE /* BackNavButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackNavButton.png; sourceTree = "<group>"; };
-		FFAEAE9B1967FA7800F3ABDE /* LaunchScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchScreen.png; sourceTree = "<group>"; };
-		FFAEAE9C1967FA7800F3ABDE /* LaunchScreenClear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchScreenClear.png; sourceTree = "<group>"; };
-		FFAEAE9D1967FA7800F3ABDE /* RoundedRectButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RoundedRectButton.png; sourceTree = "<group>"; };
-		FFAEAE9E1967FA7800F3ABDE /* YouLocalBackgroundLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = YouLocalBackgroundLogo.png; sourceTree = "<group>"; };
 		FFAEAEA01967FA7800F3ABDE /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		FFAEAEA11967FA7800F3ABDE /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		FFAEAEA21967FA7800F3ABDE /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
@@ -147,6 +144,15 @@
 		FFAEAEC61967FB3700F3ABDE /* BaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseController.m; sourceTree = "<group>"; };
 		FFAEAECB196813FE00F3ABDE /* UIConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIConstants.h; sourceTree = "<group>"; };
 		FFAEAECC196813FE00F3ABDE /* UIConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIConstants.m; sourceTree = "<group>"; };
+		FFAEAED11968220500F3ABDE /* AddPhoto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AddPhoto.png; sourceTree = "<group>"; };
+		FFAEAED21968220500F3ABDE /* BackNavButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackNavButton.png; sourceTree = "<group>"; };
+		FFAEAED31968220500F3ABDE /* LaunchScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchScreen.png; sourceTree = "<group>"; };
+		FFAEAED41968220500F3ABDE /* LaunchScreenClear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchScreenClear.png; sourceTree = "<group>"; };
+		FFAEAED51968220500F3ABDE /* RoundedRectButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RoundedRectButton.png; sourceTree = "<group>"; };
+		FFAEAED61968220500F3ABDE /* YouLocalBackgroundLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = YouLocalBackgroundLogo.png; sourceTree = "<group>"; };
+		FFAEAEDD196822E200F3ABDE /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		FFAEAEDE196822E200F3ABDE /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
+		FFAEAEE11968243500F3ABDE /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,10 +183,10 @@
 		38759807193DF4EB00A103E0 = {
 			isa = PBXGroup;
 			children = (
+				FFAEAECE1968220500F3ABDE /* Resources */,
 				FFAEAE611967FA7800F3ABDE /* Base */,
 				FFAEAE8C1967FA7800F3ABDE /* Controllers */,
 				FFAEAE8F1967FA7800F3ABDE /* Forms */,
-				FFAEAE981967FA7800F3ABDE /* Images */,
 				FFAEAE9F1967FA7800F3ABDE /* ViewControllers */,
 				FFAEAE921967FA7800F3ABDE /* General */,
 				38759819193DF4EB00A103E0 /* TestYL */,
@@ -326,31 +332,10 @@
 				FFAEAE941967FA7800F3ABDE /* AppDelegate.m */,
 				FFAEAE951967FA7800F3ABDE /* globals.h */,
 				FFAEAE961967FA7800F3ABDE /* globals.m */,
-				FFAEAE971967FA7800F3ABDE /* SupportingFiles */,
 				FFAEAECB196813FE00F3ABDE /* UIConstants.h */,
 				FFAEAECC196813FE00F3ABDE /* UIConstants.m */,
 			);
 			path = General;
-			sourceTree = "<group>";
-		};
-		FFAEAE971967FA7800F3ABDE /* SupportingFiles */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SupportingFiles;
-			sourceTree = "<group>";
-		};
-		FFAEAE981967FA7800F3ABDE /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				FFAEAE991967FA7800F3ABDE /* AddPhoto.png */,
-				FFAEAE9A1967FA7800F3ABDE /* BackNavButton.png */,
-				FFAEAE9B1967FA7800F3ABDE /* LaunchScreen.png */,
-				FFAEAE9C1967FA7800F3ABDE /* LaunchScreenClear.png */,
-				FFAEAE9D1967FA7800F3ABDE /* RoundedRectButton.png */,
-				FFAEAE9E1967FA7800F3ABDE /* YouLocalBackgroundLogo.png */,
-			);
-			path = Images;
 			sourceTree = "<group>";
 		};
 		FFAEAE9F1967FA7800F3ABDE /* ViewControllers */ = {
@@ -362,6 +347,38 @@
 				FFAEAEA31967FA7800F3ABDE /* NavigationViewController.m */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FFAEAECE1968220500F3ABDE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FFAEAECF1968220500F3ABDE /* Fonts */,
+				FFAEAED01968220500F3ABDE /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FFAEAECF1968220500F3ABDE /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FFAEAEE11968243500F3ABDE /* Lato-Regular.ttf */,
+				FFAEAEDD196822E200F3ABDE /* Lato-Bold.ttf */,
+				FFAEAEDE196822E200F3ABDE /* Lato-Light.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		FFAEAED01968220500F3ABDE /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				FFAEAED11968220500F3ABDE /* AddPhoto.png */,
+				FFAEAED21968220500F3ABDE /* BackNavButton.png */,
+				FFAEAED31968220500F3ABDE /* LaunchScreen.png */,
+				FFAEAED41968220500F3ABDE /* LaunchScreenClear.png */,
+				FFAEAED51968220500F3ABDE /* RoundedRectButton.png */,
+				FFAEAED61968220500F3ABDE /* YouLocalBackgroundLogo.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -442,14 +459,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFAEAEC01967FA7800F3ABDE /* LaunchScreenClear.png in Resources */,
+				FFAEAEDA1968220500F3ABDE /* LaunchScreenClear.png in Resources */,
 				FF107D411965E099008399DA /* Main.storyboard in Resources */,
-				FFAEAEBF1967FA7800F3ABDE /* LaunchScreen.png in Resources */,
+				FFAEAED91968220500F3ABDE /* LaunchScreen.png in Resources */,
 				3875982C193DF4EB00A103E0 /* Images.xcassets in Resources */,
-				FFAEAEBE1967FA7800F3ABDE /* BackNavButton.png in Resources */,
-				FFAEAEC11967FA7800F3ABDE /* RoundedRectButton.png in Resources */,
-				FFAEAEC21967FA7800F3ABDE /* YouLocalBackgroundLogo.png in Resources */,
-				FFAEAEBD1967FA7800F3ABDE /* AddPhoto.png in Resources */,
+				FFAEAED81968220500F3ABDE /* BackNavButton.png in Resources */,
+				FFAEAEDB1968220500F3ABDE /* RoundedRectButton.png in Resources */,
+				FFAEAEDC1968220500F3ABDE /* YouLocalBackgroundLogo.png in Resources */,
+				FFAEAED71968220500F3ABDE /* AddPhoto.png in Resources */,
+				FFAEAEDF196822E200F3ABDE /* Lato-Bold.ttf in Resources */,
+				FFAEAEE21968243500F3ABDE /* Lato-Regular.ttf in Resources */,
+				FFAEAEE0196822E200F3ABDE /* Lato-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,9 +10,9 @@
 
 @implementation BaseController
 
--(instancetype)init
+-(instancetype)initWithCoder:(NSCoder *)aDecoder
 {
-    self = [super init];
+    self = [super initWithCoder:aDecoder];
     if(self)
     {
         
