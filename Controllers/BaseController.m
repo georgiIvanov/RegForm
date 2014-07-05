@@ -15,20 +15,30 @@
     self = [super initWithCoder:aDecoder];
     if(self)
     {
-        
-        [[NSNotificationCenter defaultCenter] addObserver:self
-                                                 selector:@selector(keyboardWillShow:)
-                                                     name:UIKeyboardWillShowNotification
-                                                   object:nil];
-        [[NSNotificationCenter defaultCenter] addObserver:self
-                                                 selector:@selector(keyboardWillHide:)
-                                                     name:UIKeyboardWillHideNotification
-                                                   object:nil];
-        
-        
+        [self setupObservers];
     }
     
     return self;
+}
+
+-(void)setupObservers
+{
+    NSNotificationCenter* center = [NSNotificationCenter defaultCenter];
+    [center addObserver:self
+               selector:@selector(keyboardWillShow:)
+                   name:UIKeyboardWillShowNotification
+                 object:nil];
+    
+    [center addObserver:self
+               selector:@selector(keyboardWillHide:)
+                   name:UIKeyboardWillHideNotification
+                 object:nil];
+}
+
+-(void)removeObservers
+{
+    NSNotificationCenter* center = [NSNotificationCenter defaultCenter];
+    [center removeObserver:self];
 }
 
 -(void)keyboardWillShow:(NSNotification*)notification

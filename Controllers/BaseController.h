@@ -10,4 +10,7 @@
 
 @interface BaseController : UIView
 
+-(void)setupObservers;
+-(void)removeObservers;
+
 @end
