@@ -81,6 +81,9 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="lSt-Oy-Zzl" kind="custom" customClass="ViewControllerSegue" id="N48-he-Zws"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -123,6 +126,47 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="214" y="138"/>
+        </scene>
+        <!--Register View Controller-->
+        <scene sceneID="HjD-lt-27B">
+            <objects>
+                <viewController id="lSt-Oy-Zzl" customClass="RegisterViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="M5y-16-iQB"/>
+                        <viewControllerLayoutGuide type="bottom" id="k2M-ih-93d"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iCL-3g-aLQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreenClear.png" translatesAutoresizingMaskIntoConstraints="NO" id="GGT-SM-Uop">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YouLocalBackgroundLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="X4p-p9-xKm">
+                                <rect key="frame" x="50" y="66" width="221" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="221" id="mA2-o7-Eqc"/>
+                                    <constraint firstAttribute="height" constant="57" id="qyo-5H-Of7"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="X4p-p9-xKm" firstAttribute="top" secondItem="iCL-3g-aLQ" secondAttribute="top" constant="66" id="9mp-e1-rge"/>
+                            <constraint firstItem="GGT-SM-Uop" firstAttribute="top" secondItem="iCL-3g-aLQ" secondAttribute="top" id="I2n-dx-oxD"/>
+                            <constraint firstItem="GGT-SM-Uop" firstAttribute="leading" secondItem="iCL-3g-aLQ" secondAttribute="leading" id="ITV-fE-q0W"/>
+                            <constraint firstAttribute="trailing" secondItem="GGT-SM-Uop" secondAttribute="trailing" id="O0s-Qk-vP1"/>
+                            <constraint firstAttribute="bottom" secondItem="GGT-SM-Uop" secondAttribute="bottom" id="TS0-PK-XWg"/>
+                            <constraint firstAttribute="centerX" secondItem="X4p-p9-xKm" secondAttribute="centerX" id="b80-Qv-NUD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="cVa-XQ-5EF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n4h-Xb-oQx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="489" y="819"/>
         </scene>
         <!--Recover Password View Controller-->
         <scene sceneID="abz-CF-pfo">
@@ -198,7 +242,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PGz-lY-U1H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="595" y="603"/>
+            <point key="canvasLocation" x="53" y="819"/>
         </scene>
     </scenes>
     <resources>

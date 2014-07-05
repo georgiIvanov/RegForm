@@ -62,6 +62,7 @@
 		FFAEAEEE1968882C00F3ABDE /* PasswordRecoveryController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAEED1968882B00F3ABDE /* PasswordRecoveryController.m */; };
 		FFAEAEF1196888BC00F3ABDE /* RecoveryForm.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAEF0196888BC00F3ABDE /* RecoveryForm.m */; };
 		FFAEAEF519689A3700F3ABDE /* RoundedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAEF419689A3700F3ABDE /* RoundedButton.m */; };
+		FFAEAEF81968A44500F3ABDE /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAEF71968A44500F3ABDE /* RegisterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -168,6 +169,8 @@
 		FFAEAEF0196888BC00F3ABDE /* RecoveryForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecoveryForm.m; sourceTree = "<group>"; };
 		FFAEAEF319689A3700F3ABDE /* RoundedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundedButton.h; sourceTree = "<group>"; };
 		FFAEAEF419689A3700F3ABDE /* RoundedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundedButton.m; sourceTree = "<group>"; };
+		FFAEAEF61968A44500F3ABDE /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		FFAEAEF71968A44500F3ABDE /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -366,6 +369,8 @@
 				FFAEAEA11967FA7800F3ABDE /* LoginViewController.m */,
 				FFAEAEE919686FCF00F3ABDE /* RecoverPasswordViewController.h */,
 				FFAEAEEA19686FCF00F3ABDE /* RecoverPasswordViewController.m */,
+				FFAEAEF61968A44500F3ABDE /* RegisterViewController.h */,
+				FFAEAEF71968A44500F3ABDE /* RegisterViewController.m */,
 				FFAEAEA21967FA7800F3ABDE /* NavigationViewController.h */,
 				FFAEAEA31967FA7800F3ABDE /* NavigationViewController.m */,
 			);
@@ -593,6 +598,7 @@
 				FFAEAEA51967FA7800F3ABDE /* BaseFormCells.m in Sources */,
 				FFAEAEAC1967FA7800F3ABDE /* BaseUserAvatar.m in Sources */,
 				FFAEAEB41967FA7800F3ABDE /* YLBirthDateModel.m in Sources */,
+				FFAEAEF81968A44500F3ABDE /* RegisterViewController.m in Sources */,
 				FFAEAEF1196888BC00F3ABDE /* RecoveryForm.m in Sources */,
 				FFAEAEB71967FA7800F3ABDE /* YLDistanceTransformer.m in Sources */,
 				FFAEAEA71967FA7800F3ABDE /* BaseFormTableView.m in Sources */,
