@@ -13,6 +13,7 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *forgotPwdButton;
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;
+@property (weak, nonatomic) IBOutlet UIButton *signUpButton;
 
 - (IBAction)loginTapped:(id)sender;
 

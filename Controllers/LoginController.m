@@ -69,6 +69,7 @@
     
     [self.forgotPwdButton.titleLabel setFont:latoLightFont(14)];
     [self.loginButton.titleLabel setFont:latoLightFont(18)];
+    [self.signUpButton.titleLabel setFont:latoLightFont(14)];
     
 }
 
