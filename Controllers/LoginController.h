@@ -11,6 +11,11 @@
 
 @interface LoginController : BaseController
 
+@property (weak, nonatomic) IBOutlet UIButton *forgotPwdButton;
+@property (weak, nonatomic) IBOutlet UIButton *loginButton;
+
+- (IBAction)loginTapped:(id)sender;
+
 -(void)setupViews;
 -(void)reloadViews;
 @end

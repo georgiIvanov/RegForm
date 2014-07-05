@@ -7,11 +7,12 @@
 //
 
 #import "BaseForm.h"
+#import "UIConstants.h"
 
 @implementation BaseForm
 
 - (UIFont *)defaultLabelFont {
-    return [UIFont fontWithName:kStandartFontName size:12.0f];
+    return [UIFont fontWithName:kLatoBold size:12.0f];
 }
 
 - (UIColor *)defaultLabelColor {
@@ -19,7 +20,7 @@
 }
 
 - (UIFont *)defaultFormFont {
-    return [UIFont fontWithName:kStandartFontName size:17.0f];
+    return [UIFont fontWithName:kLatoBold size:17.0f];
 }
 
 - (UIColor *)defaultFormColor {

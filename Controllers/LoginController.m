@@ -64,6 +64,8 @@
         make.top.equalTo(superview.mas_centerY);
     }];
     
+    [self.forgotPwdButton.titleLabel setFont:latoLightFont(14)];
+    [self.loginButton.titleLabel setFont:latoLightFont(18)];
     
 }
 
@@ -100,6 +102,11 @@
 -(void)reloadViews
 {
     [self.loginTable reloadData];
+}
+
+- (IBAction)loginTapped:(id)sender
+{
+    
 }
 
 /*

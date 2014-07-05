@@ -7,7 +7,26 @@
 //
 
 #import "LoginForm.h"
+#import "UIConstants.h"
 
 @implementation LoginForm
+
+-(NSDictionary*) emailField
+{
+    return @{
+             kLabelFontPath:  [super defaultLabelFont],
+             kLabelTextPath:  @"EMAIL",
+             kLabelColorPath: [super defaultLabelColor]
+             };
+}
+
+-(NSDictionary*) passwordField
+{
+    return @{
+             kLabelFontPath:  [super defaultLabelFont],
+             kLabelTextPath:  @"PASSWORD",
+             kLabelColorPath: [super defaultLabelColor]
+             };
+}
 
 @end

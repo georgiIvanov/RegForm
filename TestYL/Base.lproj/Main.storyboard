@@ -47,10 +47,44 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GKX-Wf-LoO" customClass="LoginController">
                                 <rect key="frame" x="0.0" y="288" width="320" height="280"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPD-KJ-LKD">
+                                        <rect key="frame" x="98" y="236" width="119" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Forgot password?">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLJ-3z-KJv">
+                                        <rect key="frame" x="60" y="105" width="201" height="38"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="2zf-QB-nVg"/>
+                                            <constraint firstAttribute="width" constant="201" id="Zmc-gc-i98"/>
+                                        </constraints>
+                                        <state key="normal" title="Login" backgroundImage="RoundedRectButton.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loginTapped:" destination="GKX-Wf-LoO" eventType="touchUpInside" id="qJD-vR-Ffb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="zPD-KJ-LKD" firstAttribute="leading" secondItem="GKX-Wf-LoO" secondAttribute="leading" constant="98" id="6El-xz-qeF"/>
+                                    <constraint firstAttribute="centerX" secondItem="jLJ-3z-KJv" secondAttribute="centerX" id="8LS-nc-PjE"/>
+                                    <constraint firstAttribute="bottom" secondItem="zPD-KJ-LKD" secondAttribute="bottom" constant="14" id="GOa-fo-KYn"/>
                                     <constraint firstAttribute="height" constant="280" placeholder="YES" id="H74-pi-7kD"/>
+                                    <constraint firstItem="jLJ-3z-KJv" firstAttribute="top" secondItem="GKX-Wf-LoO" secondAttribute="top" constant="105" id="Hyh-KV-6fr"/>
+                                    <constraint firstAttribute="trailing" secondItem="zPD-KJ-LKD" secondAttribute="trailing" constant="103" id="Joq-Ye-GMu"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="forgotPwdButton" destination="zPD-KJ-LKD" id="Ri7-fp-XHt"/>
+                                    <outlet property="loginButton" destination="jLJ-3z-KJv" id="Ylu-4e-tk0"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -78,6 +112,7 @@
     </scenes>
     <resources>
         <image name="LaunchScreenClear.png" width="640" height="960"/>
+        <image name="RoundedRectButton.png" width="540" height="90"/>
         <image name="YouLocalBackgroundLogo.png" width="379" height="104"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
