@@ -58,6 +58,9 @@
 		FFAEAEE0196822E200F3ABDE /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFAEAEDE196822E200F3ABDE /* Lato-Light.ttf */; };
 		FFAEAEE21968243500F3ABDE /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFAEAEE11968243500F3ABDE /* Lato-Regular.ttf */; };
 		FFAEAEE819686C8B00F3ABDE /* ViewControllerSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAEE719686C8B00F3ABDE /* ViewControllerSegue.m */; };
+		FFAEAEEB19686FCF00F3ABDE /* RecoverPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAEEA19686FCF00F3ABDE /* RecoverPasswordViewController.m */; };
+		FFAEAEEE1968882C00F3ABDE /* PasswordRecoveryController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAEED1968882B00F3ABDE /* PasswordRecoveryController.m */; };
+		FFAEAEF1196888BC00F3ABDE /* RecoveryForm.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAEF0196888BC00F3ABDE /* RecoveryForm.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -156,6 +159,12 @@
 		FFAEAEE11968243500F3ABDE /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
 		FFAEAEE619686C8B00F3ABDE /* ViewControllerSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerSegue.h; sourceTree = "<group>"; };
 		FFAEAEE719686C8B00F3ABDE /* ViewControllerSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerSegue.m; sourceTree = "<group>"; };
+		FFAEAEE919686FCF00F3ABDE /* RecoverPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecoverPasswordViewController.h; sourceTree = "<group>"; };
+		FFAEAEEA19686FCF00F3ABDE /* RecoverPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecoverPasswordViewController.m; sourceTree = "<group>"; };
+		FFAEAEEC1968882B00F3ABDE /* PasswordRecoveryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordRecoveryController.h; sourceTree = "<group>"; };
+		FFAEAEED1968882B00F3ABDE /* PasswordRecoveryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordRecoveryController.m; sourceTree = "<group>"; };
+		FFAEAEEF196888BC00F3ABDE /* RecoveryForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecoveryForm.h; sourceTree = "<group>"; };
+		FFAEAEF0196888BC00F3ABDE /* RecoveryForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecoveryForm.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -316,6 +325,8 @@
 				FFAEAEC61967FB3700F3ABDE /* BaseController.m */,
 				FFAEAE8D1967FA7800F3ABDE /* LoginController.h */,
 				FFAEAE8E1967FA7800F3ABDE /* LoginController.m */,
+				FFAEAEEC1968882B00F3ABDE /* PasswordRecoveryController.h */,
+				FFAEAEED1968882B00F3ABDE /* PasswordRecoveryController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -325,6 +336,8 @@
 			children = (
 				FFAEAE901967FA7800F3ABDE /* LoginForm.h */,
 				FFAEAE911967FA7800F3ABDE /* LoginForm.m */,
+				FFAEAEEF196888BC00F3ABDE /* RecoveryForm.h */,
+				FFAEAEF0196888BC00F3ABDE /* RecoveryForm.m */,
 			);
 			path = Forms;
 			sourceTree = "<group>";
@@ -347,6 +360,8 @@
 			children = (
 				FFAEAEA01967FA7800F3ABDE /* LoginViewController.h */,
 				FFAEAEA11967FA7800F3ABDE /* LoginViewController.m */,
+				FFAEAEE919686FCF00F3ABDE /* RecoverPasswordViewController.h */,
+				FFAEAEEA19686FCF00F3ABDE /* RecoverPasswordViewController.m */,
 				FFAEAEA21967FA7800F3ABDE /* NavigationViewController.h */,
 				FFAEAEA31967FA7800F3ABDE /* NavigationViewController.m */,
 			);
@@ -536,6 +551,7 @@
 			files = (
 				FFAEAECD196813FE00F3ABDE /* UIConstants.m in Sources */,
 				FFAEAEAE1967FA7800F3ABDE /* BBlock.m in Sources */,
+				FFAEAEEB19686FCF00F3ABDE /* RecoverPasswordViewController.m in Sources */,
 				FFAEAEB51967FA7800F3ABDE /* YLColors.m in Sources */,
 				FFAEAEBC1967FA7800F3ABDE /* globals.m in Sources */,
 				FFAEAEB91967FA7800F3ABDE /* LoginController.m in Sources */,
@@ -558,10 +574,12 @@
 				FFAEAEA91967FA7800F3ABDE /* BaseMapImageOverlay.m in Sources */,
 				FFAEAEC71967FB3700F3ABDE /* BaseController.m in Sources */,
 				FFAEAEAA1967FA7800F3ABDE /* BaseMapImageOverlayView.m in Sources */,
+				FFAEAEEE1968882C00F3ABDE /* PasswordRecoveryController.m in Sources */,
 				FFAEAEBB1967FA7800F3ABDE /* AppDelegate.m in Sources */,
 				FFAEAEA51967FA7800F3ABDE /* BaseFormCells.m in Sources */,
 				FFAEAEAC1967FA7800F3ABDE /* BaseUserAvatar.m in Sources */,
 				FFAEAEB41967FA7800F3ABDE /* YLBirthDateModel.m in Sources */,
+				FFAEAEF1196888BC00F3ABDE /* RecoveryForm.m in Sources */,
 				FFAEAEB71967FA7800F3ABDE /* YLDistanceTransformer.m in Sources */,
 				FFAEAEA71967FA7800F3ABDE /* BaseFormTableView.m in Sources */,
 				FFAEAEE819686C8B00F3ABDE /* ViewControllerSegue.m in Sources */,

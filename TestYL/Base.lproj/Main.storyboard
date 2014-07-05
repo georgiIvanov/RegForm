@@ -37,7 +37,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YouLocalBackgroundLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="l6g-c2-O88">
-                                <rect key="frame" x="50" y="36" width="221" height="57"/>
+                                <rect key="frame" x="50" y="66" width="221" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="57" id="29B-vp-klM"/>
@@ -55,6 +55,9 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="8m7-de-UdS" kind="custom" customClass="ViewControllerSegue" id="bKV-tY-bBA"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLJ-3z-KJv">
                                         <rect key="frame" x="60" y="105" width="201" height="38"/>
@@ -90,7 +93,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="GKX-Wf-LoO" secondAttribute="bottom" id="01p-94-UjR"/>
-                            <constraint firstItem="l6g-c2-O88" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="36" id="4nd-6E-J6w"/>
+                            <constraint firstItem="l6g-c2-O88" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="66" id="4nd-6E-J6w"/>
                             <constraint firstAttribute="trailing" secondItem="GKX-Wf-LoO" secondAttribute="trailing" id="5Yv-63-7f8"/>
                             <constraint firstItem="4FC-o8-uG4" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="b9x-yj-aS2"/>
                             <constraint firstItem="GKX-Wf-LoO" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="dMU-CJ-YQ1"/>
@@ -108,6 +111,63 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="214" y="138"/>
+        </scene>
+        <!--Recover Password View Controller-->
+        <scene sceneID="abz-CF-pfo">
+            <objects>
+                <viewController id="8m7-de-UdS" customClass="RecoverPasswordViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dV1-8y-NlL"/>
+                        <viewControllerLayoutGuide type="bottom" id="hsy-6A-qgl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5XN-dz-VPO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreenClear.png" translatesAutoresizingMaskIntoConstraints="NO" id="ngo-yL-hDG">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YouLocalBackgroundLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="on1-Cy-OR2">
+                                <rect key="frame" x="50" y="66" width="221" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="Jx7-sf-uzC"/>
+                                    <constraint firstAttribute="width" constant="221" id="byJ-Fc-LWs"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iTW-1u-9h6" customClass="PasswordRecoveryController">
+                                <rect key="frame" x="0.0" y="288" width="320" height="280"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" placeholder="YES" id="afI-e6-qpF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="on1-Cy-OR2" firstAttribute="top" secondItem="5XN-dz-VPO" secondAttribute="top" constant="66" id="9bT-wf-Pbc"/>
+                            <constraint firstItem="ngo-yL-hDG" firstAttribute="leading" secondItem="5XN-dz-VPO" secondAttribute="leading" id="GT6-dr-InO"/>
+                            <constraint firstItem="ngo-yL-hDG" firstAttribute="top" secondItem="5XN-dz-VPO" secondAttribute="top" id="NwE-MR-4YQ"/>
+                            <constraint firstAttribute="centerX" secondItem="on1-Cy-OR2" secondAttribute="centerX" id="TNZ-vr-dsE"/>
+                            <constraint firstAttribute="bottom" secondItem="iTW-1u-9h6" secondAttribute="bottom" id="Z3S-sj-MYM"/>
+                            <constraint firstAttribute="bottom" secondItem="ngo-yL-hDG" secondAttribute="bottom" id="c4y-vM-wv9"/>
+                            <constraint firstItem="iTW-1u-9h6" firstAttribute="leading" secondItem="5XN-dz-VPO" secondAttribute="leading" id="jV5-IQ-cPu"/>
+                            <constraint firstAttribute="trailing" secondItem="iTW-1u-9h6" secondAttribute="trailing" id="kvT-MM-wAb"/>
+                            <constraint firstAttribute="trailing" secondItem="ngo-yL-hDG" secondAttribute="trailing" id="unb-Ks-On2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="EDu-VW-ITu"/>
+                    <connections>
+                        <outlet property="backgroundImage" destination="ngo-yL-hDG" id="sJr-LH-qp0"/>
+                        <outlet property="backgroundLogo" destination="on1-Cy-OR2" id="MEL-CQ-oov"/>
+                        <outlet property="recoveryController" destination="iTW-1u-9h6" id="Ua9-ZV-05e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PGz-lY-U1H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="595" y="603"/>
         </scene>
     </scenes>
     <resources>

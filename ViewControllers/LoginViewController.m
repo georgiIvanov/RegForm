@@ -30,12 +30,18 @@
 -(void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    [self.loginController setupObservers];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    [self.loginController removeObservers];
 }
 
 -(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
