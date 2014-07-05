@@ -7,21 +7,15 @@
 //
 
 #import "LoginViewController.h"
+#import "LoginController.h"
 
 @interface LoginViewController ()
+
+@property(nonatomic, strong) LoginController* loginController;
 
 @end
 
 @implementation LoginViewController
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
 
 - (void)viewDidLoad
 {
@@ -31,13 +25,27 @@
 
 -(void)setupViews
 {
+    self.loginController = [[LoginController alloc] init];
+    [self.view addSubview:self.loginController];
+    [self.loginController setupViews];
     
+
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    [self.loginController reloadViews];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self.view endEditing:YES];
 }
 
 /*

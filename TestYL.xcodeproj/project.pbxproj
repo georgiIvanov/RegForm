@@ -50,6 +50,8 @@
 		FF107D4B1965E21A008399DA /* LaunchScreenClear.png in Resources */ = {isa = PBXBuildFile; fileRef = FF107D461965E21A008399DA /* LaunchScreenClear.png */; };
 		FF107D4C1965E21A008399DA /* RoundedRectButton.png in Resources */ = {isa = PBXBuildFile; fileRef = FF107D471965E21A008399DA /* RoundedRectButton.png */; };
 		FF107D4E1965E547008399DA /* YouLocalBackgroundLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = FF107D4D1965E547008399DA /* YouLocalBackgroundLogo.png */; };
+		FF107D521965E816008399DA /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF107D511965E816008399DA /* LoginController.m */; };
+		FF107D561965F038008399DA /* LoginForm.m in Sources */ = {isa = PBXBuildFile; fileRef = FF107D551965F038008399DA /* LoginForm.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +137,10 @@
 		FF107D461965E21A008399DA /* LaunchScreenClear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchScreenClear.png; sourceTree = "<group>"; };
 		FF107D471965E21A008399DA /* RoundedRectButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RoundedRectButton.png; sourceTree = "<group>"; };
 		FF107D4D1965E547008399DA /* YouLocalBackgroundLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = YouLocalBackgroundLogo.png; sourceTree = "<group>"; };
+		FF107D501965E816008399DA /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
+		FF107D511965E816008399DA /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
+		FF107D541965F038008399DA /* LoginForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginForm.h; sourceTree = "<group>"; };
+		FF107D551965F038008399DA /* LoginForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginForm.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +173,8 @@
 			children = (
 				FF107D421965E21A008399DA /* Images */,
 				FF107CEF1965DEE9008399DA /* Base */,
+				FF107D531965F014008399DA /* Forms */,
+				FF107D4F1965E7ED008399DA /* Controllers */,
 				FF107C681965DBE2008399DA /* ViewControllers */,
 				FF107D2F1965DF79008399DA /* General */,
 				38759819193DF4EB00A103E0 /* TestYL */,
@@ -324,6 +332,26 @@
 			path = TestYL/Images;
 			sourceTree = "<group>";
 		};
+		FF107D4F1965E7ED008399DA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FF107D501965E816008399DA /* LoginController.h */,
+				FF107D511965E816008399DA /* LoginController.m */,
+			);
+			name = Controllers;
+			path = TestYL/Controllers;
+			sourceTree = "<group>";
+		};
+		FF107D531965F014008399DA /* Forms */ = {
+			isa = PBXGroup;
+			children = (
+				FF107D541965F038008399DA /* LoginForm.h */,
+				FF107D551965F038008399DA /* LoginForm.m */,
+			);
+			name = Forms;
+			path = TestYL/Forms;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -478,7 +506,9 @@
 				FF107D201965DEE9008399DA /* BaseMapImageOverlayView.m in Sources */,
 				FF107D281965DEE9008399DA /* UIImage+VeplayCommon.m in Sources */,
 				FF107D251965DEE9008399DA /* MKCircleView+VeplayCommon.m in Sources */,
+				FF107D521965E816008399DA /* LoginController.m in Sources */,
 				FF107D1B1965DEE9008399DA /* BaseFormCells.m in Sources */,
+				FF107D561965F038008399DA /* LoginForm.m in Sources */,
 				FF107D291965DEE9008399DA /* UIView+FrameAdditions.m in Sources */,
 				FF107D351965DF79008399DA /* globals.m in Sources */,
 				FF107D211965DEE9008399DA /* BaseSegment.m in Sources */,
