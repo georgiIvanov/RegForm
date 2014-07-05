@@ -9,6 +9,7 @@
 #import "LoginController.h"
 #import <Masonry.h>
 #import <FXForms.h>
+#import <POP.h>
 #import "UIConstants.h"
 #import "LoginForm.h"
 #import "BaseFormController.h"
@@ -20,6 +21,8 @@
 @property(nonatomic, strong) BaseFormController* formController;
 @property(nonatomic, strong) LoginForm* loginForm;
 
+// animation properties
+@property(nonatomic, assign) CGFloat loginTableYDelta;
 
 @end
 
@@ -40,10 +43,8 @@
 {
     NSNumber* tableHeight = [NSNumber numberWithInteger:self.formCellsCount * CellHeight];
     self.loginTable = [[UITableView alloc] init];
-    self.loginTable.scrollEnabled = NO;
     self.loginTable.contentSize = CGSizeMake(0, tableHeight.intValue);
     self.loginTable.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0);
-
     
     
     self.formController = [[BaseFormController alloc] init];
@@ -56,7 +57,7 @@
     [self.loginTable mas_makeConstraints:^(MASConstraintMaker* make){
         make.leading.equalTo(self.mas_leading);
         make.trailing.equalTo(self.mas_trailing);
-        make.top.equalTo(self.mas_top).priorityMedium();
+        make.top.equalTo(self.mas_top);
         make.height.equalTo(tableHeight);
     }];
     
@@ -79,20 +80,45 @@
     
     CGSize tableSize = self.loginTable.frame.size;
 
-    CGFloat delta = convertedKbRect.origin.y - tableSize.height;
-    if(delta < 0)
+    self.loginTableYDelta = convertedKbRect.origin.y - tableSize.height;
+    if(self.loginTableYDelta < 0)
     {
+        POPSpringAnimation* animation = [POPSpringAnimation animationWithPropertyNamed:kPOPViewFrame];
+        animation.springBounciness = 20;
+        animation.springSpeed = 10;
+        
+        __block MASConstraint* yConstraint;
         [self.loginTable mas_updateConstraints:^(MASConstraintMaker *make){
-            make.top.equalTo(@( self.loginTable.frame.origin.y + delta));
+            yConstraint = make.top;
         }];
+        [yConstraint uninstall];
+        
+        CGRect oldFrame = self.loginTable.frame;
+        CGRect newFrame = CGRectMake(oldFrame.origin.x, oldFrame.origin.y + self.loginTableYDelta, oldFrame.size.width, oldFrame.size.height);
+        
+        animation.toValue = [NSValue valueWithCGRect:newFrame];
+        [self.loginTable pop_addAnimation:animation forKey:@"moveUp"];
     }
 }
 
 -(void)keyboardWillHide:(NSNotification*)notification
 {
-    [self.loginTable mas_updateConstraints:^(MASConstraintMaker *make){
-        make.top.equalTo(self.mas_top);
-    }];
+    POPSpringAnimation* animation = [POPSpringAnimation animationWithPropertyNamed:kPOPViewFrame];
+    animation.springBounciness = 15;
+    animation.springSpeed = 14;
+    
+    CGRect oldFrame = self.loginTable.frame;
+    CGRect newRect = CGRectMake(oldFrame.origin.x, oldFrame.origin.y - self.loginTableYDelta, oldFrame.size.width, oldFrame.size.height);
+    animation.toValue = [NSValue valueWithCGRect:newRect];
+    
+    animation.completionBlock = ^(POPAnimation *anim, BOOL finished) {
+        [self.loginTable mas_makeConstraints:^(MASConstraintMaker *make){
+            make.top.equalTo(self.mas_top);
+        }];
+        self.loginTableYDelta = 0;
+    };
+    
+    [self.loginTable pop_addAnimation:animation forKey:@"moveDown"];
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
