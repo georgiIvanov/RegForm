@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseController.h"
 
-@interface LoginController : UIView
+@interface LoginController : BaseController
 
 -(void)setupViews;
 -(void)reloadViews;

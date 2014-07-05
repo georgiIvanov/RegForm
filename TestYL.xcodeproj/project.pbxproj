@@ -52,6 +52,8 @@
 		FFAEAEC21967FA7800F3ABDE /* YouLocalBackgroundLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAEAE9E1967FA7800F3ABDE /* YouLocalBackgroundLogo.png */; };
 		FFAEAEC31967FA7800F3ABDE /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAEA11967FA7800F3ABDE /* LoginViewController.m */; };
 		FFAEAEC41967FA7800F3ABDE /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAEA31967FA7800F3ABDE /* NavigationViewController.m */; };
+		FFAEAEC71967FB3700F3ABDE /* BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAEC61967FB3700F3ABDE /* BaseController.m */; };
+		FFAEAECD196813FE00F3ABDE /* UIConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAECC196813FE00F3ABDE /* UIConstants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,6 +143,10 @@
 		FFAEAEA11967FA7800F3ABDE /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		FFAEAEA21967FA7800F3ABDE /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
 		FFAEAEA31967FA7800F3ABDE /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
+		FFAEAEC51967FB3700F3ABDE /* BaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseController.h; sourceTree = "<group>"; };
+		FFAEAEC61967FB3700F3ABDE /* BaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseController.m; sourceTree = "<group>"; };
+		FFAEAECB196813FE00F3ABDE /* UIConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIConstants.h; sourceTree = "<group>"; };
+		FFAEAECC196813FE00F3ABDE /* UIConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIConstants.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,9 +180,9 @@
 				FFAEAE611967FA7800F3ABDE /* Base */,
 				FFAEAE8C1967FA7800F3ABDE /* Controllers */,
 				FFAEAE8F1967FA7800F3ABDE /* Forms */,
-				FFAEAE921967FA7800F3ABDE /* General */,
 				FFAEAE981967FA7800F3ABDE /* Images */,
 				FFAEAE9F1967FA7800F3ABDE /* ViewControllers */,
+				FFAEAE921967FA7800F3ABDE /* General */,
 				38759819193DF4EB00A103E0 /* TestYL */,
 				38759838193DF4EB00A103E0 /* TestYLTests */,
 				38759812193DF4EB00A103E0 /* Frameworks */,
@@ -296,6 +302,8 @@
 		FFAEAE8C1967FA7800F3ABDE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FFAEAEC51967FB3700F3ABDE /* BaseController.h */,
+				FFAEAEC61967FB3700F3ABDE /* BaseController.m */,
 				FFAEAE8D1967FA7800F3ABDE /* LoginController.h */,
 				FFAEAE8E1967FA7800F3ABDE /* LoginController.m */,
 			);
@@ -319,6 +327,8 @@
 				FFAEAE951967FA7800F3ABDE /* globals.h */,
 				FFAEAE961967FA7800F3ABDE /* globals.m */,
 				FFAEAE971967FA7800F3ABDE /* SupportingFiles */,
+				FFAEAECB196813FE00F3ABDE /* UIConstants.h */,
+				FFAEAECC196813FE00F3ABDE /* UIConstants.m */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -491,6 +501,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFAEAECD196813FE00F3ABDE /* UIConstants.m in Sources */,
 				FFAEAEAE1967FA7800F3ABDE /* BBlock.m in Sources */,
 				FFAEAEB51967FA7800F3ABDE /* YLColors.m in Sources */,
 				FFAEAEBC1967FA7800F3ABDE /* globals.m in Sources */,
@@ -512,6 +523,7 @@
 				FFAEAEB01967FA7800F3ABDE /* MKMapView+ZoomLevel.m in Sources */,
 				FFAEAEAD1967FA7800F3ABDE /* BaseUserAvatarView.m in Sources */,
 				FFAEAEA91967FA7800F3ABDE /* BaseMapImageOverlay.m in Sources */,
+				FFAEAEC71967FB3700F3ABDE /* BaseController.m in Sources */,
 				FFAEAEAA1967FA7800F3ABDE /* BaseMapImageOverlayView.m in Sources */,
 				FFAEAEBB1967FA7800F3ABDE /* AppDelegate.m in Sources */,
 				FFAEAEA51967FA7800F3ABDE /* BaseFormCells.m in Sources */,
@@ -592,7 +604,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -624,7 +636,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

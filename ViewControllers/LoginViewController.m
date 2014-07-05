@@ -11,8 +11,7 @@
 
 @interface LoginViewController ()
 
-@property(nonatomic, strong) LoginController* loginController;
-
+@property (weak, nonatomic) IBOutlet LoginController *loginController;
 @end
 
 @implementation LoginViewController
@@ -25,16 +24,12 @@
 
 -(void)setupViews
 {
-    self.loginController = [[LoginController alloc] init];
-    [self.view addSubview:self.loginController];
     [self.loginController setupViews];
-    
-
 }
 
 -(void)viewDidAppear:(BOOL)animated
 {
-    [self.loginController reloadViews];
+    
 }
 
 - (void)didReceiveMemoryWarning
