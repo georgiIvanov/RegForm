@@ -15,7 +15,7 @@
     self = [super initWithCoder:aDecoder];
     if(self)
     {
-        [self setupObservers];
+        
     }
     
     return self;

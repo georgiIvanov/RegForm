@@ -31,6 +31,7 @@
 {
     [super viewDidAppear:animated];
     [self.loginController setupObservers];
+    [self.loginController reloadViews];
 }
 
 - (void)didReceiveMemoryWarning

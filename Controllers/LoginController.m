@@ -74,6 +74,8 @@
 
 -(void)keyboardWillShow:(NSNotification*)notification
 {
+    
+    
     id concreteValue = [[notification userInfo] objectForKey:UIKeyboardFrameEndUserInfoKey];
     CGRect kbRect = [concreteValue CGRectValue];
     CGRect convertedKbRect = [self convertRect:kbRect fromView:self.superview];
@@ -81,7 +83,7 @@
     CGSize tableSize = self.loginTable.frame.size;
 
     self.loginTableYDelta = convertedKbRect.origin.y - tableSize.height;
-    if(self.loginTableYDelta < 0)
+    if(self.loginTableYDelta < 0 && ![self.loginTable pop_animationForKey:@"movingY"])
     {
         POPSpringAnimation* animation = [POPSpringAnimation animationWithPropertyNamed:kPOPViewFrame];
         animation.springBounciness = 20;
@@ -97,7 +99,7 @@
         CGRect newFrame = CGRectMake(oldFrame.origin.x, oldFrame.origin.y + self.loginTableYDelta, oldFrame.size.width, oldFrame.size.height);
         
         animation.toValue = [NSValue valueWithCGRect:newFrame];
-        [self.loginTable pop_addAnimation:animation forKey:@"moveUp"];
+        [self.loginTable pop_addAnimation:animation forKey:@"movingY"];
     }
 }
 
@@ -116,9 +118,10 @@
             make.top.equalTo(self.mas_top);
         }];
         self.loginTableYDelta = 0;
+        [self.loginTable setNeedsLayout];
     };
     
-    [self.loginTable pop_addAnimation:animation forKey:@"moveDown"];
+    [self.loginTable pop_addAnimation:animation forKey:@"movingY"];
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView

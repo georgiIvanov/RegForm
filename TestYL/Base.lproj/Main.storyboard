@@ -139,9 +139,28 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iTW-1u-9h6" customClass="PasswordRecoveryController">
                                 <rect key="frame" x="0.0" y="288" width="320" height="280"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIp-z7-iVr">
+                                        <rect key="frame" x="60" y="105" width="201" height="38"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="201" id="PR9-4h-3y0"/>
+                                            <constraint firstAttribute="height" constant="38" id="faX-Yu-mlg"/>
+                                        </constraints>
+                                        <state key="normal" title="Reset" backgroundImage="RoundedRectButton.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loginTapped:" destination="GKX-Wf-LoO" eventType="touchUpInside" id="IaN-qg-BJe"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="iIp-z7-iVr" secondAttribute="centerX" id="EGQ-Ao-FKg"/>
                                     <constraint firstAttribute="height" constant="280" placeholder="YES" id="afI-e6-qpF"/>
+                                    <constraint firstItem="iIp-z7-iVr" firstAttribute="top" secondItem="iTW-1u-9h6" secondAttribute="top" constant="105" id="uPX-uQ-7f6"/>
                                 </constraints>
                             </view>
                         </subviews>
