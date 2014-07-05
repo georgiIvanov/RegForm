@@ -61,6 +61,7 @@
 		FFAEAEEB19686FCF00F3ABDE /* RecoverPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAEEA19686FCF00F3ABDE /* RecoverPasswordViewController.m */; };
 		FFAEAEEE1968882C00F3ABDE /* PasswordRecoveryController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAEED1968882B00F3ABDE /* PasswordRecoveryController.m */; };
 		FFAEAEF1196888BC00F3ABDE /* RecoveryForm.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAEF0196888BC00F3ABDE /* RecoveryForm.m */; };
+		FFAEAEF519689A3700F3ABDE /* RoundedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAEF419689A3700F3ABDE /* RoundedButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -165,6 +166,8 @@
 		FFAEAEED1968882B00F3ABDE /* PasswordRecoveryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordRecoveryController.m; sourceTree = "<group>"; };
 		FFAEAEEF196888BC00F3ABDE /* RecoveryForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecoveryForm.h; sourceTree = "<group>"; };
 		FFAEAEF0196888BC00F3ABDE /* RecoveryForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecoveryForm.m; sourceTree = "<group>"; };
+		FFAEAEF319689A3700F3ABDE /* RoundedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundedButton.h; sourceTree = "<group>"; };
+		FFAEAEF419689A3700F3ABDE /* RoundedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundedButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +200,7 @@
 			children = (
 				FFAEAECE1968220500F3ABDE /* Resources */,
 				FFAEAE611967FA7800F3ABDE /* Base */,
+				FFAEAEF219689A0900F3ABDE /* Controls */,
 				FFAEAE8C1967FA7800F3ABDE /* Controllers */,
 				FFAEAE8F1967FA7800F3ABDE /* Forms */,
 				FFAEAEE519686C3F00F3ABDE /* Segues */,
@@ -409,6 +413,15 @@
 			path = Segues;
 			sourceTree = "<group>";
 		};
+		FFAEAEF219689A0900F3ABDE /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				FFAEAEF319689A3700F3ABDE /* RoundedButton.h */,
+				FFAEAEF419689A3700F3ABDE /* RoundedButton.m */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -556,6 +569,7 @@
 				FFAEAEBC1967FA7800F3ABDE /* globals.m in Sources */,
 				FFAEAEB91967FA7800F3ABDE /* LoginController.m in Sources */,
 				FFAEAEBA1967FA7800F3ABDE /* LoginForm.m in Sources */,
+				FFAEAEF519689A3700F3ABDE /* RoundedButton.m in Sources */,
 				FFAEAEC31967FA7800F3ABDE /* LoginViewController.m in Sources */,
 				FFAEAEB11967FA7800F3ABDE /* UIColor+VeplayCommon.m in Sources */,
 				FFAEAEAF1967FA7800F3ABDE /* MKCircleView+VeplayCommon.m in Sources */,
