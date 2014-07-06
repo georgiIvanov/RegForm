@@ -10,6 +10,8 @@
 
 @interface RegisterController : FormController
 
+@property (weak, nonatomic) IBOutlet UIView *registerButtonContainer;
+
 -(void)setupViews;
 
 @end

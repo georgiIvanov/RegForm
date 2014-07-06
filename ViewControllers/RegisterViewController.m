@@ -8,6 +8,7 @@
 
 #import "RegisterViewController.h"
 #import "RegisterController.h"
+#import "UIConstants.h"
 
 @interface RegisterViewController ()
 
@@ -36,18 +37,34 @@
 -(void)setupViews
 {
     [self.registerController setupViews];
-    UIButton* btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [btn setImage:[UIImage imageNamed:@"BackNavButton"] forState:UIControlStateNormal];
-    [btn setFrame:CGRectMake(0, 0, 30, 30)];
-    [btn addTarget:self action:@selector(popViewController) forControlEvents:UIControlEventTouchUpInside];
+    UIButton* backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [backBtn setImage:[UIImage imageNamed:@"BackNavButton"] forState:UIControlStateNormal];
+    [backBtn setFrame:CGRectMake(0, 0, 30, 30)];
+    [backBtn addTarget:self action:@selector(popViewController) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.leftBarButtonItem =
-    [[UIBarButtonItem alloc] initWithCustomView:btn];
+    [[UIBarButtonItem alloc] initWithCustomView:backBtn];
+    
+    UIButton* nextBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [nextBtn setTitle:@"Next" forState:UIControlStateNormal];
+    [nextBtn.titleLabel setFont:latoLightFont(23)];
+    [nextBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [nextBtn addTarget:self action:@selector(nextButtonTap:) forControlEvents:UIControlEventTouchUpInside];
+    [nextBtn sizeToFit];
+    self.navigationItem.rightBarButtonItem =
+    [[UIBarButtonItem alloc] initWithCustomView:nextBtn];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)nextButtonTap:(id)sender
+{
+    [self.registerController.formTable setHidden:YES];
+    [self.registerController.registerButtonContainer setHidden:NO];
+    self.navigationItem.rightBarButtonItem = nil;
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
