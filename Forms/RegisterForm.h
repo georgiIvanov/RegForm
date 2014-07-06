@@ -12,8 +12,6 @@
 
 @interface RegisterForm : LoginForm
 
-@property (nonatomic, copy) NSString *email;
-@property (nonatomic, copy) NSString *password;
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) FXFormBirthDateCell* birthDate;
 @property (nonatomic, copy) FXFormGenderCell* gender;

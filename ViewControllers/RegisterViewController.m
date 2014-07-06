@@ -7,8 +7,11 @@
 //
 
 #import "RegisterViewController.h"
+#import "RegisterController.h"
 
 @interface RegisterViewController ()
+
+@property (weak, nonatomic) IBOutlet RegisterController *registerController;
 
 @end
 
@@ -27,11 +30,12 @@
 {
     [super viewDidLoad];
     [self setupViews];
+    [self.registerController setupObservers];
 }
 
 -(void)setupViews
 {
-    
+    [self.registerController setupViews];
     UIButton* btn = [UIButton buttonWithType:UIButtonTypeCustom];
     [btn setImage:[UIImage imageNamed:@"BackNavButton"] forState:UIControlStateNormal];
     [btn setFrame:CGRectMake(0, 0, 30, 30)];
@@ -46,8 +50,14 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self.view endEditing:YES];
+}
+
 -(void)popViewController
 {
+    [self.registerController removeObservers];
     [self.view endEditing:YES];
     [self.navigationController popViewControllerAnimated:YES];
 }

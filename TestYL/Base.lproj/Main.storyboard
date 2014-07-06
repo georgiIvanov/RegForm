@@ -151,18 +151,32 @@
                                     <constraint firstAttribute="height" constant="57" id="qyo-5H-Of7"/>
                                 </constraints>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Mu-ys-gMv" customClass="RegisterController">
+                                <rect key="frame" x="0.0" y="288" width="320" height="280"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" placeholder="YES" id="zIq-by-7ua"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="X4p-p9-xKm" firstAttribute="top" secondItem="iCL-3g-aLQ" secondAttribute="top" constant="66" id="9mp-e1-rge"/>
+                            <constraint firstItem="9Mu-ys-gMv" firstAttribute="leading" secondItem="iCL-3g-aLQ" secondAttribute="leading" id="AD9-Li-6yt"/>
                             <constraint firstItem="GGT-SM-Uop" firstAttribute="top" secondItem="iCL-3g-aLQ" secondAttribute="top" id="I2n-dx-oxD"/>
                             <constraint firstItem="GGT-SM-Uop" firstAttribute="leading" secondItem="iCL-3g-aLQ" secondAttribute="leading" id="ITV-fE-q0W"/>
                             <constraint firstAttribute="trailing" secondItem="GGT-SM-Uop" secondAttribute="trailing" id="O0s-Qk-vP1"/>
+                            <constraint firstAttribute="trailing" secondItem="9Mu-ys-gMv" secondAttribute="trailing" id="OoR-0L-0qA"/>
                             <constraint firstAttribute="bottom" secondItem="GGT-SM-Uop" secondAttribute="bottom" id="TS0-PK-XWg"/>
                             <constraint firstAttribute="centerX" secondItem="X4p-p9-xKm" secondAttribute="centerX" id="b80-Qv-NUD"/>
+                            <constraint firstAttribute="bottom" secondItem="9Mu-ys-gMv" secondAttribute="bottom" id="qyW-9H-hIf"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cVa-XQ-5EF"/>
+                    <connections>
+                        <outlet property="registerController" destination="9Mu-ys-gMv" id="FgG-B7-3iz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n4h-Xb-oQx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

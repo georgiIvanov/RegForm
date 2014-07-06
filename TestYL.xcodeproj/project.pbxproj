@@ -65,6 +65,7 @@
 		FFAEAEF81968A44500F3ABDE /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAEF71968A44500F3ABDE /* RegisterViewController.m */; };
 		FFAFF59019693BB200082D42 /* RegisterForm.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAFF58F19693BB200082D42 /* RegisterForm.m */; };
 		FFAFF593196944D100082D42 /* FormController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAFF592196944D100082D42 /* FormController.m */; };
+		FFAFF59719694C6D00082D42 /* RegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAFF59619694C6D00082D42 /* RegisterController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -177,6 +178,8 @@
 		FFAFF58F19693BB200082D42 /* RegisterForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterForm.m; sourceTree = "<group>"; };
 		FFAFF591196944D100082D42 /* FormController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormController.h; sourceTree = "<group>"; };
 		FFAFF592196944D100082D42 /* FormController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormController.m; sourceTree = "<group>"; };
+		FFAFF59519694C6D00082D42 /* RegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterController.h; sourceTree = "<group>"; };
+		FFAFF59619694C6D00082D42 /* RegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -339,6 +342,8 @@
 				FFAEAE8E1967FA7800F3ABDE /* LoginController.m */,
 				FFAEAEEC1968882B00F3ABDE /* PasswordRecoveryController.h */,
 				FFAEAEED1968882B00F3ABDE /* PasswordRecoveryController.m */,
+				FFAFF59519694C6D00082D42 /* RegisterController.h */,
+				FFAFF59619694C6D00082D42 /* RegisterController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -608,6 +613,7 @@
 				FFAEAEC41967FA7800F3ABDE /* NavigationViewController.m in Sources */,
 				FFAEAEB31967FA7800F3ABDE /* UIView+FrameAdditions.m in Sources */,
 				FFAFF59019693BB200082D42 /* RegisterForm.m in Sources */,
+				FFAFF59719694C6D00082D42 /* RegisterController.m in Sources */,
 				FFAEAEB01967FA7800F3ABDE /* MKMapView+ZoomLevel.m in Sources */,
 				FFAEAEAD1967FA7800F3ABDE /* BaseUserAvatarView.m in Sources */,
 				FFAEAEA91967FA7800F3ABDE /* BaseMapImageOverlay.m in Sources */,
