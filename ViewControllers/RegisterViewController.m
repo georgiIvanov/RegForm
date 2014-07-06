@@ -62,6 +62,7 @@
 
 -(void)nextButtonTap:(id)sender
 {
+    [self.view endEditing:YES];
     [self.registerController.formTable setHidden:YES];
     [self.registerController.registerButtonContainer setHidden:NO];
     self.navigationItem.rightBarButtonItem = nil;

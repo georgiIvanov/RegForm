@@ -24,7 +24,6 @@
     if(self)
     {
         self.formCellsCount = 5;
-        _registerForm = [[RegisterForm alloc] init];
     }
     return self;
 }
@@ -33,6 +32,7 @@
 {
     [super setupViews];
     
+    self.registerForm = [[RegisterForm alloc] initWithParentView:self];
     self.formController.form = self.registerForm;
     [self addSubview:self.formTable];
     

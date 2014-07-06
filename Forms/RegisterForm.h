@@ -12,6 +12,8 @@
 
 @interface RegisterForm : BaseForm
 
+-(instancetype)initWithParentView:(UIView*)parent;
+
 @property (nonatomic, copy) NSString *email;
 @property (nonatomic, copy) NSString *password;
 @property (nonatomic, copy) NSString *name;

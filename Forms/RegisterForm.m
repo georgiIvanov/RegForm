@@ -17,7 +17,24 @@ typedef NS_ENUM(NSInteger, Gender)
     GenderOther = 0
 };
 
+@interface RegisterForm()
+
+@property(nonatomic, weak) UIView* parent;
+
+@end
+
 @implementation RegisterForm
+
+-(instancetype)initWithParentView:(UIView*)parent
+{
+    self = [super init];
+    if(self)
+    {
+        self.parent = parent;
+    }
+    
+    return self;
+}
 
 -(NSDictionary*) nameField
 {
@@ -49,7 +66,8 @@ typedef NS_ENUM(NSInteger, Gender)
 -(NSDictionary*) birthDateField
 {
     return @{
-             FXFormFieldCell: [FXFormBirthDateCell class]
+             FXFormFieldCell: [FXFormBirthDateCell class],
+             @"parent": _parent
              };
 }
 
