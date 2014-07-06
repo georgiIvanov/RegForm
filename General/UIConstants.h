@@ -23,4 +23,4 @@ extern NSString* const kLabelColorPath;
 // Fonts
 extern UIFont* latoLightFont(CGFloat size);
 extern UIFont* latoBoldFont(CGFloat size);
-
+extern UIFont* latoRegularFont(CGFloat size);

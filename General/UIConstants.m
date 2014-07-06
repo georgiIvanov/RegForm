@@ -27,3 +27,8 @@ UIFont* latoBoldFont(CGFloat size)
 {
     return [UIFont fontWithName:kLatoBold size:size];;
 }
+
+UIFont* latoRegularFont(CGFloat size)
+{
+    return [UIFont fontWithName:kLatoRegular size:size];;
+}

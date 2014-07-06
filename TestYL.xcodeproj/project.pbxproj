@@ -19,6 +19,7 @@
 		D7735D2FFD70421EA44C1E1C /* libPods-TestYL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 435D84CA3F3742109639C407 /* libPods-TestYL.a */; };
 		FF107D3F1965E045008399DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF107D3C1965E045008399DA /* main.m */; };
 		FF107D411965E099008399DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38759825193DF4EB00A103E0 /* Main.storyboard */; };
+		FFAC89C41969AD1200258808 /* CustomFontLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAC89C31969AD1200258808 /* CustomFontLabel.m */; };
 		FFAEAEA41967FA7800F3ABDE /* BaseForm.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAE631967FA7800F3ABDE /* BaseForm.m */; };
 		FFAEAEA51967FA7800F3ABDE /* BaseFormCells.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAE651967FA7800F3ABDE /* BaseFormCells.m */; };
 		FFAEAEA61967FA7800F3ABDE /* BaseFormController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAE671967FA7800F3ABDE /* BaseFormController.m */; };
@@ -95,6 +96,8 @@
 		FF107D3C1965E045008399DA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FF107D3D1965E045008399DA /* TestYL-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TestYL-Info.plist"; sourceTree = "<group>"; };
 		FF107D3E1965E045008399DA /* TestYL-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestYL-Prefix.pch"; sourceTree = "<group>"; };
+		FFAC89C21969AD1200258808 /* CustomFontLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomFontLabel.h; sourceTree = "<group>"; };
+		FFAC89C31969AD1200258808 /* CustomFontLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomFontLabel.m; sourceTree = "<group>"; };
 		FFAEAE621967FA7800F3ABDE /* BaseForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseForm.h; sourceTree = "<group>"; };
 		FFAEAE631967FA7800F3ABDE /* BaseForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseForm.m; sourceTree = "<group>"; };
 		FFAEAE641967FA7800F3ABDE /* BaseFormCells.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseFormCells.h; sourceTree = "<group>"; };
@@ -435,6 +438,8 @@
 			children = (
 				FFAEAEF319689A3700F3ABDE /* RoundedButton.h */,
 				FFAEAEF419689A3700F3ABDE /* RoundedButton.m */,
+				FFAC89C21969AD1200258808 /* CustomFontLabel.h */,
+				FFAC89C31969AD1200258808 /* CustomFontLabel.m */,
 			);
 			path = Controls;
 			sourceTree = "<group>";
@@ -604,6 +609,7 @@
 				FFAEAEA41967FA7800F3ABDE /* BaseForm.m in Sources */,
 				FFAEAEB81967FA7800F3ABDE /* YLSliderValues.m in Sources */,
 				FFAFF593196944D100082D42 /* FormController.m in Sources */,
+				FFAC89C41969AD1200258808 /* CustomFontLabel.m in Sources */,
 				FF107D3F1965E045008399DA /* main.m in Sources */,
 				FFAEAEAB1967FA7800F3ABDE /* BaseSegment.m in Sources */,
 				FFAEAEB61967FA7800F3ABDE /* YLDistance.m in Sources */,
