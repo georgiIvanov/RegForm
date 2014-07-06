@@ -46,9 +46,10 @@
     
     CGSize tableSize = self.formTable.frame.size;
     
-    self.formTableYDelta = convertedKbRect.origin.y - tableSize.height;
-    if(self.formTableYDelta < 0 && ![self.formTable pop_animationForKey:@"movingY"])
+    CGFloat deltaY = convertedKbRect.origin.y - tableSize.height;
+    if(deltaY < 0 && ![self.formTable pop_animationForKey:@"movingY"])
     {
+        self.formTableYDelta = deltaY;
         POPSpringAnimation* animation = [POPSpringAnimation animationWithPropertyNamed:kPOPViewFrame];
         animation.springBounciness = bounciness;
         animation.springSpeed = 10;
@@ -91,8 +92,6 @@
             make.top.equalTo(@(newY));
         }];
         [self setNeedsLayout];
-        
-        self.formTableYDelta = 0;
     };
     
     [self.formTable pop_addAnimation:animation forKey:@"movingY"];
