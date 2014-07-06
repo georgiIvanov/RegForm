@@ -72,6 +72,11 @@
 
 -(void)animateFormDown:(NSNotification*)notification bounciness:(CGFloat)bounciness
 {
+    if([self.formTable pop_animationForKey:@"movingY"])
+    {
+        return;
+    }
+    
     POPSpringAnimation* animation = [POPSpringAnimation animationWithPropertyNamed:kPOPViewFrame];
     animation.springBounciness = bounciness;
     animation.springSpeed = 14;
