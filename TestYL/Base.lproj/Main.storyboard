@@ -216,7 +216,9 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="201" id="PR9-4h-3y0"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="38" id="ana-ff-vfq"/>
                                             <constraint firstAttribute="height" constant="38" id="faX-Yu-mlg"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="201" id="uBM-BJ-TNt"/>
                                         </constraints>
                                         <state key="normal" title="Reset" backgroundImage="RoundedRectButton.png">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -229,9 +231,9 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="centerX" secondItem="iIp-z7-iVr" secondAttribute="centerX" id="EGQ-Ao-FKg"/>
-                                    <constraint firstAttribute="height" constant="280" placeholder="YES" id="afI-e6-qpF"/>
-                                    <constraint firstItem="iIp-z7-iVr" firstAttribute="top" secondItem="iTW-1u-9h6" secondAttribute="top" constant="105" id="uPX-uQ-7f6"/>
+                                    <constraint firstAttribute="centerX" secondItem="iIp-z7-iVr" secondAttribute="centerX" id="5rj-k1-582"/>
+                                    <constraint firstAttribute="height" constant="280" placeholder="YES" id="XGN-sE-cyz"/>
+                                    <constraint firstItem="iIp-z7-iVr" firstAttribute="top" secondItem="iTW-1u-9h6" secondAttribute="top" constant="105" id="dc6-TS-NRh"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -240,11 +242,11 @@
                             <constraint firstItem="on1-Cy-OR2" firstAttribute="top" secondItem="5XN-dz-VPO" secondAttribute="top" constant="66" id="9bT-wf-Pbc"/>
                             <constraint firstItem="ngo-yL-hDG" firstAttribute="leading" secondItem="5XN-dz-VPO" secondAttribute="leading" id="GT6-dr-InO"/>
                             <constraint firstItem="ngo-yL-hDG" firstAttribute="top" secondItem="5XN-dz-VPO" secondAttribute="top" id="NwE-MR-4YQ"/>
+                            <constraint firstAttribute="bottom" secondItem="iTW-1u-9h6" secondAttribute="bottom" id="RYU-U3-4hl"/>
                             <constraint firstAttribute="centerX" secondItem="on1-Cy-OR2" secondAttribute="centerX" id="TNZ-vr-dsE"/>
-                            <constraint firstAttribute="bottom" secondItem="iTW-1u-9h6" secondAttribute="bottom" placeholder="YES" id="Z3S-sj-MYM"/>
                             <constraint firstAttribute="bottom" secondItem="ngo-yL-hDG" secondAttribute="bottom" id="c4y-vM-wv9"/>
-                            <constraint firstItem="iTW-1u-9h6" firstAttribute="leading" secondItem="5XN-dz-VPO" secondAttribute="leading" placeholder="YES" id="jV5-IQ-cPu"/>
-                            <constraint firstAttribute="trailing" secondItem="iTW-1u-9h6" secondAttribute="trailing" placeholder="YES" id="kvT-MM-wAb"/>
+                            <constraint firstAttribute="trailing" secondItem="iTW-1u-9h6" secondAttribute="trailing" id="k2M-QL-hOi"/>
+                            <constraint firstItem="iTW-1u-9h6" firstAttribute="leading" secondItem="5XN-dz-VPO" secondAttribute="leading" id="lkx-iL-NFW"/>
                             <constraint firstAttribute="trailing" secondItem="ngo-yL-hDG" secondAttribute="trailing" id="unb-Ks-On2"/>
                         </constraints>
                     </view>
