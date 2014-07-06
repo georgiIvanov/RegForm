@@ -53,14 +53,17 @@
         animation.springBounciness = bounciness;
         animation.springSpeed = 10;
         
-        __block MASConstraint* yConstraint;
-        [self.formTable mas_updateConstraints:^(MASConstraintMaker *make){
-            yConstraint = make.top;
-        }];
-        [yConstraint uninstall];
-        
         CGRect oldFrame = self.formTable.frame;
         CGRect newFrame = CGRectMake(oldFrame.origin.x, oldFrame.origin.y + self.formTableYDelta, oldFrame.size.width, oldFrame.size.height);
+        
+        animation.completionBlock = ^(POPAnimation *anim, BOOL finished){
+            [self mas_remakeConstraints:^(MASConstraintMaker *make) {
+                CGFloat newY = self.frame.origin.y + self.formTable.frame.origin.y;
+                make.top.equalTo(@(newY)).priorityLow();
+                make.left.bottom.right.equalTo(self.superview);
+            }];
+            [self setNeedsLayout];
+        };
         
         animation.toValue = [NSValue valueWithCGRect:newFrame];
         [self.formTable pop_addAnimation:animation forKey:@"movingY"];
@@ -78,11 +81,13 @@
     animation.toValue = [NSValue valueWithCGRect:newRect];
     
     animation.completionBlock = ^(POPAnimation *anim, BOOL finished) {
-        [self.formTable mas_makeConstraints:^(MASConstraintMaker *make){
-            make.top.equalTo(self.mas_top);
+        [self mas_updateConstraints:^(MASConstraintMaker *make) {
+            CGFloat newY = self.frame.origin.y + self.formTable.frame.origin.y;
+            make.top.equalTo(@(newY));
         }];
+        [self setNeedsLayout];
+        
         self.formTableYDelta = 0;
-        [self.formTable setNeedsLayout];
     };
     
     [self.formTable pop_addAnimation:animation forKey:@"movingY"];

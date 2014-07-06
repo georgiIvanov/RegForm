@@ -152,7 +152,7 @@
                                     <constraint firstAttribute="height" constant="57" id="qyo-5H-Of7"/>
                                 </constraints>
                             </imageView>
-                            <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Mu-ys-gMv" customClass="RegisterController">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Mu-ys-gMv" customClass="RegisterController">
                                 <rect key="frame" x="0.0" y="288" width="320" height="280"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
