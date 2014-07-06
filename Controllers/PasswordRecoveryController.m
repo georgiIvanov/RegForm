@@ -13,9 +13,6 @@
 
 @interface PasswordRecoveryController() <FXFormControllerDelegate>
 
-@property(nonatomic, strong) UITableView* recoveryTable;
-@property(nonatomic, readonly) NSInteger formCellsCount;
-@property(nonatomic, strong) BaseFormController* formController;
 @property(nonatomic, strong) RecoveryForm* recoveryForm;
 
 @end
@@ -27,7 +24,7 @@
     self = [super initWithCoder:aDecoder];
     if (self)
     {
-        _formCellsCount = 1;
+        self.formCellsCount = 1;
         self.recoveryForm = [[RecoveryForm alloc] init];
     }
     return self;
@@ -35,20 +32,13 @@
 
 -(void)setupViews
 {
-    NSNumber* tableHeight = [NSNumber numberWithInteger:self.formCellsCount * CellHeight];
-    self.recoveryTable = [[UITableView alloc] init];
-    self.recoveryTable.contentSize = CGSizeMake(0, tableHeight.intValue);
-    self.recoveryTable.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0);
-    
-    
-    self.formController = [[BaseFormController alloc] init];
-    self.formController.tableView = self.recoveryTable;
-    self.formController.delegate = self;
+    [super setupViews];
     self.formController.form = self.recoveryForm;
     
-    [self addSubview:self.recoveryTable];
+    [self addSubview:self.formTable];
     
-    [self.recoveryTable mas_makeConstraints:^(MASConstraintMaker* make){
+    NSNumber* tableHeight = [NSNumber numberWithInteger:self.formCellsCount * CellHeight];
+    [self.formTable mas_makeConstraints:^(MASConstraintMaker* make){
         make.leading.equalTo(self.mas_leading);
         make.trailing.equalTo(self.mas_trailing);
         make.top.equalTo(self.mas_top);

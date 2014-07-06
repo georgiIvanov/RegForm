@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BaseController.h"
+#import "FormController.h"
 
-@interface LoginController : BaseController
+@interface LoginController : FormController
 
 @property (weak, nonatomic) IBOutlet UIButton *forgotPwdButton;
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;

@@ -7,8 +7,9 @@
 //
 
 #import "BaseController.h"
+#import "FormController.h"
 
-@interface PasswordRecoveryController : BaseController
+@interface PasswordRecoveryController : FormController
 
 -(void)setupViews;
 
