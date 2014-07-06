@@ -63,6 +63,7 @@
 		FFAEAEF1196888BC00F3ABDE /* RecoveryForm.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAEF0196888BC00F3ABDE /* RecoveryForm.m */; };
 		FFAEAEF519689A3700F3ABDE /* RoundedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAEF419689A3700F3ABDE /* RoundedButton.m */; };
 		FFAEAEF81968A44500F3ABDE /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAEF71968A44500F3ABDE /* RegisterViewController.m */; };
+		FFAFF59019693BB200082D42 /* RegisterForm.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAFF58F19693BB200082D42 /* RegisterForm.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -171,6 +172,8 @@
 		FFAEAEF419689A3700F3ABDE /* RoundedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundedButton.m; sourceTree = "<group>"; };
 		FFAEAEF61968A44500F3ABDE /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		FFAEAEF71968A44500F3ABDE /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		FFAFF58E19693BB200082D42 /* RegisterForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterForm.h; sourceTree = "<group>"; };
+		FFAFF58F19693BB200082D42 /* RegisterForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterForm.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -345,6 +348,8 @@
 				FFAEAE911967FA7800F3ABDE /* LoginForm.m */,
 				FFAEAEEF196888BC00F3ABDE /* RecoveryForm.h */,
 				FFAEAEF0196888BC00F3ABDE /* RecoveryForm.m */,
+				FFAFF58E19693BB200082D42 /* RegisterForm.h */,
+				FFAFF58F19693BB200082D42 /* RegisterForm.m */,
 			);
 			path = Forms;
 			sourceTree = "<group>";
@@ -588,6 +593,7 @@
 				FFAEAEA81967FA7800F3ABDE /* BaseLabel.m in Sources */,
 				FFAEAEC41967FA7800F3ABDE /* NavigationViewController.m in Sources */,
 				FFAEAEB31967FA7800F3ABDE /* UIView+FrameAdditions.m in Sources */,
+				FFAFF59019693BB200082D42 /* RegisterForm.m in Sources */,
 				FFAEAEB01967FA7800F3ABDE /* MKMapView+ZoomLevel.m in Sources */,
 				FFAEAEAD1967FA7800F3ABDE /* BaseUserAvatarView.m in Sources */,
 				FFAEAEA91967FA7800F3ABDE /* BaseMapImageOverlay.m in Sources */,
