@@ -7,6 +7,7 @@
 //
 
 #import "BaseSegment.h"
+#import "UIConstants.h"
 
 @implementation BaseSegment
 
@@ -41,10 +42,10 @@
 }
 
 - (void)gender {
-    NSDictionary *attributesNormal = @{UITextAttributeFont: [UIFont fontWithName:kStandartMessageFontName size:17.0],
+    NSDictionary *attributesNormal = @{UITextAttributeFont: [UIFont fontWithName:kLatoRegular size:17.0],
                                        NSForegroundColorAttributeName: [UIColor colorWithHexValue:@"#000000" alpha:1.0]};
     
-    NSDictionary *attributesSelected = @{UITextAttributeFont: [UIFont fontWithName:kStandartMessageFontName size:17.0],
+    NSDictionary *attributesSelected = @{UITextAttributeFont: [UIFont fontWithName:kLatoRegular size:17.0],
                                          NSForegroundColorAttributeName: [UIColor colorWithHexValue:@"#ffffff" alpha:1.0]};
     
     [self setTitleTextAttributes:attributesNormal forState:UIControlStateNormal];

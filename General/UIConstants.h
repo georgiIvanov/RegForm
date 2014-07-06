@@ -12,6 +12,7 @@ extern CGFloat const CellHeight;
 // Font names
 extern NSString* const kLatoLight;
 extern NSString* const kLatoBold;
+extern NSString* const kLatoRegular;
 
 // FXForm keys for cells
 extern NSString* const kLabelFontPath;

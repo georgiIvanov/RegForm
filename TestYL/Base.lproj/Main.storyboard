@@ -92,7 +92,8 @@
                                     <constraint firstAttribute="centerX" secondItem="jLJ-3z-KJv" secondAttribute="centerX" id="8LS-nc-PjE"/>
                                     <constraint firstItem="Hok-zX-8MG" firstAttribute="leading" secondItem="GKX-Wf-LoO" secondAttribute="leading" constant="31" id="Faw-69-35u"/>
                                     <constraint firstAttribute="height" constant="280" placeholder="YES" id="H74-pi-7kD"/>
-                                    <constraint firstItem="jLJ-3z-KJv" firstAttribute="top" secondItem="GKX-Wf-LoO" secondAttribute="top" constant="105" id="Hyh-KV-6fr"/>
+                                    <constraint firstItem="jLJ-3z-KJv" firstAttribute="top" relation="greaterThanOrEqual" secondItem="GKX-Wf-LoO" secondAttribute="top" constant="105" id="Hyh-KV-6fr"/>
+                                    <constraint firstItem="Hok-zX-8MG" firstAttribute="top" secondItem="jLJ-3z-KJv" secondAttribute="bottom" priority="500" constant="87" id="T0W-KM-S9l"/>
                                     <constraint firstItem="Hok-zX-8MG" firstAttribute="height" secondItem="zPD-KJ-LKD" secondAttribute="height" id="d6c-M0-FmS"/>
                                     <constraint firstItem="Hok-zX-8MG" firstAttribute="width" secondItem="zPD-KJ-LKD" secondAttribute="width" id="h4i-88-4K2"/>
                                     <constraint firstAttribute="bottom" secondItem="Hok-zX-8MG" secondAttribute="bottom" constant="20" id="kNQ-o2-oUt"/>
@@ -151,7 +152,7 @@
                                     <constraint firstAttribute="height" constant="57" id="qyo-5H-Of7"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Mu-ys-gMv" customClass="RegisterController">
+                            <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Mu-ys-gMv" customClass="RegisterController">
                                 <rect key="frame" x="0.0" y="288" width="320" height="280"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -240,10 +241,10 @@
                             <constraint firstItem="ngo-yL-hDG" firstAttribute="leading" secondItem="5XN-dz-VPO" secondAttribute="leading" id="GT6-dr-InO"/>
                             <constraint firstItem="ngo-yL-hDG" firstAttribute="top" secondItem="5XN-dz-VPO" secondAttribute="top" id="NwE-MR-4YQ"/>
                             <constraint firstAttribute="centerX" secondItem="on1-Cy-OR2" secondAttribute="centerX" id="TNZ-vr-dsE"/>
-                            <constraint firstAttribute="bottom" secondItem="iTW-1u-9h6" secondAttribute="bottom" id="Z3S-sj-MYM"/>
+                            <constraint firstAttribute="bottom" secondItem="iTW-1u-9h6" secondAttribute="bottom" placeholder="YES" id="Z3S-sj-MYM"/>
                             <constraint firstAttribute="bottom" secondItem="ngo-yL-hDG" secondAttribute="bottom" id="c4y-vM-wv9"/>
-                            <constraint firstItem="iTW-1u-9h6" firstAttribute="leading" secondItem="5XN-dz-VPO" secondAttribute="leading" id="jV5-IQ-cPu"/>
-                            <constraint firstAttribute="trailing" secondItem="iTW-1u-9h6" secondAttribute="trailing" id="kvT-MM-wAb"/>
+                            <constraint firstItem="iTW-1u-9h6" firstAttribute="leading" secondItem="5XN-dz-VPO" secondAttribute="leading" placeholder="YES" id="jV5-IQ-cPu"/>
+                            <constraint firstAttribute="trailing" secondItem="iTW-1u-9h6" secondAttribute="trailing" placeholder="YES" id="kvT-MM-wAb"/>
                             <constraint firstAttribute="trailing" secondItem="ngo-yL-hDG" secondAttribute="trailing" id="unb-Ks-On2"/>
                         </constraints>
                     </view>

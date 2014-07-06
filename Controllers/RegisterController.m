@@ -47,7 +47,7 @@
     
     UIView* superview = self.superview;
     [self mas_makeConstraints:^(MASConstraintMaker *make){
-        make.top.equalTo(superview.mas_centerY);
+        make.top.equalTo(superview.mas_centerY).priorityLow();
     }];
 }
 

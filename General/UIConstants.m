@@ -8,8 +8,9 @@
 
 CGFloat const CellHeight = 44;
 
-NSString* const kLatoLight = @"Lato-Light";
-NSString* const kLatoBold  = @"Lato-Bold";
+NSString* const kLatoLight =   @"Lato-Light";
+NSString* const kLatoBold  =   @"Lato-Bold";
+NSString* const kLatoRegular = @"Lato-Regular";
 
 
 NSString* const kLabelFontPath =  @"textLabel.font";
