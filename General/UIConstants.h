@@ -24,3 +24,6 @@ extern NSString* const kLabelColorPath;
 extern UIFont* latoLightFont(CGFloat size);
 extern UIFont* latoBoldFont(CGFloat size);
 extern UIFont* latoRegularFont(CGFloat size);
+
+// Colors
+UIColor* formTextColor();

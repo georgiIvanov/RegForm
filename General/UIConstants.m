@@ -32,3 +32,8 @@ UIFont* latoRegularFont(CGFloat size)
 {
     return [UIFont fontWithName:kLatoRegular size:size];;
 }
+
+UIColor* formTextColor()
+{
+    return [UIColor colorWithHexValue:@"#818187" alpha:1.0];
+}

@@ -11,6 +11,7 @@
 #import "BaseMapImageOverlayView.h"
 #import "BaseSegment.h"
 #import "YLSliderValues.h"
+#import "UIConstants.h"
 
 @implementation BaseFormCells
 
@@ -250,14 +251,16 @@
 - (void)setUp
 {
     birthDayField = [[UITextField alloc] initWithFrame:CGRectMake(15, 0, self.contentView.$width/2, self.contentView.$height)];
+    birthDayField.font = latoBoldFont(14);
+    [birthDayField setTextColor:formTextColor()];
     birthDayField.delegate = self;
     
     [self.contentView addSubview:birthDayField];
     
     UILabel *title = [[UILabel alloc] init];
     title.numberOfLines = 1;
-    title.font = [UIFont fontWithName:kStandartMessageFontName size:17];
-    title.textColor = [UIColor blackColor];
+    title.font = [UIFont fontWithName:kLatoRegular size:17];
+    title.textColor = formTextColor();
     title.text = NSLocalizedString(@"Public", @"");
     
     [self.contentView addSubview:title];
@@ -305,8 +308,9 @@
 
 - (void)valueChanged
 {
-    ((YLBirthDateModel *)self.field.value).birthDate = self.birthDateSelected;
-    ((YLBirthDateModel *)self.field.value).birthDatePublic = self.birthdayPublicSwitch.on;
+    YLBirthDateModel* model = self.field.value;
+    model.birthDate = self.birthDateSelected;
+    model.birthDatePublic = self.birthdayPublicSwitch.on;
     
     if (self.field.action) self.field.action(self);
 }
@@ -362,6 +366,11 @@
     
     [UIView animateWithDuration:0.3 animations:^{
         self.birthDayPicker.$y = self.parent.$height - 260;
+    }];
+    
+    [self.birthDayPicker mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.bottom.trailing.equalTo(parent);
+        make.height.equalTo(@(self.birthDayPicker.frame.size.height));
     }];
 }
 
