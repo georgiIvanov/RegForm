@@ -7,12 +7,8 @@
 //
 
 #import "LoginController.h"
-#import <Masonry.h>
-#import <FXForms.h>
-#import <POP.h>
 #import "UIConstants.h"
 #import "LoginForm.h"
-#import "BaseFormController.h"
 
 @interface LoginController() <FXFormControllerDelegate>
 
@@ -62,20 +58,15 @@
 
 -(void)keyboardWillShow:(NSNotification*)notification
 {
-    [super animateFormUp:notification];
+    [super animateFormUp:notification bounciness:20];
 }
 
 -(void)keyboardWillHide:(NSNotification*)notification
 {
-    [super animateFormDown:notification];
+    [super animateFormDown:notification bounciness:15];
 }
 
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView
-{
-    [self.formTable scrollToRowAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:0]
-                           atScrollPosition:UITableViewScrollPositionTop
-                                   animated:NO];
-}
+
 
 -(void)reloadViews
 {

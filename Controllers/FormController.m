@@ -38,7 +38,7 @@
     self.formController.delegate = self;
 }
 
--(void)animateFormUp:(NSNotification*)notification
+-(void)animateFormUp:(NSNotification*)notification bounciness:(CGFloat)bounciness
 {
     id concreteValue = [[notification userInfo] objectForKey:UIKeyboardFrameEndUserInfoKey];
     CGRect kbRect = [concreteValue CGRectValue];
@@ -50,7 +50,7 @@
     if(self.formTableYDelta < 0 && ![self.formTable pop_animationForKey:@"movingY"])
     {
         POPSpringAnimation* animation = [POPSpringAnimation animationWithPropertyNamed:kPOPViewFrame];
-        animation.springBounciness = 20;
+        animation.springBounciness = bounciness;
         animation.springSpeed = 10;
         
         __block MASConstraint* yConstraint;
@@ -67,10 +67,10 @@
     }
 }
 
--(void)animateFormDown:(NSNotification*)notification
+-(void)animateFormDown:(NSNotification*)notification bounciness:(CGFloat)bounciness
 {
     POPSpringAnimation* animation = [POPSpringAnimation animationWithPropertyNamed:kPOPViewFrame];
-    animation.springBounciness = 15;
+    animation.springBounciness = bounciness;
     animation.springSpeed = 14;
     
     CGRect oldFrame = self.formTable.frame;
@@ -86,5 +86,12 @@
     };
     
     [self.formTable pop_addAnimation:animation forKey:@"movingY"];
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    [self.formTable scrollToRowAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:0]
+                          atScrollPosition:UITableViewScrollPositionTop
+                                  animated:NO];
 }
 @end

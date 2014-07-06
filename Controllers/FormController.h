@@ -20,7 +20,7 @@
 
 -(void)setupViews;
 
--(void)animateFormUp:(NSNotification*)notification;
--(void)animateFormDown:(NSNotification*)notification;
+-(void)animateFormUp:(NSNotification*)notification bounciness:(CGFloat)bounciness;
+-(void)animateFormDown:(NSNotification*)notification bounciness:(CGFloat)bounciness;
 
 @end
