@@ -297,9 +297,13 @@
 
 - (void)update
 {
-    self.birthDateSelected = ((YLBirthDateModel *)self.field.value).birthDate;
+    FXFormField* field = self.field;
+
+    [field setValue:[[YLBirthDateModel alloc] initWithDate:nil public:NO]];
+    YLBirthDateModel* model = self.field.value;
+    self.birthDateSelected = model.birthDate;
     
-    self.birthdayPublicSwitch.on = ((YLBirthDateModel *)self.field.value).birthDatePublic;
+    self.birthdayPublicSwitch.on = model.birthDatePublic;
     
     [self setDateFieldText];
     
@@ -308,9 +312,8 @@
 
 - (void)valueChanged
 {
-    YLBirthDateModel* model = self.field.value;
-    model.birthDate = self.birthDateSelected;
-    model.birthDatePublic = self.birthdayPublicSwitch.on;
+    ((YLBirthDateModel *)self.field.value).birthDate = self.birthDateSelected;
+    ((YLBirthDateModel *)self.field.value).birthDatePublic = self.birthdayPublicSwitch.on;
     
     if (self.field.action) self.field.action(self);
 }

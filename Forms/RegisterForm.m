@@ -10,13 +10,6 @@
 #import "UIConstants.h"
 #import "BaseSegment.h"
 
-typedef NS_ENUM(NSInteger, Gender)
-{
-    GenderMale = 1,
-    GenderFemale = 1 << 1,
-    GenderOther = 0
-};
-
 @interface RegisterForm()
 
 @property(nonatomic, weak) UIView* parent;

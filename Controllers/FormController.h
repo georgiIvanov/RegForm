@@ -22,5 +22,5 @@
 
 -(void)animateFormUp:(NSNotification*)notification bounciness:(CGFloat)bounciness;
 -(void)animateFormDown:(NSNotification*)notification bounciness:(CGFloat)bounciness;
-
+-(void)shakeForm;
 @end

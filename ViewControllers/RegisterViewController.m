@@ -8,6 +8,7 @@
 
 #import "RegisterViewController.h"
 #import "RegisterController.h"
+#import <POP.h>
 #import "UIConstants.h"
 
 @interface RegisterViewController ()
@@ -63,9 +64,18 @@
 -(void)nextButtonTap:(id)sender
 {
     [self.view endEditing:YES];
-    [self.registerController.formTable setHidden:YES];
-    [self.registerController.registerButtonContainer setHidden:NO];
-    self.navigationItem.rightBarButtonItem = nil;
+    
+    if([self.registerController validateFormFields])
+    {
+     
+        [self.registerController.formTable setHidden:YES];
+        [self.registerController.registerButtonContainer setHidden:NO];
+        self.navigationItem.rightBarButtonItem = nil;
+    }
+    else
+    {
+        [self.registerController shakeForm];
+    }
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
@@ -79,6 +89,4 @@
     [self.view endEditing:YES];
     [self.navigationController popViewControllerAnimated:YES];
 }
-
-
 @end

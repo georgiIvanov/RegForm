@@ -13,5 +13,7 @@
 @property (weak, nonatomic) IBOutlet UIView *registerButtonContainer;
 
 -(void)setupViews;
+-(BOOL)validateFormFields;
+-(void)chooseAvatar;
 
 @end

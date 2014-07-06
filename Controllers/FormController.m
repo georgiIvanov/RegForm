@@ -103,4 +103,17 @@
                           atScrollPosition:UITableViewScrollPositionTop
                                   animated:NO];
 }
+
+-(void)shakeForm
+{
+    CGFloat bounciness = 15;
+    CGFloat speed = 30;
+    
+    POPSpringAnimation* shakeForm = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerPositionX];
+    shakeForm.springBounciness = bounciness;
+    shakeForm.springSpeed = speed;
+    shakeForm.fromValue = @(self.formTable.frame.origin.x);
+    shakeForm.toValue = @([UIScreen mainScreen].bounds.size.width/2);
+    [self.formTable.layer pop_addAnimation:shakeForm forKey:@"invalidEntry"];
+}
 @end
