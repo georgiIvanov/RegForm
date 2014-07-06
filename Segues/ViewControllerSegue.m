@@ -18,13 +18,20 @@
     
     [sourceViewController.view addSubview:destinationController.view];
     
+    POPSpringAnimation *xAnim = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerPositionX];
     CALayer *layer = destinationController.view.layer;
     [layer pop_removeAllAnimations];
     
-    
-    POPSpringAnimation *xAnim = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerPositionX];
-    
-    xAnim.fromValue = @([UIScreen mainScreen].bounds.size.width);
+    if (UIDeviceOrientationIsLandscape([UIDevice currentDevice].orientation))
+    {
+        destinationController.view.frame = sourceViewController.view.frame;
+        xAnim.fromValue = @([UIScreen mainScreen].bounds.size.height);
+    }
+    else
+    {
+        xAnim.fromValue = @([UIScreen mainScreen].bounds.size.width);
+    }
+
     xAnim.springBounciness = 15;
     xAnim.springSpeed = 10;
     
