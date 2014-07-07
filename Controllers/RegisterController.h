@@ -13,8 +13,9 @@
 @property (weak, nonatomic) IBOutlet UIView *registerButtonContainer;
 @property (weak, nonatomic) IBOutlet UIButton *addPhotoButton;
 
+- (IBAction)addPhotoTapped:(id)sender;
+
 -(void)setupViews;
 -(BOOL)validateFormFields;
--(void)chooseAvatar;
 
 @end

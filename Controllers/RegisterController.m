@@ -10,10 +10,14 @@
 #import "RegisterForm.h"
 #import "UIConstants.h"
 #import "RoundedButton.h"
+#import "BaseUserAvatar.h"
 
 @interface RegisterController()
 
 @property(nonatomic, strong) RegisterForm* registerForm;
+@property(nonatomic, strong) BaseUserAvatar* userAvatar;
+@property(nonatomic, strong) NSArray* possibleImageUrls;
+@property(nonatomic, assign) NSInteger previousIndex;
 
 @end
 
@@ -25,6 +29,11 @@
     if(self)
     {
         self.formCellsCount = 5;
+        self.userAvatar = [BaseUserAvatar avatarWithSize:self.addPhotoButton.bounds.size border:0 borderPadding:0];
+        self.possibleImageUrls = @[@"http://georgi-ivanov.com/wp-content/uploads/2014/07/Flapjack-150x150.jpg",
+                                   @"http://georgi-ivanov.com/wp-content/uploads/2014/07/courage-the-cowardly-dog-complete-8-dvds-42b1-150x150.jpg",
+                                   @"http://georgi-ivanov.com/wp-content/uploads/2014/07/jake-150x150.png"];
+        self.previousIndex = -1;
     }
     return self;
 }
@@ -89,11 +98,6 @@
     return YES;
 }
 
--(void)chooseAvatar
-{
-    
-}
-
 -(BOOL)NSStringIsValidEmail:(NSString *)checkString
 {
     BOOL stricterFilter = YES;
@@ -112,6 +116,20 @@
         return YES;
     }
     return NO;
+}
+
+- (IBAction)addPhotoTapped:(id)sender
+{
+    int index = arc4random() % self.possibleImageUrls.count;
+    
+    while (index == _previousIndex) {
+       index = arc4random() % self.possibleImageUrls.count;
+    }
+    [self.userAvatar loadWithPath:self.possibleImageUrls[index] placeholder:nil complete:^(UIImage* image){
+        [self.addPhotoButton setBackgroundImage:image forState:UIControlStateHighlighted];
+        [self.addPhotoButton setBackgroundImage:image forState:UIControlStateNormal];
+    }];
+    _previousIndex = index;
 }
 
 -(void)keyboardWillShow:(NSNotification*)notification
