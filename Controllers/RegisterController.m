@@ -51,6 +51,8 @@
     [self mas_makeConstraints:^(MASConstraintMaker *make){
         make.top.equalTo(superview.mas_centerY).priorityLow();
     }];
+    
+    [self.addPhotoButton setBackgroundImage:[UIImage imageNamed:@"AddPhoto"] forState:UIControlStateHighlighted];
 }
 
 -(BOOL)validateFormFields
@@ -98,6 +100,16 @@
     NSString *emailRegex = stricterFilter ? stricterFilterString : laxString;
     NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
     return [emailTest evaluateWithObject:checkString];
+}
+
+-(BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event
+{
+    if (CGRectContainsPoint(self.bounds, point) ||
+        CGRectContainsPoint(self.addPhotoButton.frame, [self.registerButtonContainer convertPoint:point fromView:self]))
+    {
+        return YES;
+    }
+    return NO;
 }
 
 -(void)keyboardWillShow:(NSNotification*)notification

@@ -65,16 +65,15 @@
 {
     [self.view endEditing:YES];
     
-    if([self.registerController validateFormFields])
+    if(YES) //[self.registerController validateFormFields])
     {
-     
-        [self.registerController.formTable setHidden:YES];
-        [self.registerController.registerButtonContainer setHidden:NO];
+        [self.registerController hideFormDuration:0.4];
+        [self showSecondPartOfRegistration];
         self.navigationItem.rightBarButtonItem = nil;
     }
     else
     {
-        [self.registerController shakeForm];
+        [self.registerController shakeFormBounciness:15 speed:30];
     }
 }
 
@@ -89,4 +88,27 @@
     [self.view endEditing:YES];
     [self.navigationController popViewControllerAnimated:YES];
 }
+
+-(void)showSecondPartOfRegistration
+{
+    CGRect originalRect = self.registerController.registerButtonContainer.frame;
+    
+    self.registerController.registerButtonContainer.transform = CGAffineTransformScale(CGAffineTransformIdentity, 0.5, 0.5);
+    [self.registerController.registerButtonContainer setHidden:NO];
+    POPBasicAnimation* scale = [POPBasicAnimation animationWithPropertyNamed:kPOPViewScaleXY];
+    scale.duration = 0.9;
+    scale.toValue = [NSValue valueWithCGSize:CGSizeMake(1, 1)];
+    
+    POPBasicAnimation* moveYAnimation = [POPBasicAnimation animationWithPropertyNamed:kPOPLayerPositionY];
+    moveYAnimation.duration = 1.2;
+    moveYAnimation.toValue = @(originalRect.size.height/2 + originalRect.origin.y);
+    
+    [self.registerController.registerButtonContainer pop_addAnimation:moveYAnimation forKey:@"moveY"];
+    [self.registerController.registerButtonContainer pop_addAnimation:scale forKey:@"showViewAnimation"];
+}
+
+
+
+
+
 @end

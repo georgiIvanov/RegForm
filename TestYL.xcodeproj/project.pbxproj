@@ -20,6 +20,7 @@
 		FF107D3F1965E045008399DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF107D3C1965E045008399DA /* main.m */; };
 		FF107D411965E099008399DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38759825193DF4EB00A103E0 /* Main.storyboard */; };
 		FFAC89C41969AD1200258808 /* CustomFontLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAC89C31969AD1200258808 /* CustomFontLabel.m */; };
+		FFADB7F7196B0DDA00537B58 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFADB7F6196B0DDA00537B58 /* QuartzCore.framework */; };
 		FFAEAEA41967FA7800F3ABDE /* BaseForm.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAE631967FA7800F3ABDE /* BaseForm.m */; };
 		FFAEAEA51967FA7800F3ABDE /* BaseFormCells.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAE651967FA7800F3ABDE /* BaseFormCells.m */; };
 		FFAEAEA61967FA7800F3ABDE /* BaseFormController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAEAE671967FA7800F3ABDE /* BaseFormController.m */; };
@@ -98,6 +99,7 @@
 		FF107D3E1965E045008399DA /* TestYL-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestYL-Prefix.pch"; sourceTree = "<group>"; };
 		FFAC89C21969AD1200258808 /* CustomFontLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomFontLabel.h; sourceTree = "<group>"; };
 		FFAC89C31969AD1200258808 /* CustomFontLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomFontLabel.m; sourceTree = "<group>"; };
+		FFADB7F6196B0DDA00537B58 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		FFAEAE621967FA7800F3ABDE /* BaseForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseForm.h; sourceTree = "<group>"; };
 		FFAEAE631967FA7800F3ABDE /* BaseForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseForm.m; sourceTree = "<group>"; };
 		FFAEAE641967FA7800F3ABDE /* BaseFormCells.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseFormCells.h; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFADB7F7196B0DDA00537B58 /* QuartzCore.framework in Frameworks */,
 				38759816193DF4EB00A103E0 /* CoreGraphics.framework in Frameworks */,
 				38759818193DF4EB00A103E0 /* UIKit.framework in Frameworks */,
 				38759814193DF4EB00A103E0 /* Foundation.framework in Frameworks */,
@@ -241,6 +244,7 @@
 		38759812193DF4EB00A103E0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FFADB7F6196B0DDA00537B58 /* QuartzCore.framework */,
 				38759813193DF4EB00A103E0 /* Foundation.framework */,
 				38759815193DF4EB00A103E0 /* CoreGraphics.framework */,
 				38759817193DF4EB00A103E0 /* UIKit.framework */,

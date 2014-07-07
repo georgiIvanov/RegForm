@@ -154,62 +154,70 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Mu-ys-gMv" customClass="RegisterController">
                                 <rect key="frame" x="0.0" y="288" width="320" height="280"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="280" placeholder="YES" id="zIq-by-7ua"/>
-                                </constraints>
-                                <connections>
-                                    <outlet property="registerButtonContainer" destination="adb-Vd-pz2" id="AqH-d6-itA"/>
-                                </connections>
-                            </view>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="adb-Vd-pz2">
-                                <rect key="frame" x="40" y="131" width="241" height="412"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AddPhoto.png" translatesAutoresizingMaskIntoConstraints="NO" id="GDM-qw-K5X">
-                                        <rect key="frame" x="56" y="20" width="128" height="128"/>
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="adb-Vd-pz2">
+                                        <rect key="frame" x="40" y="-157" width="241" height="412"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jkC-Xt-EKR" customClass="RoundedButton">
+                                                <rect key="frame" x="58" y="20" width="128" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="128" id="0uu-KY-lL0"/>
+                                                    <constraint firstAttribute="height" constant="128" id="7Mb-Xd-Jvi"/>
+                                                </constraints>
+                                                <state key="normal" backgroundImage="AddPhoto.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Add Photo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6mr-PP-aeA" customClass="CustomFontLabel">
+                                                <rect key="frame" x="54" y="156" width="134" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T23-uF-rC5" customClass="RoundedButton">
+                                                <rect key="frame" x="20" y="289" width="201" height="38"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="38" id="HNA-ot-shR"/>
+                                                    <constraint firstAttribute="height" constant="38" id="Yic-bs-kGX"/>
+                                                    <constraint firstAttribute="width" constant="201" id="bpU-Ek-RAd"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="201" id="lsn-63-h2m"/>
+                                                </constraints>
+                                                <state key="normal" title="Register" backgroundImage="RoundedRectButton.png">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="loginTapped:" destination="GKX-Wf-LoO" eventType="touchUpInside" id="OjK-X8-5hl"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="128" id="0wT-Nk-dIJ"/>
-                                            <constraint firstAttribute="width" constant="128" id="7i3-ap-vc8"/>
+                                            <constraint firstAttribute="height" constant="412" id="04X-Ri-z0y"/>
+                                            <constraint firstItem="jkC-Xt-EKR" firstAttribute="leading" secondItem="adb-Vd-pz2" secondAttribute="leading" constant="58" id="82J-vm-DJq"/>
+                                            <constraint firstAttribute="centerX" secondItem="6mr-PP-aeA" secondAttribute="centerX" id="83z-yg-1N2"/>
+                                            <constraint firstAttribute="trailing" secondItem="T23-uF-rC5" secondAttribute="trailing" constant="20" id="CrR-87-cDT"/>
+                                            <constraint firstItem="T23-uF-rC5" firstAttribute="leading" secondItem="adb-Vd-pz2" secondAttribute="leading" constant="20" id="HQi-hy-dla"/>
+                                            <constraint firstItem="jkC-Xt-EKR" firstAttribute="top" secondItem="adb-Vd-pz2" secondAttribute="top" constant="20" id="f8z-iP-juq"/>
+                                            <constraint firstItem="6mr-PP-aeA" firstAttribute="top" secondItem="jkC-Xt-EKR" secondAttribute="bottom" constant="8" id="fBL-FI-Bsj"/>
+                                            <constraint firstAttribute="bottom" secondItem="T23-uF-rC5" secondAttribute="bottom" constant="85" id="pQH-Mm-b5W"/>
                                         </constraints>
-                                    </imageView>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Add Photo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6mr-PP-aeA" customClass="CustomFontLabel">
-                                        <rect key="frame" x="54" y="156" width="134" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T23-uF-rC5" customClass="RoundedButton">
-                                        <rect key="frame" x="20" y="289" width="201" height="38"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="38" id="HNA-ot-shR"/>
-                                            <constraint firstAttribute="height" constant="38" id="Yic-bs-kGX"/>
-                                            <constraint firstAttribute="width" constant="201" id="bpU-Ek-RAd"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="201" id="lsn-63-h2m"/>
-                                        </constraints>
-                                        <state key="normal" title="Register" backgroundImage="RoundedRectButton.png">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="loginTapped:" destination="GKX-Wf-LoO" eventType="touchUpInside" id="OjK-X8-5hl"/>
-                                        </connections>
-                                    </button>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="412" id="04X-Ri-z0y"/>
-                                    <constraint firstAttribute="centerX" secondItem="6mr-PP-aeA" secondAttribute="centerX" id="83z-yg-1N2"/>
-                                    <constraint firstAttribute="trailing" secondItem="T23-uF-rC5" secondAttribute="trailing" constant="20" id="CrR-87-cDT"/>
-                                    <constraint firstItem="6mr-PP-aeA" firstAttribute="top" secondItem="GDM-qw-K5X" secondAttribute="bottom" constant="8" id="Gxk-UD-Iz7"/>
-                                    <constraint firstItem="T23-uF-rC5" firstAttribute="leading" secondItem="adb-Vd-pz2" secondAttribute="leading" constant="20" id="HQi-hy-dla"/>
-                                    <constraint firstItem="GDM-qw-K5X" firstAttribute="top" secondItem="adb-Vd-pz2" secondAttribute="top" constant="20" id="kbx-lk-ecX"/>
-                                    <constraint firstItem="GDM-qw-K5X" firstAttribute="leading" secondItem="adb-Vd-pz2" secondAttribute="leading" constant="56" id="m5f-cA-Ccc"/>
-                                    <constraint firstAttribute="bottom" secondItem="T23-uF-rC5" secondAttribute="bottom" constant="85" id="pQH-Mm-b5W"/>
+                                    <constraint firstAttribute="bottom" secondItem="adb-Vd-pz2" secondAttribute="bottom" constant="25" id="58a-6a-p29"/>
+                                    <constraint firstAttribute="centerX" secondItem="adb-Vd-pz2" secondAttribute="centerX" id="aHh-BG-0bW"/>
+                                    <constraint firstAttribute="height" constant="280" placeholder="YES" id="zIq-by-7ua"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="addPhotoButton" destination="jkC-Xt-EKR" id="fd7-4L-5zw"/>
+                                    <outlet property="registerButtonContainer" destination="adb-Vd-pz2" id="AqH-d6-itA"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -220,11 +228,8 @@
                             <constraint firstItem="GGT-SM-Uop" firstAttribute="leading" secondItem="iCL-3g-aLQ" secondAttribute="leading" id="ITV-fE-q0W"/>
                             <constraint firstAttribute="trailing" secondItem="GGT-SM-Uop" secondAttribute="trailing" id="O0s-Qk-vP1"/>
                             <constraint firstAttribute="trailing" secondItem="9Mu-ys-gMv" secondAttribute="trailing" id="OoR-0L-0qA"/>
-                            <constraint firstAttribute="trailing" secondItem="adb-Vd-pz2" secondAttribute="trailing" constant="39" id="T1i-FB-Mtp"/>
-                            <constraint firstItem="adb-Vd-pz2" firstAttribute="leading" secondItem="iCL-3g-aLQ" secondAttribute="leading" constant="40" id="T4J-7y-J9f"/>
                             <constraint firstAttribute="bottom" secondItem="GGT-SM-Uop" secondAttribute="bottom" id="TS0-PK-XWg"/>
                             <constraint firstAttribute="centerX" secondItem="X4p-p9-xKm" secondAttribute="centerX" id="b80-Qv-NUD"/>
-                            <constraint firstItem="adb-Vd-pz2" firstAttribute="top" secondItem="X4p-p9-xKm" secondAttribute="bottom" constant="8" id="eGG-bX-1C1"/>
                             <constraint firstAttribute="bottom" secondItem="9Mu-ys-gMv" secondAttribute="bottom" id="qyW-9H-hIf"/>
                         </constraints>
                     </view>

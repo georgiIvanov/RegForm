@@ -104,16 +104,24 @@
                                   animated:NO];
 }
 
--(void)shakeForm
+-(void)shakeFormBounciness:(CGFloat)bounciness speed:(CGFloat)speed
 {
-    CGFloat bounciness = 15;
-    CGFloat speed = 30;
-    
     POPSpringAnimation* shakeForm = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerPositionX];
     shakeForm.springBounciness = bounciness;
     shakeForm.springSpeed = speed;
     shakeForm.fromValue = @(self.formTable.frame.origin.x);
     shakeForm.toValue = @([UIScreen mainScreen].bounds.size.width/2);
     [self.formTable.layer pop_addAnimation:shakeForm forKey:@"invalidEntry"];
+}
+
+-(void)hideFormDuration:(CFTimeInterval)duration
+{
+    POPBasicAnimation* scaleForm = [POPBasicAnimation animationWithPropertyNamed:kPOPViewScaleXY];
+    scaleForm.toValue = [NSValue valueWithCGSize:CGSizeMake(0, 0)];
+    scaleForm.duration = duration;
+    scaleForm.completionBlock = ^(POPAnimation* animation, BOOL finished){
+        [self.formTable setHidden:YES];
+    };
+    [self.formTable pop_addAnimation:scaleForm forKey:@"hideAnimation"];
 }
 @end

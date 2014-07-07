@@ -11,6 +11,7 @@
 @interface RegisterController : FormController
 
 @property (weak, nonatomic) IBOutlet UIView *registerButtonContainer;
+@property (weak, nonatomic) IBOutlet UIButton *addPhotoButton;
 
 -(void)setupViews;
 -(BOOL)validateFormFields;
