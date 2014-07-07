@@ -9,6 +9,7 @@
 #import "RegisterController.h"
 #import "RegisterForm.h"
 #import "UIConstants.h"
+#import "RoundedButton.h"
 
 @interface RegisterController()
 
@@ -53,6 +54,7 @@
     }];
     
     [self.addPhotoButton setBackgroundImage:[UIImage imageNamed:@"AddPhoto"] forState:UIControlStateHighlighted];
+    [((RoundedButton* )self.addPhotoButton) setScalingTouchDownX:1.4 downY:1.4 touchUpX:1.1 upY:1.1];
 }
 
 -(BOOL)validateFormFields

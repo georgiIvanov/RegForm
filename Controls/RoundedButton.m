@@ -16,6 +16,11 @@
 - (void)scaleToFullSize;
 - (void)scaleToDefault;
 
+@property(nonatomic, assign) CGFloat touchDownXScale;
+@property(nonatomic, assign) CGFloat touchDownYScale;
+@property(nonatomic, assign) CGFloat touchUpXScale;
+@property(nonatomic, assign) CGFloat touchUpYScale;
+
 @end
 
 @implementation RoundedButton
@@ -24,9 +29,21 @@
 {
     self = [super initWithCoder:aDecoder];
     if (self) {
+        _touchDownXScale = 0;
+        _touchDownYScale = 0;
+        _touchUpXScale   = 0;
+        _touchUpYScale   = 0;
         [self setup];
     }
     return self;
+}
+
+-(void)setScalingTouchDownX:(CGFloat)xDown downY:(CGFloat)yDown touchUpX:(CGFloat)xUp upY:(CGFloat)yUp
+{
+    _touchDownXScale = xDown;
+    _touchDownYScale = yDown;
+    _touchUpXScale = xUp;
+    _touchUpYScale = yUp;
 }
 
 - (void)setup
@@ -42,7 +59,10 @@
 - (void)scaleToSmall
 {
     POPBasicAnimation *scaleAnimation = [POPBasicAnimation animationWithPropertyNamed:kPOPLayerScaleXY];
-    scaleAnimation.toValue = [NSValue valueWithCGSize:CGSizeMake(0.93f, 0.95f)];
+    scaleAnimation.toValue = [NSValue valueWithCGSize:CGSizeMake(
+                                                                 _touchDownXScale ? _touchDownXScale : 0.93f,
+                                                                 _touchDownYScale ? _touchDownYScale : 0.95f
+                                                                 )];
     scaleAnimation.duration = 0.1f;
     [self.layer pop_addAnimation:scaleAnimation forKey:@"layerScaleSmallAnimation"];
 }
@@ -51,7 +71,10 @@
 {
     POPSpringAnimation *scaleAnimation = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerScaleXY];
     scaleAnimation.velocity = [NSValue valueWithCGSize:CGSizeMake(3.f, 3.f)];
-    scaleAnimation.toValue = [NSValue valueWithCGSize:CGSizeMake(1.f, 1.f)];
+    scaleAnimation.toValue = [NSValue valueWithCGSize:CGSizeMake(
+                                                                 _touchUpXScale ? _touchUpXScale : 1.f,
+                                                                 _touchUpYScale ? _touchUpYScale : 1.f
+                                                                 )];
     scaleAnimation.springBounciness = 8.0f;
     scaleAnimation.springSpeed = 15;
     [self.layer pop_addAnimation:scaleAnimation forKey:@"layerScaleSpringAnimation"];

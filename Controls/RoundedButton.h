@@ -10,4 +10,6 @@
 
 @interface RoundedButton : UIButton
 
+-(void)setScalingTouchDownX:(CGFloat)xDown downY:(CGFloat)yDown touchUpX:(CGFloat)xUp upY:(CGFloat)yUp;
+
 @end
