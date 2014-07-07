@@ -8,6 +8,7 @@
 
 #import "RecoverPasswordViewController.h"
 #import "PasswordRecoveryController.h"
+#import "UIConstants.h"
 
 @interface RecoverPasswordViewController ()
 
@@ -37,12 +38,7 @@
 {
     [self.recoveryController setupViews];
     
-    UIButton* btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [btn setImage:[UIImage imageNamed:@"BackNavButton"] forState:UIControlStateNormal];
-    [btn setFrame:CGRectMake(0, 0, 30, 30)];
-    [btn addTarget:self action:@selector(popViewController) forControlEvents:UIControlEventTouchUpInside];
-    self.navigationItem.leftBarButtonItem =
-    [[UIBarButtonItem alloc] initWithCustomView:btn];
+    self.navigationItem.leftBarButtonItem = navigationBackButton(self, @selector(popViewController));
 }
 
 -(void)viewDidLayoutSubviews

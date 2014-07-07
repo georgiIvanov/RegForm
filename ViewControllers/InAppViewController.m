@@ -7,6 +7,7 @@
 //
 
 #import "InAppViewController.h"
+#import "UIConstants.h"
 
 @interface InAppViewController ()
 
@@ -26,6 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.navigationItem.leftBarButtonItem = navigationBackButton(self, @selector(popViewController));
     // Do any additional setup after loading the view.
 }
 
@@ -35,6 +37,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)popViewController
+{
+    [self.view endEditing:YES];
+    [self.navigationController popViewControllerAnimated:YES];
+}
 /*
 #pragma mark - Navigation
 

@@ -128,10 +128,10 @@
             </objects>
             <point key="canvasLocation" x="214" y="138"/>
         </scene>
-        <!--View Controller-->
+        <!--In App View Controller-->
         <scene sceneID="pRo-of-qjq">
             <objects>
-                <viewController id="Meo-ih-Vog" sceneMemberID="viewController">
+                <viewController id="Meo-ih-Vog" customClass="InAppViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Rhn-vl-qQD"/>
                         <viewControllerLayoutGuide type="bottom" id="7uo-qJ-DUe"/>
@@ -139,7 +139,38 @@
                     <view key="view" contentMode="scaleToFill" id="V3L-dj-an3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreenClear.png" translatesAutoresizingMaskIntoConstraints="NO" id="hux-QI-BqV">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YouLocalBackgroundLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="wh3-DI-Fpz">
+                                <rect key="frame" x="50" y="66" width="221" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="0O1-m7-Y4M"/>
+                                    <constraint firstAttribute="width" constant="221" id="M31-3F-2wk"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTG-fO-Rbf" customClass="CustomFontLabel">
+                                <rect key="frame" x="122" y="148" width="76" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="hux-QI-BqV" secondAttribute="bottom" id="NBv-pM-D8o"/>
+                            <constraint firstItem="hux-QI-BqV" firstAttribute="leading" secondItem="V3L-dj-an3" secondAttribute="leading" id="VwE-cB-MAg"/>
+                            <constraint firstItem="wh3-DI-Fpz" firstAttribute="top" secondItem="V3L-dj-an3" secondAttribute="top" constant="66" id="bDn-QQ-x5p"/>
+                            <constraint firstItem="hux-QI-BqV" firstAttribute="top" secondItem="V3L-dj-an3" secondAttribute="top" id="dch-xF-6sf"/>
+                            <constraint firstAttribute="centerX" secondItem="wh3-DI-Fpz" secondAttribute="centerX" id="ghA-Hb-O9C"/>
+                            <constraint firstItem="UTG-fO-Rbf" firstAttribute="top" secondItem="wh3-DI-Fpz" secondAttribute="bottom" constant="25" id="l75-CK-nBN"/>
+                            <constraint firstAttribute="trailing" secondItem="hux-QI-BqV" secondAttribute="trailing" id="nTw-pL-qQF"/>
+                            <constraint firstItem="UTG-fO-Rbf" firstAttribute="centerX" secondItem="wh3-DI-Fpz" secondAttribute="centerX" id="wqS-bv-yHn"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9RW-rR-sEs" userLabel="First Responder" sceneMemberID="firstResponder"/>

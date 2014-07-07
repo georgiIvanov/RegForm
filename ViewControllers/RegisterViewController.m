@@ -38,12 +38,7 @@
 -(void)setupViews
 {
     [self.registerController setupViews];
-    UIButton* backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [backBtn setImage:[UIImage imageNamed:@"BackNavButton"] forState:UIControlStateNormal];
-    [backBtn setFrame:CGRectMake(0, 0, 30, 30)];
-    [backBtn addTarget:self action:@selector(popViewController) forControlEvents:UIControlEventTouchUpInside];
-    self.navigationItem.leftBarButtonItem =
-    [[UIBarButtonItem alloc] initWithCustomView:backBtn];
+    self.navigationItem.leftBarButtonItem = navigationBackButton(self, @selector(popViewController));
     
     UIButton* nextBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [nextBtn setTitle:@"Next" forState:UIControlStateNormal];
