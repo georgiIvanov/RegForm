@@ -95,6 +95,7 @@
 
 -(void)showSecondPartOfRegistration
 {
+    [self.registerController.formTable removeFromSuperview];
     CGRect originalRect = self.registerController.registerButtonContainer.frame;
     
     self.registerController.registerButtonContainer.transform = CGAffineTransformScale(CGAffineTransformIdentity, 0.5, 0.5);

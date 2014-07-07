@@ -68,6 +68,7 @@
 		FFAFF59019693BB200082D42 /* RegisterForm.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAFF58F19693BB200082D42 /* RegisterForm.m */; };
 		FFAFF593196944D100082D42 /* FormController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAFF592196944D100082D42 /* FormController.m */; };
 		FFAFF59719694C6D00082D42 /* RegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAFF59619694C6D00082D42 /* RegisterController.m */; };
+		FFC19971196B51B600FD7C26 /* InAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC19970196B51B600FD7C26 /* InAppViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -185,6 +186,8 @@
 		FFAFF592196944D100082D42 /* FormController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormController.m; sourceTree = "<group>"; };
 		FFAFF59519694C6D00082D42 /* RegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterController.h; sourceTree = "<group>"; };
 		FFAFF59619694C6D00082D42 /* RegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterController.m; sourceTree = "<group>"; };
+		FFC1996F196B51B600FD7C26 /* InAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppViewController.h; sourceTree = "<group>"; };
+		FFC19970196B51B600FD7C26 /* InAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAppViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -392,6 +395,8 @@
 				FFAEAEF71968A44500F3ABDE /* RegisterViewController.m */,
 				FFAEAEA21967FA7800F3ABDE /* NavigationViewController.h */,
 				FFAEAEA31967FA7800F3ABDE /* NavigationViewController.m */,
+				FFC1996F196B51B600FD7C26 /* InAppViewController.h */,
+				FFC19970196B51B600FD7C26 /* InAppViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -600,6 +605,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFAEAECD196813FE00F3ABDE /* UIConstants.m in Sources */,
+				FFC19971196B51B600FD7C26 /* InAppViewController.m in Sources */,
 				FFAEAEAE1967FA7800F3ABDE /* BBlock.m in Sources */,
 				FFAEAEEB19686FCF00F3ABDE /* RecoverPasswordViewController.m in Sources */,
 				FFAEAEB51967FA7800F3ABDE /* YLColors.m in Sources */,

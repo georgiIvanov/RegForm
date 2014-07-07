@@ -72,6 +72,7 @@
                                         </state>
                                         <connections>
                                             <action selector="loginTapped:" destination="GKX-Wf-LoO" eventType="touchUpInside" id="qJD-vR-Ffb"/>
+                                            <segue destination="Meo-ih-Vog" kind="custom" customClass="ViewControllerSegue" id="c3M-Rl-Rir"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hok-zX-8MG">
@@ -126,6 +127,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="214" y="138"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="pRo-of-qjq">
+            <objects>
+                <viewController id="Meo-ih-Vog" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rhn-vl-qQD"/>
+                        <viewControllerLayoutGuide type="bottom" id="7uo-qJ-DUe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="V3L-dj-an3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9RW-rR-sEs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="929" y="122"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="HjD-lt-27B">
@@ -195,6 +214,7 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="loginTapped:" destination="GKX-Wf-LoO" eventType="touchUpInside" id="OjK-X8-5hl"/>
+                                                    <segue destination="Meo-ih-Vog" kind="custom" customClass="ViewControllerSegue" id="oes-9W-IRY"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -335,4 +355,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="oes-9W-IRY"/>
+    </inferredMetricsTieBreakers>
 </document>
