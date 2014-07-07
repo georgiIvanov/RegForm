@@ -122,6 +122,7 @@
     scaleForm.completionBlock = ^(POPAnimation* animation, BOOL finished){
         [self.formTable setHidden:YES];
     };
+    [self.formTable pop_removeAllAnimations];
     [self.formTable pop_addAnimation:scaleForm forKey:@"hideAnimation"];
 }
 @end

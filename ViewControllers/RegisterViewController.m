@@ -63,6 +63,10 @@
 
 -(void)nextButtonTap:(id)sender
 {
+    if([self.registerController.formTable pop_animationKeys].count > 0)
+    {
+        return;
+    }
     [self.view endEditing:YES];
     
     if(YES) //[self.registerController validateFormFields])
