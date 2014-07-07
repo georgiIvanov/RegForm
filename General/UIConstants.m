@@ -37,3 +37,12 @@ UIColor* formTextColor()
 {
     return [UIColor colorWithHexValue:@"#818187" alpha:1.0];
 }
+
+UIBarButtonItem* navigationBackButton(id target, SEL onTouch)
+{
+    UIButton* backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [backBtn setImage:[UIImage imageNamed:@"BackNavButton"] forState:UIControlStateNormal];
+    [backBtn setFrame:CGRectMake(0, 0, 30, 30)];
+    [backBtn addTarget:target action:onTouch forControlEvents:UIControlEventTouchUpInside];
+    return [[UIBarButtonItem alloc] initWithCustomView:backBtn];
+}

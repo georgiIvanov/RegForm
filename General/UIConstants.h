@@ -26,4 +26,7 @@ extern UIFont* latoBoldFont(CGFloat size);
 extern UIFont* latoRegularFont(CGFloat size);
 
 // Colors
-UIColor* formTextColor();
+extern UIColor* formTextColor();
+
+// Buttons
+extern UIBarButtonItem* navigationBackButton(id target, SEL onTouch);
