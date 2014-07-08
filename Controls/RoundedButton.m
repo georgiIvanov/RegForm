@@ -58,6 +58,7 @@
 
 - (void)scaleToSmall
 {
+    [self.layer pop_removeAllAnimations];
     POPBasicAnimation *scaleAnimation = [POPBasicAnimation animationWithPropertyNamed:kPOPLayerScaleXY];
     scaleAnimation.toValue = [NSValue valueWithCGSize:CGSizeMake(
                                                                  _touchDownXScale ? _touchDownXScale : 0.93f,
@@ -69,6 +70,7 @@
 
 - (void)scaleToFullSize
 {
+    [self.layer pop_removeAllAnimations];
     POPSpringAnimation *scaleAnimation = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerScaleXY];
     scaleAnimation.velocity = [NSValue valueWithCGSize:CGSizeMake(3.f, 3.f)];
     scaleAnimation.toValue = [NSValue valueWithCGSize:CGSizeMake(

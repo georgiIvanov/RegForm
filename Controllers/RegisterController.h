@@ -7,11 +7,12 @@
 //
 
 #import "FormController.h"
+#import "RoundedButton.h"
 
 @interface RegisterController : FormController
 
 @property (weak, nonatomic) IBOutlet UIView *registerButtonContainer;
-@property (weak, nonatomic) IBOutlet UIButton *addPhotoButton;
+@property (weak, nonatomic) IBOutlet RoundedButton *addPhotoButton;
 
 - (IBAction)addPhotoTapped:(id)sender;
 

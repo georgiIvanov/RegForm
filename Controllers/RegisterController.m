@@ -9,7 +9,6 @@
 #import "RegisterController.h"
 #import "RegisterForm.h"
 #import "UIConstants.h"
-#import "RoundedButton.h"
 #import "BaseUserAvatar.h"
 
 @interface RegisterController()
@@ -29,7 +28,6 @@
     if(self)
     {
         self.formCellsCount = 5;
-        self.userAvatar = [BaseUserAvatar avatarWithSize:self.addPhotoButton.bounds.size border:0 borderPadding:0];
         self.possibleImageUrls = @[@"http://georgi-ivanov.com/wp-content/uploads/2014/07/Flapjack-150x150.jpg",
                                    @"http://georgi-ivanov.com/wp-content/uploads/2014/07/courage-the-cowardly-dog-complete-8-dvds-42b1-150x150.jpg",
                                    @"http://georgi-ivanov.com/wp-content/uploads/2014/07/jake-150x150.png"];
@@ -62,8 +60,9 @@
         make.top.equalTo(superview.mas_centerY).priorityLow();
     }];
     
+    self.userAvatar = [BaseUserAvatar avatarWithSize:self.addPhotoButton.bounds.size border:0 borderPadding:0];
     [self.addPhotoButton setBackgroundImage:[UIImage imageNamed:@"AddPhoto"] forState:UIControlStateHighlighted];
-    [((RoundedButton* )self.addPhotoButton) setScalingTouchDownX:1.4 downY:1.4 touchUpX:1.1 upY:1.1];
+    [((RoundedButton* )self.addPhotoButton) setScalingTouchDownX:1.3 downY:1.3 touchUpX:0.9 upY:0.9];
 }
 
 -(BOOL)validateFormFields
@@ -126,8 +125,8 @@
        index = arc4random() % self.possibleImageUrls.count;
     }
     [self.userAvatar loadWithPath:self.possibleImageUrls[index] placeholder:nil complete:^(UIImage* image){
-        [self.addPhotoButton setBackgroundImage:image forState:UIControlStateHighlighted];
         [self.addPhotoButton setBackgroundImage:image forState:UIControlStateNormal];
+        [self.addPhotoButton setBackgroundImage:image forState:UIControlStateHighlighted];
     }];
     _previousIndex = index;
 }

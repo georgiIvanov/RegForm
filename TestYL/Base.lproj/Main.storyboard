@@ -224,7 +224,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Add Photo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6mr-PP-aeA" customClass="CustomFontLabel">
-                                                <rect key="frame" x="54" y="156" width="134" height="21"/>
+                                                <rect key="frame" x="54" y="165" width="134" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -252,12 +252,12 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="412" id="04X-Ri-z0y"/>
-                                            <constraint firstItem="jkC-Xt-EKR" firstAttribute="leading" secondItem="adb-Vd-pz2" secondAttribute="leading" constant="58" id="82J-vm-DJq"/>
+                                            <constraint firstItem="jkC-Xt-EKR" firstAttribute="leading" secondItem="adb-Vd-pz2" secondAttribute="leading" constant="58" placeholder="YES" id="82J-vm-DJq"/>
                                             <constraint firstAttribute="centerX" secondItem="6mr-PP-aeA" secondAttribute="centerX" id="83z-yg-1N2"/>
                                             <constraint firstAttribute="trailing" secondItem="T23-uF-rC5" secondAttribute="trailing" constant="20" id="CrR-87-cDT"/>
                                             <constraint firstItem="T23-uF-rC5" firstAttribute="leading" secondItem="adb-Vd-pz2" secondAttribute="leading" constant="20" id="HQi-hy-dla"/>
-                                            <constraint firstItem="jkC-Xt-EKR" firstAttribute="top" secondItem="adb-Vd-pz2" secondAttribute="top" constant="20" id="f8z-iP-juq"/>
-                                            <constraint firstItem="6mr-PP-aeA" firstAttribute="top" secondItem="jkC-Xt-EKR" secondAttribute="bottom" constant="8" id="fBL-FI-Bsj"/>
+                                            <constraint firstItem="jkC-Xt-EKR" firstAttribute="top" secondItem="adb-Vd-pz2" secondAttribute="top" constant="20" placeholder="YES" id="f8z-iP-juq"/>
+                                            <constraint firstItem="6mr-PP-aeA" firstAttribute="top" secondItem="jkC-Xt-EKR" secondAttribute="bottom" constant="17" id="fBL-FI-Bsj"/>
                                             <constraint firstAttribute="bottom" secondItem="T23-uF-rC5" secondAttribute="bottom" constant="85" id="pQH-Mm-b5W"/>
                                         </constraints>
                                     </view>
