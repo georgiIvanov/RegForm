@@ -10,6 +10,8 @@
 #import "LoginController.h"
 #import "AccountService.h"
 #import "RegisterViewController.h"
+#import "InAppViewController.h"
+#import "UserAccount.h"
 
 @interface LoginViewController ()
 
@@ -58,6 +60,18 @@
 -(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     [self.view endEditing:YES];
+}
+
+- (IBAction)loginTapped:(id)sender
+{
+    [self.accountService loginUser:[self.loginController userAccount] onSuccess:^(UserAccount *user) {
+
+        [self performSegueWithIdentifier:@"inAppSegue" sender:self];
+        [self.loginController clearForm];
+        
+    } onFailure:^(UserAccount *user, NSDictionary *error) {
+        [self.loginController shakeFormBounciness:15 speed:30];
+    }];
 }
 
 /*

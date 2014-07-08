@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "FormController.h"
+#import "UserAccount.h"
 
 @interface LoginController : FormController
 
@@ -15,8 +16,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;
 @property (weak, nonatomic) IBOutlet UIButton *signUpButton;
 
-- (IBAction)loginTapped:(id)sender;
-
 -(void)setupViews;
 -(void)reloadViews;
+-(UserAccount*)userAccount;
+
 @end

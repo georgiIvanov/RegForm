@@ -66,17 +66,25 @@
     [super animateFormDown:notification bounciness:15];
 }
 
-
-
 -(void)reloadViews
 {
     [self.formTable reloadData];
 }
 
-- (IBAction)loginTapped:(id)sender
+-(UserAccount*)userAccount
 {
-//    NSString* email = self.loginForm.email;
-//    NSString* password = self.loginForm.password;
+    UserAccount* user = [[UserAccount alloc] init];
+    user.email = self.loginForm.email;
+    user.password = self.loginForm.password;
+    
+    return user;
+}
+
+-(void)clearForm
+{
+    self.loginForm.email = @"";
+    self.loginForm.password = @"";
+    [self.formTable reloadData];
 }
 
 @end

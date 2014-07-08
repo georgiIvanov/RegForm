@@ -36,7 +36,30 @@ static NSString* const kGenderKey = @"gender";
 
 -(void)loginUser:(UserAccount*)user onSuccess:(void (^)(UserAccount* user))onSuccess onFailure:(void (^)(UserAccount* user, NSDictionary* error))onError
 {
+    NSDictionary* userDict = [self.userDefaults objectForKey:user.email];
+    if(userDict == nil)
+    {
+        onError(user, @{@"error": @"No such user"});
+        return;
+    }
     
+    UserAccount* userFound = [[UserAccount alloc] init];
+    userFound.password = [userDict objectForKey:kPasswordKey];
+    
+    if(![userFound.password isEqualToString:user.password])
+    {
+        onError(user, @{@"error": @"Wrong password"});
+        return;
+    }
+    
+    userFound.email = [userDict objectForKey:kEmailKey];
+    userFound.name = [userDict objectForKey:kNameKey];
+    userFound.avatarUrl = [userDict objectForKey:kAvatarKey];
+    userFound.birthDate = [userDict objectForKey:kBirthDateKey];
+    userFound.birthDatePublic = [[userDict objectForKey:kBirthDatePublicKey] boolValue];
+    userFound.gender = [[userDict objectForKey:kGenderKey] integerValue];
+    
+    onSuccess(userFound);
 }
 
 -(void)registerUser:(UserAccount*)user onSuccess:(void (^)(UserAccount* user))onSuccess onFailure:(void (^)(UserAccount* user, NSDictionary* error))onError

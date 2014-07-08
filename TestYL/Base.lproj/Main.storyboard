@@ -71,8 +71,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="loginTapped:" destination="GKX-Wf-LoO" eventType="touchUpInside" id="qJD-vR-Ffb"/>
-                                            <segue destination="Meo-ih-Vog" kind="custom" customClass="ViewControllerSegue" id="c3M-Rl-Rir"/>
+                                            <action selector="loginTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="p0K-4Q-5fz"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hok-zX-8MG">
@@ -122,11 +121,12 @@
                     <navigationItem key="navigationItem" id="8u9-eC-kyg"/>
                     <connections>
                         <outlet property="loginController" destination="GKX-Wf-LoO" id="50n-In-AkI"/>
+                        <segue destination="Meo-ih-Vog" kind="custom" identifier="inAppSegue" customClass="ViewControllerSegue" id="MS3-bU-dOz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="214" y="138"/>
+            <point key="canvasLocation" x="175" y="85"/>
         </scene>
         <!--In App View Controller-->
         <scene sceneID="pRo-of-qjq">
@@ -388,6 +388,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="U4E-sB-Rtp"/>
+        <segue reference="MS3-bU-dOz"/>
     </inferredMetricsTieBreakers>
 </document>

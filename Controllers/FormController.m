@@ -38,6 +38,11 @@
     self.formController.delegate = self;
 }
 
+-(void)clearForm
+{
+    
+}
+
 -(void)animateFormUp:(NSNotification*)notification bounciness:(CGFloat)bounciness
 {
     id concreteValue = [[notification userInfo] objectForKey:UIKeyboardFrameEndUserInfoKey];

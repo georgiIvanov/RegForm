@@ -145,7 +145,7 @@
     user.birthDate = date.birthDate;
     user.birthDatePublic = date.birthDatePublic;
     user.avatarUrl = self.userAvatarUrl;
-    user.gender = [((NSNumber*)self.registerForm.gender)integerValue];
+    user.gender = [((NSNumber*)self.registerForm.gender)integerValue] - 1;
     
     return user;
 }

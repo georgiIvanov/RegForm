@@ -19,6 +19,7 @@
 @property(nonatomic, assign) CGFloat formTableYDelta;
 
 -(void)setupViews;
+-(void)clearForm;
 
 -(void)animateFormUp:(NSNotification*)notification bounciness:(CGFloat)bounciness;
 -(void)animateFormDown:(NSNotification*)notification bounciness:(CGFloat)bounciness;
