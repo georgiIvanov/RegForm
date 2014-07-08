@@ -13,6 +13,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [self resolveKeyboardLagOnInitialLoad];    
     return YES;
 }
 							
@@ -41,6 +42,15 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+-(void)resolveKeyboardLagOnInitialLoad
+{
+    UITextField *lagFreeField = [[UITextField alloc] init];
+    [self.window addSubview:lagFreeField];
+    [lagFreeField becomeFirstResponder];
+    [lagFreeField resignFirstResponder];
+    [lagFreeField removeFromSuperview];
 }
 
 @end
