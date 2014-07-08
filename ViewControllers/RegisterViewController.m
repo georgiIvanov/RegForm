@@ -8,6 +8,7 @@
 
 #import "RegisterViewController.h"
 #import "RegisterController.h"
+#import "InAppViewController.h"
 #import <POP.h>
 #import "UIConstants.h"
 
@@ -88,6 +89,17 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([segue.identifier isEqualToString:@"inAppSegue"])
+    {
+        InAppViewController* inAppVC = segue.destinationViewController;
+        inAppVC.userAccount = sender;
+    }
+    
+    [self.registerController removeObservers];
+}
+
 -(void)showSecondPartOfRegistration
 {
     [self.registerController.formTable removeFromSuperview];
@@ -112,7 +124,7 @@
     UserAccount* user = [self.registerController userAccount];
     [self.accountService registerUser:user onSuccess:^(UserAccount *user) {
         
-        [self performSegueWithIdentifier:@"inAppSegue" sender:self];
+        [self performSegueWithIdentifier:@"inAppSegue" sender:user];
         
     } onFailure:^(UserAccount *user, NSDictionary *error) {
         NSLog(@"Fail %@", error);
