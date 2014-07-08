@@ -7,19 +7,22 @@
 //
 
 #import "InAppViewController.h"
+#import "BaseUserAvatar.h"
 #import "UIConstants.h"
 
 @interface InAppViewController ()
+
+@property(nonatomic, strong) BaseUserAvatar* userAvatar;
 
 @end
 
 @implementation InAppViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (id)initWithCoder:(NSCoder *)aDecoder
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    self = [super initWithCoder:aDecoder];
     if (self) {
-        // Custom initialization
+        
     }
     return self;
 }
@@ -28,7 +31,17 @@
 {
     [super viewDidLoad];
     self.navigationItem.leftBarButtonItem = navigationBackButton(self, @selector(popViewController));
-    // Do any additional setup after loading the view.
+    
+    self.welcomeLabel.text = [NSString stringWithFormat:@"Welcome, %@!", self.userAccount.name];
+    
+    self.userAvatar = [BaseUserAvatar avatarWithSize:self.avatarImageView.bounds.size border:0 borderPadding:0];
+    [self.userAvatar loadWithPath:self.userAccount.avatarUrl placeholder:nil complete:^(UIImage *image) {
+        self.avatarImageView.image = image;
+        self.avatarImageView.contentMode = UIViewContentModeScaleAspectFit;
+    }];
+    
+        
+    self.userInfoTextView.text = [self.userAccount userDescription];
 }
 
 - (void)didReceiveMemoryWarning
@@ -42,15 +55,10 @@
     [self.view endEditing:YES];
     [self.navigationController popViewControllerAnimated:YES];
 }
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+-(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    [self.view endEditing:YES];
 }
-*/
 
 @end

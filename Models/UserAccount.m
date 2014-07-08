@@ -10,4 +10,29 @@
 
 @implementation UserAccount
 
+-(NSString*)userDescription
+{
+    NSString* publicBirthDate = self.birthDatePublic ? @"Yes" : @"No";
+    NSString* gender;
+    
+    switch (self.gender) {
+        case GenderMale:
+            gender = @"Male";
+            break;
+        case GenderFemale:
+            gender = @"Female";
+            break;
+        case GenderOther:
+            gender = @"Private";
+            break;
+            
+        default:
+            break;
+    }
+    NSString* result = [NSString stringWithFormat:@"Email: %@\nBirthDate: %@\nBirthDatePublic: %@\nGender: %@",
+                        self.email, self.birthDate, publicBirthDate, gender];
+    
+    return result;
+}
+
 @end

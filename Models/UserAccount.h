@@ -26,5 +26,7 @@ typedef NS_ENUM(NSInteger, Gender)
 @property (nonatomic, assign) Gender gender;
 @property (nonatomic, assign) BOOL birthDatePublic;
 
+-(NSString*)userDescription;
+
 
 @end

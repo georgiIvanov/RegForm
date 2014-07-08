@@ -54,6 +54,12 @@
         regVC.accountService = self.accountService;
         
     }
+    else if([segue.identifier isEqualToString:@"inAppSegue"])
+    {
+        InAppViewController* inAppVC = segue.destinationViewController;
+        inAppVC.userAccount = sender;
+    }
+    
     [self.loginController removeObservers];
 }
 
@@ -66,7 +72,7 @@
 {
     [self.accountService loginUser:[self.loginController userAccount] onSuccess:^(UserAccount *user) {
 
-        [self performSegueWithIdentifier:@"inAppSegue" sender:self];
+        [self performSegueWithIdentifier:@"inAppSegue" sender:user];
         [self.loginController clearForm];
         
     } onFailure:^(UserAccount *user, NSDictionary *error) {
