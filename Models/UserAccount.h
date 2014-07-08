@@ -22,6 +22,7 @@ typedef NS_ENUM(NSInteger, Gender)
 @property (nonatomic, strong) NSString *password;
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSDate* birthDate;
+@property (nonatomic, strong) NSURL* avatar;
 @property (nonatomic, assign) Gender gender;
 
 
