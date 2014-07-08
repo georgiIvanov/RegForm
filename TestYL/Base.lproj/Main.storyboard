@@ -83,7 +83,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="lSt-Oy-Zzl" kind="custom" customClass="ViewControllerSegue" id="N48-he-Zws"/>
+                                            <segue destination="lSt-Oy-Zzl" kind="custom" identifier="registerSegue" customClass="ViewControllerSegue" id="N48-he-Zws"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -172,6 +172,7 @@
                             <constraint firstItem="UTG-fO-Rbf" firstAttribute="centerX" secondItem="wh3-DI-Fpz" secondAttribute="centerX" id="wqS-bv-yHn"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="fMs-EU-3ph"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9RW-rR-sEs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -244,8 +245,7 @@
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="loginTapped:" destination="GKX-Wf-LoO" eventType="touchUpInside" id="OjK-X8-5hl"/>
-                                                    <segue destination="Meo-ih-Vog" kind="custom" customClass="ViewControllerSegue" id="oes-9W-IRY"/>
+                                                    <action selector="registerTap:" destination="lSt-Oy-Zzl" eventType="touchUpInside" id="Imp-HF-woh"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -290,11 +290,12 @@
                     <navigationItem key="navigationItem" id="cVa-XQ-5EF"/>
                     <connections>
                         <outlet property="registerController" destination="9Mu-ys-gMv" id="FgG-B7-3iz"/>
+                        <segue destination="Meo-ih-Vog" kind="custom" identifier="inAppSegue" customClass="ViewControllerSegue" id="U4E-sB-Rtp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n4h-Xb-oQx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="489" y="819"/>
+            <point key="canvasLocation" x="544" y="788"/>
         </scene>
         <!--Recover Password View Controller-->
         <scene sceneID="abz-CF-pfo">
@@ -387,6 +388,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="c3M-Rl-Rir"/>
+        <segue reference="U4E-sB-Rtp"/>
     </inferredMetricsTieBreakers>
 </document>

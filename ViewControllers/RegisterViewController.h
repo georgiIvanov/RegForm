@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AccountServiceProtocol.h"
 
 @interface RegisterViewController : UIViewController
+
+@property(nonatomic, strong) id<AccountService> accountService;
+
+
+- (IBAction)registerTap:(id)sender;
 
 @end

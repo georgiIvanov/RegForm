@@ -8,10 +8,13 @@
 
 #import "LoginViewController.h"
 #import "LoginController.h"
+#import "AccountService.h"
+#import "RegisterViewController.h"
 
 @interface LoginViewController ()
 
 @property (weak, nonatomic) IBOutlet LoginController *loginController;
+@property(nonatomic, strong) id<AccountService> accountService;
 @end
 
 @implementation LoginViewController
@@ -24,6 +27,7 @@
 
 -(void)setupViews
 {
+    self.accountService = [[AccountService alloc] init];
     [self.loginController setupViews];
 }
 
@@ -42,6 +46,12 @@
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    if([segue.identifier isEqualToString:@"registerSegue"])
+    {
+        RegisterViewController* regVC = segue.destinationViewController;
+        regVC.accountService = self.accountService;
+        
+    }
     [self.loginController removeObservers];
 }
 

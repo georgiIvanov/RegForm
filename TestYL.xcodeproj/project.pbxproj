@@ -192,6 +192,7 @@
 		FFBF47E8196C52D3003AFA0D /* AccountService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountService.m; sourceTree = "<group>"; };
 		FFBF47EB196C533B003AFA0D /* UserAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAccount.h; sourceTree = "<group>"; };
 		FFBF47EC196C533B003AFA0D /* UserAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAccount.m; sourceTree = "<group>"; };
+		FFBF47EE196C684C003AFA0D /* AccountServiceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountServiceProtocol.h; sourceTree = "<group>"; };
 		FFC1996F196B51B600FD7C26 /* InAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppViewController.h; sourceTree = "<group>"; };
 		FFC19970196B51B600FD7C26 /* InAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAppViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -477,6 +478,7 @@
 			children = (
 				FFBF47E7196C52D3003AFA0D /* AccountService.h */,
 				FFBF47E8196C52D3003AFA0D /* AccountService.m */,
+				FFBF47EE196C684C003AFA0D /* AccountServiceProtocol.h */,
 			);
 			path = Network;
 			sourceTree = "<group>";

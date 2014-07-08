@@ -8,6 +8,7 @@
 
 #import "FormController.h"
 #import "RoundedButton.h"
+#import "UserAccount.h"
 
 @interface RegisterController : FormController
 
@@ -18,5 +19,7 @@
 
 -(void)setupViews;
 -(BOOL)validateFormFields;
+
+-(UserAccount*)userAccount;
 
 @end

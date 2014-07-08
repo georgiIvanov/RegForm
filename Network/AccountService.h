@@ -7,18 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "UserAccount.h"
-
-
-@protocol AccountService <NSObject>
-
--(void)loginUser:(UserAccount*)user onSuccess:(void (^)(UserAccount* user))onSuccess onFailure:(void (^)(UserAccount* user, NSDictionary* error))onError;
-
--(void)registerUser:(UserAccount*)user onSuccess:(void (^)(UserAccount* user))onSuccess onFailure:(void (^)(UserAccount* user, NSDictionary* error))onError;
-
--(void)resetPassword:(NSString*)email onSuccess:(void (^)(NSDictionary* info))onSuccess onFailure:(void (^)(NSDictionary* error))onError;
-
-@end
+#import "AccountServiceProtocol.h"
 
 // This is only a mock service
 @interface AccountService : NSObject <AccountService>

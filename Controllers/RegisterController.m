@@ -17,6 +17,7 @@
 @property(nonatomic, strong) BaseUserAvatar* userAvatar;
 @property(nonatomic, strong) NSArray* possibleImageUrls;
 @property(nonatomic, assign) NSInteger previousIndex;
+@property(nonatomic, strong) NSString* userAvatarUrl;
 
 @end
 
@@ -124,11 +125,29 @@
     while (index == _previousIndex) {
        index = arc4random() % self.possibleImageUrls.count;
     }
-    [self.userAvatar loadWithPath:self.possibleImageUrls[index] placeholder:nil complete:^(UIImage* image){
+    self.userAvatarUrl = self.possibleImageUrls[index];
+    [self.userAvatar loadWithPath:self.userAvatarUrl placeholder:nil complete:^(UIImage* image){
         [self.addPhotoButton setBackgroundImage:image forState:UIControlStateNormal];
         [self.addPhotoButton setBackgroundImage:image forState:UIControlStateHighlighted];
     }];
     _previousIndex = index;
+}
+
+-(UserAccount *)userAccount
+{
+    UserAccount* user = [[UserAccount alloc] init];
+    
+    user.email = self.registerForm.email;
+    user.password = self.registerForm.password;
+    user.name = self.registerForm.name;
+    
+    YLBirthDateModel* date = (YLBirthDateModel*)self.registerForm.birthDate;
+    user.birthDate = date.birthDate;
+    user.birthDatePublic = date.birthDatePublic;
+    user.avatarUrl = self.userAvatarUrl;
+    user.gender = [((NSNumber*)self.registerForm.gender)integerValue];
+    
+    return user;
 }
 
 -(void)keyboardWillShow:(NSNotification*)notification

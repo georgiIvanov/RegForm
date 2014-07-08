@@ -11,7 +11,8 @@
 static NSString* const kEmailKey = @"email";
 static NSString* const kPasswordKey = @"password";
 static NSString* const kNameKey = @"name";
-static NSString* const kBirthDatelKey = @"birthDate";
+static NSString* const kBirthDateKey = @"birthDate";
+static NSString* const kBirthDatePublicKey = @"birthDatePublic";
 static NSString* const kAvatarKey = @"avatar";
 static NSString* const kGenderKey = @"gender";
 
@@ -43,8 +44,9 @@ static NSString* const kGenderKey = @"gender";
     NSDictionary* userDict = @{kEmailKey: user.email,
                                kPasswordKey: user.password,
                                kNameKey: user.name,
-                               kBirthDatelKey: user.birthDate,
-                               kAvatarKey: user.avatar,
+                               kBirthDateKey: user.birthDate,
+                               kBirthDatePublicKey: @(user.birthDatePublic),
+                               kAvatarKey: user.avatarUrl,
                                kGenderKey: @(user.gender)};
     
     [self.userDefaults setObject:userDict forKey:user.email];

@@ -64,7 +64,7 @@
     }
     [self.view endEditing:YES];
     
-    if(YES) //[self.registerController validateFormFields])
+    if([self.registerController validateFormFields])
     {
         [self.registerController hideFormDuration:0.4];
         [self showSecondPartOfRegistration];
@@ -107,8 +107,16 @@
     [self.registerController.registerButtonContainer pop_addAnimation:scale forKey:@"showViewAnimation"];
 }
 
-
-
-
-
+- (IBAction)registerTap:(id)sender {
+    
+    UserAccount* user = [self.registerController userAccount];
+    [self.accountService registerUser:user onSuccess:^(UserAccount *user) {
+        
+        [self performSegueWithIdentifier:@"inAppSegue" sender:self];
+        
+    } onFailure:^(UserAccount *user, NSDictionary *error) {
+        NSLog(@"Fail %@", error);
+    }];
+    
+}
 @end
