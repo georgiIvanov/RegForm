@@ -68,6 +68,7 @@
 		FFAFF59019693BB200082D42 /* RegisterForm.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAFF58F19693BB200082D42 /* RegisterForm.m */; };
 		FFAFF593196944D100082D42 /* FormController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAFF592196944D100082D42 /* FormController.m */; };
 		FFAFF59719694C6D00082D42 /* RegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAFF59619694C6D00082D42 /* RegisterController.m */; };
+		FFBF47ED196C533B003AFA0D /* UserAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBF47EC196C533B003AFA0D /* UserAccount.m */; };
 		FFC19971196B51B600FD7C26 /* InAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC19970196B51B600FD7C26 /* InAppViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -186,6 +187,8 @@
 		FFAFF592196944D100082D42 /* FormController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormController.m; sourceTree = "<group>"; };
 		FFAFF59519694C6D00082D42 /* RegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterController.h; sourceTree = "<group>"; };
 		FFAFF59619694C6D00082D42 /* RegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterController.m; sourceTree = "<group>"; };
+		FFBF47EB196C533B003AFA0D /* UserAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAccount.h; sourceTree = "<group>"; };
+		FFBF47EC196C533B003AFA0D /* UserAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAccount.m; sourceTree = "<group>"; };
 		FFC1996F196B51B600FD7C26 /* InAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppViewController.h; sourceTree = "<group>"; };
 		FFC19970196B51B600FD7C26 /* InAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAppViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -221,6 +224,7 @@
 			children = (
 				FFAEAECE1968220500F3ABDE /* Resources */,
 				FFAEAE611967FA7800F3ABDE /* Base */,
+				FFBF47EA196C532D003AFA0D /* Models */,
 				FFAEAEF219689A0900F3ABDE /* Controls */,
 				FFAEAE8C1967FA7800F3ABDE /* Controllers */,
 				FFAEAE8F1967FA7800F3ABDE /* Forms */,
@@ -464,6 +468,15 @@
 			name = BaseControllers;
 			sourceTree = "<group>";
 		};
+		FFBF47EA196C532D003AFA0D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FFBF47EB196C533B003AFA0D /* UserAccount.h */,
+				FFBF47EC196C533B003AFA0D /* UserAccount.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -609,6 +622,7 @@
 				FFAEAEAE1967FA7800F3ABDE /* BBlock.m in Sources */,
 				FFAEAEEB19686FCF00F3ABDE /* RecoverPasswordViewController.m in Sources */,
 				FFAEAEB51967FA7800F3ABDE /* YLColors.m in Sources */,
+				FFBF47ED196C533B003AFA0D /* UserAccount.m in Sources */,
 				FFAEAEBC1967FA7800F3ABDE /* globals.m in Sources */,
 				FFAEAEB91967FA7800F3ABDE /* LoginController.m in Sources */,
 				FFAEAEBA1967FA7800F3ABDE /* LoginForm.m in Sources */,

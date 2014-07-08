@@ -9,15 +9,7 @@
 #import "BaseForm.h"
 #import "BaseFormCells.h"
 #import "LoginForm.h"
-
-typedef NS_ENUM(NSInteger, Gender)
-{
-    GenderMale,
-    GenderFemale,
-    GenderOther,
-    GenderInvalid
-};
-
+#import "UserAccount.h"
 
 @interface RegisterForm : BaseForm
 
