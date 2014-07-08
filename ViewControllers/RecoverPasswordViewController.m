@@ -31,7 +31,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self setupViews];   
+    [self setupViews];
+    [self.recoveryController setupObservers];
 }
 
 -(void)setupViews

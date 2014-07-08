@@ -52,4 +52,14 @@
     }];
 }
 
+-(void)keyboardWillShow:(NSNotification*)notification
+{
+    [super animateFormUp:notification bounciness:15];
+}
+
+-(void)keyboardWillHide:(NSNotification*)notification
+{
+    [super animateFormDown:notification bounciness:10];
+}
+
 @end
