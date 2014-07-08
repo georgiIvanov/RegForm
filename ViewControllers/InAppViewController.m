@@ -40,7 +40,7 @@
         self.avatarImageView.contentMode = UIViewContentModeScaleAspectFit;
     }];
     
-        
+    self.userInfoTextView.font = latoRegularFont(15);
     self.userInfoTextView.text = [self.userAccount userDescription];
 }
 

@@ -29,8 +29,12 @@
         default:
             break;
     }
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+	[dateFormatter setDateFormat:@"MM/dd/yyyy"];
+    
     NSString* result = [NSString stringWithFormat:@"Email: %@\nBirthDate: %@\nBirthDatePublic: %@\nGender: %@",
-                        self.email, self.birthDate, publicBirthDate, gender];
+                        self.email, [dateFormatter stringFromDate:self.birthDate], publicBirthDate, gender];
     
     return result;
 }
