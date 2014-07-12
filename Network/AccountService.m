@@ -7,18 +7,22 @@
 //
 
 #import "AccountService.h"
+#import "AFNetworking.h"
 
 static NSString* const kEmailKey = @"email";
 static NSString* const kPasswordKey = @"password";
-static NSString* const kNameKey = @"name";
-static NSString* const kBirthDateKey = @"birthDate";
+static NSString* const kNameKey = @"fullname";
+static NSString* const kBirthDateKey = @"birthday";
 static NSString* const kBirthDatePublicKey = @"birthDatePublic";
 static NSString* const kAvatarKey = @"avatar";
 static NSString* const kGenderKey = @"gender";
 
+static NSString* const kDomainName = @"http://regformserver.apphb.com/";
+
 @interface AccountService()
 
 @property(nonatomic, strong) NSUserDefaults* userDefaults;
+@property(nonatomic, strong) AFHTTPRequestOperationManager* manager;
 
 @end
 
@@ -30,6 +34,7 @@ static NSString* const kGenderKey = @"gender";
     if(self)
     {
         self.userDefaults = [NSUserDefaults standardUserDefaults];
+        self.manager = [AFHTTPRequestOperationManager manager];
     }
     return self;
 }
@@ -69,18 +74,16 @@ static NSString* const kGenderKey = @"gender";
                                kNameKey: user.name,
                                kBirthDateKey: user.birthDate,
                                kBirthDatePublicKey: @(user.birthDatePublic),
-                               kAvatarKey: user.avatarUrl,
                                kGenderKey: @(user.gender)};
+    [self.manager POST:[NSString stringWithFormat:@"%@%@", kDomainName, @"oauth2/signup"] parameters:userDict success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+        NSLog(@"JSON: %@", responseObject);
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+
+        onError(user, @{@"error": error.localizedDescription});
+    }];
     
-    [self.userDefaults setObject:userDict forKey:user.email];
-    if(![self.userDefaults synchronize])
-    {
-        onError(user, @{@"error": @"Can't persist user"});
-    }
-    else
-    {
-        onSuccess(user);
-    }
 }
 
 -(void)resetPassword:(NSString*)email onSuccess:(void (^)(NSDictionary* info))onSuccess onFailure:(void (^)(NSDictionary* error))onError

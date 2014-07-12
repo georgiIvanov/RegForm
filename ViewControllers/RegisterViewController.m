@@ -67,6 +67,15 @@
     
     if([self.registerController validateFormFields])
     {
+        [self.accountService registerUser:[self.registerController userAccount] onSuccess:^(UserAccount *user) {
+            
+            
+            
+        } onFailure:^(UserAccount *user, NSDictionary *error) {
+            NSLog(@"Fail %@", error);
+        }];
+        
+        
         [self.registerController hideFormDuration:0.4];
         [self showSecondPartOfRegistration];
         self.navigationItem.rightBarButtonItem = nil;
@@ -121,14 +130,7 @@
 
 - (IBAction)registerTap:(id)sender {
     
-    UserAccount* user = [self.registerController userAccount];
-    [self.accountService registerUser:user onSuccess:^(UserAccount *user) {
-        
-        [self performSegueWithIdentifier:@"inAppSegue" sender:user];
-        
-    } onFailure:^(UserAccount *user, NSDictionary *error) {
-        NSLog(@"Fail %@", error);
-    }];
     
+    [self performSegueWithIdentifier:@"inAppSegue" sender:[self.registerController userAccount]];
 }
 @end
