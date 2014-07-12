@@ -135,17 +135,14 @@
 
 -(UserAccount *)userAccount
 {
-    UserAccount* user = [[UserAccount alloc] init];
-    
-    user.email = self.registerForm.email;
-    user.password = self.registerForm.password;
-    user.name = self.registerForm.name;
-    
     YLBirthDateModel* date = (YLBirthDateModel*)self.registerForm.birthDate;
-    user.birthDate = date.birthDate;
-    user.birthDatePublic = date.birthDatePublic;
-    user.avatarUrl = self.userAvatarUrl;
-    user.gender = [((NSNumber*)self.registerForm.gender)integerValue] - 1;
+    UserAccount* user = [[UserAccount alloc] initWithEmail:self.registerForm.email
+                                                  password:self.registerForm.password
+                                                      name:self.registerForm.name
+                                                 birthDate:date.birthDate
+                                                 avatarUrl:self.userAvatarUrl
+                                                    gender:[((NSNumber*)self.registerForm.gender)integerValue] - 1
+                                            birthdayPublic:date.birthDatePublic];    
     
     return user;
 }

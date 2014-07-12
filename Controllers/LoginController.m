@@ -73,9 +73,7 @@
 
 -(UserAccount*)userAccount
 {
-    UserAccount* user = [[UserAccount alloc] init];
-    user.email = self.loginForm.email;
-    user.password = self.loginForm.password;
+    UserAccount* user = [[UserAccount alloc] initWithEmail:self.loginForm.email password:self.loginForm.password];
     
     return user;
 }

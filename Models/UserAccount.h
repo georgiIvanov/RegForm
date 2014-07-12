@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <MTLModel.h>
+#import <Mantle/MTLJSONAdapter.h>
 
 typedef NS_ENUM(NSInteger, Gender)
 {
@@ -16,17 +18,18 @@ typedef NS_ENUM(NSInteger, Gender)
     GenderInvalid
 };
 
-@interface UserAccount : NSObject
+@interface UserAccount : MTLModel <MTLJSONSerializing>
 
-@property (nonatomic, strong) NSString *email;
-@property (nonatomic, strong) NSString *password;
-@property (nonatomic, strong) NSString *name;
-@property (nonatomic, strong) NSDate* birthDate;
-@property (nonatomic, strong) NSString* avatarUrl;
-@property (nonatomic, assign) Gender gender;
-@property (nonatomic, assign) BOOL birthDatePublic;
+@property (nonatomic, copy, readonly) NSString *email;
+@property (nonatomic, copy, readonly) NSString *password;
+@property (nonatomic, copy, readonly) NSString *name;
+@property (nonatomic, copy, readonly) NSDate* birthDate;
+@property (nonatomic, copy, readonly) NSString* avatarUrl;
+@property (nonatomic, assign, readonly) Gender gender;
+@property (nonatomic, assign, readonly) BOOL birthDatePublic;
 
 -(NSString*)userDescription;
-
+-(instancetype)initWithEmail:(NSString*)email password:(NSString*)password;
+-(instancetype)initWithEmail:(NSString*)email password:(NSString*)password name:(NSString*)name birthDate:(NSDate*)birthDate avatarUrl:(NSString*)avatarUrl gender:(Gender)gender birthdayPublic:(BOOL)birthdayPublic;
 
 @end

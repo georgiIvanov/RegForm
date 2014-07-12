@@ -49,7 +49,6 @@ static NSString* const kDomainName = @"http://regformserver.apphb.com/";
     }
     
     UserAccount* userFound = [[UserAccount alloc] init];
-    userFound.password = [userDict objectForKey:kPasswordKey];
     
     if(![userFound.password isEqualToString:user.password])
     {
@@ -57,27 +56,19 @@ static NSString* const kDomainName = @"http://regformserver.apphb.com/";
         return;
     }
     
-    userFound.email = [userDict objectForKey:kEmailKey];
-    userFound.name = [userDict objectForKey:kNameKey];
-    userFound.avatarUrl = [userDict objectForKey:kAvatarKey];
-    userFound.birthDate = [userDict objectForKey:kBirthDateKey];
-    userFound.birthDatePublic = [[userDict objectForKey:kBirthDatePublicKey] boolValue];
-    userFound.gender = [[userDict objectForKey:kGenderKey] integerValue];
-    
     onSuccess(userFound);
 }
 
 -(void)registerUser:(UserAccount*)user onSuccess:(void (^)(UserAccount* user))onSuccess onFailure:(void (^)(UserAccount* user, NSDictionary* error))onError
 {
-    NSDictionary* userDict = @{kEmailKey: user.email,
-                               kPasswordKey: user.password,
-                               kNameKey: user.name,
-                               kBirthDateKey: user.birthDate,
-                               kBirthDatePublicKey: @(user.birthDatePublic),
-                               kGenderKey: @(user.gender)};
+    
+    NSDictionary* userDict = [MTLJSONAdapter JSONDictionaryFromModel:user];
+    
     [self.manager POST:[NSString stringWithFormat:@"%@%@", kDomainName, @"oauth2/signup"] parameters:userDict success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        
+        NSError* error;
+        UserAccount* registeredUser = [MTLJSONAdapter modelOfClass:UserAccount.class fromJSONDictionary:responseObject error:&error];
         NSLog(@"JSON: %@", responseObject);
+        NSLog(@"%@", registeredUser);
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
 
