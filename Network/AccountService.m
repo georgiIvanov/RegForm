@@ -41,22 +41,18 @@ static NSString* const kDomainName = @"http://regformserver.apphb.com/";
 
 -(void)loginUser:(UserAccount*)user onSuccess:(void (^)(UserAccount* user))onSuccess onFailure:(void (^)(UserAccount* user, NSDictionary* error))onError
 {
-    NSDictionary* userDict = [self.userDefaults objectForKey:user.email];
-    if(userDict == nil)
-    {
-        onError(user, @{@"error": @"No such user"});
-        return;
-    }
+    NSDictionary* userDict = [MTLJSONAdapter JSONDictionaryFromModel:user];
     
-    UserAccount* userFound = [[UserAccount alloc] init];
+    [self.manager POST:[NSString stringWithFormat:@"%@%@", kDomainName, @"oauth2/signin"] parameters:userDict success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSError* error;
+        UserAccount* loggedInUser = [MTLJSONAdapter modelOfClass:UserAccount.class fromJSONDictionary:responseObject error:&error];
+        NSLog(@"%@", loggedInUser);
+        onSuccess(loggedInUser);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"%@", operation);
+        onError(user, operation.responseObject);
+    }];
     
-    if(![userFound.password isEqualToString:user.password])
-    {
-        onError(user, @{@"error": @"Wrong password"});
-        return;
-    }
-    
-    onSuccess(userFound);
 }
 
 -(void)registerUser:(UserAccount*)user onSuccess:(void (^)(UserAccount* user))onSuccess onFailure:(void (^)(UserAccount* user, NSDictionary* error))onError
