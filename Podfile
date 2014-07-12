@@ -5,6 +5,7 @@ target "TestYL" do
 
 pod 'FXForms'
 pod 'AFNetworking'
+pod 'Mantle', '~> 1.5'
 pod 'Masonry', '~> 0.5.0'
 pod 'pop', '~> 1.0'
 
