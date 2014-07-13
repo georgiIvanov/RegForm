@@ -76,6 +76,7 @@
         [self.loginController clearForm];
         
     } onFailure:^(UserAccount *user, NSDictionary *error) {
+        NSLog(@"%@", error);
         [self.loginController shakeFormBounciness:15 speed:30];
     }];
 }

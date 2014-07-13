@@ -48,10 +48,8 @@ static NSString* const kDomainName = @"http://regformserver.apphb.com/";
         NSError* error;
         UserAccount* loggedInUser = [MTLJSONAdapter modelOfClass:UserAccount.class fromJSONDictionary:responseObject error:&error];
         self.user = loggedInUser;
-        NSLog(@"%@", loggedInUser);
         onSuccess(loggedInUser);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"%@", error.localizedDescription);
         onError(user, operation.responseObject);
     }];
     
@@ -68,7 +66,6 @@ static NSString* const kDomainName = @"http://regformserver.apphb.com/";
         self.user = registeredUser;
         onSuccess(registeredUser);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-
         onError(user, operation.responseObject);
     }];
     
@@ -79,7 +76,7 @@ static NSString* const kDomainName = @"http://regformserver.apphb.com/";
     NSData* imageData = UIImageJPEGRepresentation(image, 1);
     NSString* postUrl =[NSString stringWithFormat:@"%@%@%@", kDomainName, @"api/UserSettings/UploadAvatar?email=", _user.email];
     [self.manager POST:postUrl parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
-        [formData appendPartWithFileData:imageData name:@"image" fileName:@"image" mimeType:@"image/png"];
+        [formData appendPartWithFileData:imageData name:@"image" fileName:@"image" mimeType:@"image/jpeg"];
     } success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSError* error;
         UserAccount* newAvatarUser = [MTLJSONAdapter modelOfClass:UserAccount.class fromJSONDictionary:responseObject error:&error];
