@@ -86,7 +86,7 @@
              @"name": @"fullname",
              @"birthDate": @"birthday",
              @"birthDatePublic": @"birthDatePublic",
-             @"avatarUrl": @"avatar",
+             @"avatarUrl": @"avatarUrl",
              @"gender": @"gender"
              };
 }
