@@ -14,10 +14,6 @@
 @interface RegisterController()
 
 @property(nonatomic, strong) RegisterForm* registerForm;
-@property(nonatomic, strong) BaseUserAvatar* userAvatar;
-@property(nonatomic, strong) NSArray* possibleImageUrls;
-@property(nonatomic, assign) NSInteger previousIndex;
-@property(nonatomic, strong) NSString* userAvatarUrl;
 
 @end
 
@@ -29,10 +25,6 @@
     if(self)
     {
         self.formCellsCount = 5;
-        self.possibleImageUrls = @[@"http://georgi-ivanov.com/wp-content/uploads/2014/07/Flapjack-150x150.jpg",
-                                   @"http://georgi-ivanov.com/wp-content/uploads/2014/07/courage-the-cowardly-dog-complete-8-dvds-42b1-150x150.jpg",
-                                   @"http://georgi-ivanov.com/wp-content/uploads/2014/07/jake-150x150.png"];
-        self.previousIndex = -1;
     }
     return self;
 }
@@ -61,7 +53,6 @@
         make.top.equalTo(superview.mas_centerY).priorityLow();
     }];
     
-    self.userAvatar = [BaseUserAvatar avatarWithSize:self.addPhotoButton.bounds.size border:0 borderPadding:0];
     [self.addPhotoButton setBackgroundImage:[UIImage imageNamed:@"AddPhoto"] forState:UIControlStateHighlighted];
     [((RoundedButton* )self.addPhotoButton) setScalingTouchDownX:1.3 downY:1.3 touchUpX:0.9 upY:0.9];
 }
@@ -118,21 +109,6 @@
     return NO;
 }
 
-- (IBAction)addPhotoTapped:(id)sender
-{
-    int index = arc4random() % self.possibleImageUrls.count;
-    
-    while (index == _previousIndex) {
-       index = arc4random() % self.possibleImageUrls.count;
-    }
-    self.userAvatarUrl = self.possibleImageUrls[index];
-    [self.userAvatar loadWithPath:self.userAvatarUrl placeholder:nil complete:^(UIImage* image){
-        [self.addPhotoButton setBackgroundImage:image forState:UIControlStateNormal];
-        [self.addPhotoButton setBackgroundImage:image forState:UIControlStateHighlighted];
-    }];
-    _previousIndex = index;
-}
-
 -(UserAccount *)userAccount
 {
     YLBirthDateModel* date = (YLBirthDateModel*)self.registerForm.birthDate;
@@ -140,7 +116,7 @@
                                                   password:self.registerForm.password
                                                       name:self.registerForm.name
                                                  birthDate:date.birthDate
-                                                 avatarUrl:self.userAvatarUrl
+                                                 avatarUrl:nil
                                                     gender:[((NSNumber*)self.registerForm.gender)integerValue]
                                             birthdayPublic:date.birthDatePublic];    
     
