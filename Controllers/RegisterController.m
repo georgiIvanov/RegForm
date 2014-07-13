@@ -133,4 +133,13 @@
     [super animateFormDown:notification bounciness:10];
 }
 
+-(void)removeObservers
+{
+    [super removeObservers];
+    [self.formTable removeFromSuperview];
+    self.registerForm = nil;
+    self.formController = nil;
+    self.formTable = nil;
+}
+
 @end

@@ -19,4 +19,12 @@
     return self;
 }
 
+- (id)copyWithZone:(NSZone *)zone
+{
+    YLBirthDateModel* newBirthDate = [[[self class] alloc] init];
+    newBirthDate.birthDate = [self.birthDate copy];
+    newBirthDate.birthDatePublic = self.birthDatePublic;
+    
+    return newBirthDate;
+}
 @end

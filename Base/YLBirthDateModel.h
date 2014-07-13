@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface YLBirthDateModel : NSObject
+@interface YLBirthDateModel : NSObject <NSCopying>
 
 @property (nonatomic, strong) NSDate *birthDate;
 @property (nonatomic, assign) BOOL birthDatePublic;
