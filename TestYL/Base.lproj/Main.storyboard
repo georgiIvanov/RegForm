@@ -309,6 +309,7 @@
                                 </constraints>
                                 <connections>
                                     <outlet property="addPhotoButton" destination="jkC-Xt-EKR" id="fd7-4L-5zw"/>
+                                    <outlet property="registerButton" destination="T23-uF-rC5" id="nRa-LW-nR9"/>
                                     <outlet property="registerButtonContainer" destination="adb-Vd-pz2" id="AqH-d6-itA"/>
                                 </connections>
                             </view>

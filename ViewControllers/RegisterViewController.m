@@ -129,6 +129,24 @@
     [self.registerController.registerButtonContainer pop_addAnimation:scale forKey:@"showViewAnimation"];
 }
 
+-(void)makeUploadAvatarRequest
+{
+    [self.registerController.registerButton removeTarget:self action:@selector(registerTap:) forControlEvents:UIControlEventTouchUpInside];
+    [self.accountService uploadAvatar:self.pickedImage onSuccess:^(UserAccount *userWithNewAvatar) {
+        
+        [self performSegueWithIdentifier:@"inAppSegue" sender:userWithNewAvatar];
+        self.pickedImage = nil;
+        [self.registerController.registerButton addTarget:self action:@selector(registerTap:) forControlEvents:UIControlEventTouchUpInside];
+        
+    } onFailure:^(NSDictionary *error) {
+        
+        NSLog(@"%@", error);
+        [self.registerController.registerButton addTarget:self action:@selector(registerTap:) forControlEvents:UIControlEventTouchUpInside];
+        self.pickedImage = nil;
+        
+    }];
+}
+
 #pragma mark - ImagePicker Delegate
 
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
@@ -142,12 +160,14 @@
 #pragma mark - UI Actions
 
 - (IBAction)registerTap:(id)sender {
-    
-    [self.accountService uploadAvatar:self.pickedImage onSuccess:^(UserAccount *userWithNewAvatar) {
-        [self performSegueWithIdentifier:@"inAppSegue" sender:userWithNewAvatar];
-    } onFailure:^(NSDictionary *error) {
-        NSLog(@"%@", error);
-    }];
+    if(self.pickedImage)
+    {
+        [self makeUploadAvatarRequest];
+    }
+    else
+    {
+        [self performSegueWithIdentifier:@"inAppSegue" sender:[self.accountService userAccount]];
+    }
     
 }
 
