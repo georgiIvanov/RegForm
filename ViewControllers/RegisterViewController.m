@@ -12,9 +12,10 @@
 #import <POP.h>
 #import "UIConstants.h"
 
-@interface RegisterViewController ()
+@interface RegisterViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet RegisterController *registerController;
+@property (nonatomic, strong) UIImage* pickedImage;
 
 @end
 
@@ -64,7 +65,6 @@
         return;
     }
     [self.view endEditing:YES];
-    
     if([self.registerController validateFormFields])
     {
         [self.activityIndicator startAnimating];
@@ -80,9 +80,6 @@
             [self.registerController shakeFormBounciness:15 speed:30];
             NSLog(@"Fail %@", error);
         }];
-        
-        
-        
     }
     else
     {
@@ -132,9 +129,34 @@
     [self.registerController.registerButtonContainer pop_addAnimation:scale forKey:@"showViewAnimation"];
 }
 
+#pragma mark - ImagePicker Delegate
+
+-(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    self.pickedImage = info[UIImagePickerControllerOriginalImage];
+    [self.registerController.addPhotoButton setBackgroundImage:self.pickedImage forState:UIControlStateNormal];
+    [self.registerController.addPhotoButton setBackgroundImage:self.pickedImage forState:UIControlStateHighlighted];
+    [picker dismissViewControllerAnimated:YES completion:nil];
+}
+
+#pragma mark - UI Actions
+
 - (IBAction)registerTap:(id)sender {
     
+    [self.accountService uploadAvatar:self.pickedImage onSuccess:^(UserAccount *userWithNewAvatar) {
+        [self performSegueWithIdentifier:@"inAppSegue" sender:userWithNewAvatar];
+    } onFailure:^(NSDictionary *error) {
+        NSLog(@"%@", error);
+    }];
     
-    [self performSegueWithIdentifier:@"inAppSegue" sender:[self.registerController userAccount]];
+}
+
+- (IBAction)addPhotoTap:(id)sender {
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    picker.delegate = self;
+    picker.allowsEditing = YES;
+    picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    
+    [self presentViewController:picker animated:YES completion:NULL];
 }
 @end

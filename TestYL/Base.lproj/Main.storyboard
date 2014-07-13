@@ -260,7 +260,7 @@
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="addPhotoTapped:" destination="9Mu-ys-gMv" eventType="touchUpInside" id="PdA-zu-PuI"/>
+                                                    <action selector="addPhotoTap:" destination="lSt-Oy-Zzl" eventType="touchUpInside" id="YjW-36-Kxl"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Add Photo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6mr-PP-aeA" customClass="CustomFontLabel">

@@ -16,5 +16,6 @@
 
 
 - (IBAction)registerTap:(id)sender;
+- (IBAction)addPhotoTap:(id)sender;
 
 @end
