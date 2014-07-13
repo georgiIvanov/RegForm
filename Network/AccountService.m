@@ -49,7 +49,7 @@ static NSString* const kDomainName = @"http://regformserver.apphb.com/";
         NSLog(@"%@", loggedInUser);
         onSuccess(loggedInUser);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"%@", operation);
+        NSLog(@"%@", error.localizedDescription);
         onError(user, operation.responseObject);
     }];
     
@@ -63,12 +63,10 @@ static NSString* const kDomainName = @"http://regformserver.apphb.com/";
     [self.manager POST:[NSString stringWithFormat:@"%@%@", kDomainName, @"oauth2/signup"] parameters:userDict success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSError* error;
         UserAccount* registeredUser = [MTLJSONAdapter modelOfClass:UserAccount.class fromJSONDictionary:responseObject error:&error];
-        NSLog(@"JSON: %@", responseObject);
-        NSLog(@"%@", registeredUser);
-        
+        onSuccess(registeredUser);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
 
-        onError(user, @{@"error": error.localizedDescription});
+        onError(user, operation.responseObject);
     }];
     
 }

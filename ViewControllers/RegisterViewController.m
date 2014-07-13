@@ -67,18 +67,22 @@
     
     if([self.registerController validateFormFields])
     {
+        [self.activityIndicator startAnimating];
         [self.accountService registerUser:[self.registerController userAccount] onSuccess:^(UserAccount *user) {
             
-            
+            [self.activityIndicator stopAnimating];
+            [self.registerController hideFormDuration:0.4];
+            [self showSecondPartOfRegistration];
+            self.navigationItem.rightBarButtonItem = nil;
             
         } onFailure:^(UserAccount *user, NSDictionary *error) {
+            [self.activityIndicator stopAnimating];
+            [self.registerController shakeFormBounciness:15 speed:30];
             NSLog(@"Fail %@", error);
         }];
         
         
-        [self.registerController hideFormDuration:0.4];
-        [self showSecondPartOfRegistration];
-        self.navigationItem.rightBarButtonItem = nil;
+        
     }
     else
     {

@@ -230,19 +230,23 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YouLocalBackgroundLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="X4p-p9-xKm">
-                                <rect key="frame" x="50" y="66" width="221" height="57"/>
+                                <rect key="frame" x="49" y="66" width="221" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="221" id="mA2-o7-Eqc"/>
                                     <constraint firstAttribute="height" constant="57" id="qyo-5H-Of7"/>
                                 </constraints>
                             </imageView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="zDd-PN-kbo">
+                                <rect key="frame" x="141" y="176" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Mu-ys-gMv" customClass="RegisterController">
                                 <rect key="frame" x="0.0" y="288" width="320" height="280"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="adb-Vd-pz2">
-                                        <rect key="frame" x="40" y="-157" width="241" height="412"/>
+                                        <rect key="frame" x="39" y="-157" width="241" height="412"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jkC-Xt-EKR" customClass="RoundedButton">
@@ -317,13 +321,16 @@
                             <constraint firstItem="GGT-SM-Uop" firstAttribute="leading" secondItem="iCL-3g-aLQ" secondAttribute="leading" id="ITV-fE-q0W"/>
                             <constraint firstAttribute="trailing" secondItem="GGT-SM-Uop" secondAttribute="trailing" id="O0s-Qk-vP1"/>
                             <constraint firstAttribute="trailing" secondItem="9Mu-ys-gMv" secondAttribute="trailing" id="OoR-0L-0qA"/>
+                            <constraint firstItem="zDd-PN-kbo" firstAttribute="top" secondItem="X4p-p9-xKm" secondAttribute="bottom" constant="53" id="RMa-5W-VoG"/>
                             <constraint firstAttribute="bottom" secondItem="GGT-SM-Uop" secondAttribute="bottom" id="TS0-PK-XWg"/>
                             <constraint firstAttribute="centerX" secondItem="X4p-p9-xKm" secondAttribute="centerX" id="b80-Qv-NUD"/>
+                            <constraint firstItem="zDd-PN-kbo" firstAttribute="centerX" secondItem="X4p-p9-xKm" secondAttribute="centerX" id="nme-zr-maY"/>
                             <constraint firstAttribute="bottom" secondItem="9Mu-ys-gMv" secondAttribute="bottom" id="qyW-9H-hIf"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cVa-XQ-5EF"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="zDd-PN-kbo" id="SlJ-jt-HlB"/>
                         <outlet property="registerController" destination="9Mu-ys-gMv" id="FgG-B7-3iz"/>
                         <segue destination="Meo-ih-Vog" kind="custom" identifier="inAppSegue" customClass="ViewControllerSegue" id="U4E-sB-Rtp"/>
                     </connections>
@@ -423,6 +430,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="MS3-bU-dOz"/>
+        <segue reference="U4E-sB-Rtp"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -12,6 +12,7 @@
 @interface RegisterViewController : UIViewController
 
 @property(nonatomic, strong) id<AccountService> accountService;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 
 
 - (IBAction)registerTap:(id)sender;

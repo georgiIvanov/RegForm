@@ -12,10 +12,11 @@
 
 typedef NS_ENUM(NSInteger, Gender)
 {
+    GenderInvalid,
     GenderMale,
     GenderFemale,
     GenderOther,
-    GenderInvalid
+    
 };
 
 @interface UserAccount : MTLModel <MTLJSONSerializing>

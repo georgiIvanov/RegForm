@@ -90,7 +90,7 @@
     }
     
     NSNumber* gender = (NSNumber*)self.registerForm.gender;
-    if([gender unsignedIntegerValue] > GenderInvalid)
+    if([gender unsignedIntegerValue] > GenderOther)
     {
         return NO;
     }
@@ -141,7 +141,7 @@
                                                       name:self.registerForm.name
                                                  birthDate:date.birthDate
                                                  avatarUrl:self.userAvatarUrl
-                                                    gender:[((NSNumber*)self.registerForm.gender)integerValue] - 1
+                                                    gender:[((NSNumber*)self.registerForm.gender)integerValue]
                                             birthdayPublic:date.birthDatePublic];    
     
     return user;
