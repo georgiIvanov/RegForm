@@ -106,4 +106,13 @@
     }];
 }
 
++ (NSValueTransformer *)birthDatePublicJSONTransformer {
+    return [MTLValueTransformer reversibleTransformerWithForwardBlock:^id(NSNumber* datePublic) {
+        return [datePublic integerValue] == 1 ? [NSNumber numberWithBool:YES] : [NSNumber numberWithBool:NO];
+    } reverseBlock:^id(NSNumber* datePublic) {
+        return [datePublic boolValue] == YES ? @"true" : @"false";
+        
+    }];
+}
+
 @end
