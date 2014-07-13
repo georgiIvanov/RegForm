@@ -15,6 +15,8 @@
 
 -(void)registerUser:(UserAccount*)user onSuccess:(void (^)(UserAccount* user))onSuccess onFailure:(void (^)(UserAccount* user, NSDictionary* error))onError;
 
--(void)resetPassword:(NSString*)email onSuccess:(void (^)(NSDictionary* info))onSuccess onFailure:(void (^)(NSDictionary* error))onError;
+-(void)uploadAvatar:(UIImage*)image onSuccess:(void (^)(UserAccount* userWithNewAvatar))onSuccess onFailure:(void (^)(NSDictionary* error))onError;
+
+-(UserAccount*)userAccount;
 
 @end
