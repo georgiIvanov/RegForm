@@ -68,15 +68,16 @@
     if([self.registerController validateFormFields])
     {
         [self.activityIndicator startAnimating];
+        self.navigationItem.rightBarButtonItem.customView.hidden = YES;
         [self.accountService registerUser:[self.registerController userAccount] onSuccess:^(UserAccount *user) {
             
             [self.activityIndicator stopAnimating];
             [self.registerController hideFormDuration:0.4];
             [self showSecondPartOfRegistration];
-            self.navigationItem.rightBarButtonItem = nil;
             
         } onFailure:^(UserAccount *user, NSDictionary *error) {
             [self.activityIndicator stopAnimating];
+            self.navigationItem.rightBarButtonItem.customView.hidden = NO;
             [self.registerController shakeFormBounciness:15 speed:30];
             NSLog(@"Fail %@", error);
         }];
